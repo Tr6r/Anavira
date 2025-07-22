@@ -1,0 +1,20 @@
+{
+  "intelephense.stubs": [
+    "wordpress",
+    "core",
+    "json",
+    "date",
+    "dom",
+    "filter",
+    "pcre",
+    "reflection",
+    "spl",
+    "standard",
+    "mysqli",
+    "pdo"
+  ],
+  "intelephense.environment.includePaths": [
+    "wp-includes",
+    "wp-admin"
+  ]
+}

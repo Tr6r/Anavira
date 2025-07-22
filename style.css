@@ -1,0 +1,164 @@
+
+/*
+Theme Name: Anavira
+Theme URI: http://anavira.local/wp-content/uploads/2025/07/banner.png
+Author: Dinh Cuong
+
+Description: Anavira
+Requires at least: 6.7
+Tested up to: 6.8
+Requires PHP: 7.2
+Version: 1.2
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: twentytwentyfive
+Tags: one-column, custom-colors, custom-menu, custom-logo, editor-style, featured-images, full-site-editing, block-patterns, rtl-language-support, sticky-post, threaded-comments, translation-ready, wide-blocks, block-styles, style-variations, accessibility-ready, blog, portfolio, news
+*/
+
+@font-face {
+  font-family: 'HLTAphroditeSlimPro';
+  src: url('./assets/fonts/HLTAphroditeSlimPro.woff2') format('woff2');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'VnCenturySchoolbook';
+  src: url('./assets/fonts/VnCenturySchoolbook.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+}
+
+:root {
+  --font-size-title: 1.5rem;
+  --font-size-base: 1rem;
+  --font-size-slogan: 1.875rem;
+}
+@media (max-width: 768px) {
+  :root {
+    --font-size-title: 0.9rem;
+    --font-size-base: 0.7rem;
+    --font-size-slogan: 0.9rem;
+  }
+}
+.app {
+
+  background-color: #000;
+  padding: 32px 0;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.Container {
+  display: flex;
+    flex-direction: column;
+  align-items: center;
+
+  width: 95%;
+
+  display: flex;
+  flex-direction: column;
+  padding: 32px 0;
+  box-sizing: border-box;
+
+}
+.app::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+.app::-webkit-scrollbar-thumb {
+  background-color: rgba(0, 0, 0, 0.3);
+  border-radius: 3px;
+}
+
+.app::-webkit-scrollbar-track {
+  background: transparent;
+}
+.Container_Bar {
+      margin-top: 10px;
+
+  display: flex;
+  align-items: center;
+  
+  position: sticky;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  top: 0;
+  z-index: 1000;
+
+  width: 100%;
+  height: 40px;
+  background-color: #f8edda;
+  border-radius: 7px;
+
+  font-size:  var(--font-size-base);
+  padding: 0 10px;
+  box-sizing: border-box;
+
+
+    user-select: none;
+  -webkit-user-select: none; /* Safari */
+  -moz-user-select: none;    /* Firefox */
+  -ms-user-select: none;     /* IE/Edge */
+
+}
+
+.Container_Bar_Icon {
+  font-size: 30px;
+  color: #4a4a3f;
+  margin-top: 10px;
+  
+}
+
+.Container_Bar_Icon:hover {
+  cursor: pointer;
+}
+
+/* .Container_Content {
+  display: flex;
+  
+} */
+
+.Container_Bar_Menu {
+
+   display: none;
+}
+
+.Container_Bar_Menu.active {
+   display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  top: 25px;
+  left:-10px;
+  z-index: 100;
+
+
+  width: 15%; 
+  /* height: fit-content;s */
+  background-color: #1d9b71;
+  border-radius: 7px;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+.Slogan {
+  color: #1a5e1a;
+  font-family: HLTAphroditeSlimPro, sans-serif;
+  font-size: var(--font-size-slogan);
+}
+
+
+.Mobileapp
+{
+  width: 100vw;
+  height: fit-content;
+  padding-bottom: 10px;
+  box-sizing: border-box;
+  overflow: auto;
+  margin: 0 !important;
+  background-color: #fdfaf5;
+}

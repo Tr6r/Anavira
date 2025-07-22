@@ -1,0 +1,374 @@
+/* .HomePage {
+      display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+    color: #4a4a3f;
+} */
+
+.HomePage_Container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.HomePage_Container_banner {
+
+    padding-bottom: 60px;
+
+}
+
+.HomePage_Container_banner_Image {
+    width: 100%;
+    border-radius: 7px;
+    margin-top: 10px;
+}
+
+.HomePage_Container_Items {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    border-radius: 7px;
+    background-color: #f8edda;
+    /* margin-top: 30px; */
+    padding: 10px 30px;
+    box-sizing: border-box;
+    font-family: 'Merriweather', serif;
+
+}
+
+.HomePage_Container_Items_Welcome {
+    font-size: var(--font-size-slogan);
+    font-weight: 400;
+}
+
+.HomePage_Container_Items_Tilte {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: var(--font-size-title);
+
+}
+
+.HomePage_Container_Items_Tilte_Icon svg {
+    width: 40px;
+    height: 40px;
+    stroke-width: 25;
+    margin-right: 10px;
+    color: #4a4a3f;
+
+}
+
+.HomePage_Container_Items_Tilte_Text {
+    font-size: var(--font-size-title);
+    font-weight: 400;
+
+}
+
+.HomePage_Container_Items_Text {
+    font-size: var(--font-size-base);
+    line-height: 1.6;
+    font-weight: 400;
+}
+
+.HomePage_Container_Guaranty {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    /* Cho phép xuống dòng khi cần */
+    justify-content: center;
+    /* Căn giữa các item */
+    gap: 40px 10%;
+    box-sizing: border-box;
+}
+
+.HomePage_Container_Guaranty_Items {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    font-family: 'Merriweather', serif;
+    background-color: #f8edda;
+    border-radius: 7px;
+    padding: 20px 30px;
+    box-sizing: border-box;
+}
+
+.HomePage_Container_Guaranty_Items_Icon svg {
+    width: 55px;
+    height: 55px;
+    stroke-width: 25;
+    color: #4a4a3f;
+}
+
+.HomePage_Container_Guaranty_Items_Title {
+    font-size: var(--font-size-title);
+    font-weight: 400;
+}
+
+.HomePage_Container_Guaranty_Items_content {
+    font-size: var(--font-size-base);
+    text-align: center;
+    width: 200px;
+    margin-top: 10px;
+    line-height: 1.6;
+}
+
+
+
+.HomePage_Container_Buttons {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px 13%;
+
+    padding: 20px 100px;
+    box-sizing: border-box;
+    margin-top: 60px;
+    border-radius: 7px;
+}
+
+
+
+.HomePage_Container_Buttons_Item {
+
+    font-size: var(--font-size-base);
+    padding: 5px;
+    font-weight: bold;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    border-radius: 50%;
+    gap: 10px 0px;
+    flex: 1 1 100px;
+    border: none;
+
+
+
+}
+
+.HomePage_Container_Buttons_Item_Icon {
+    width: 100px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #f8edda;
+
+    padding: 5px;
+    box-sizing: border-box;
+    border-radius: 50%;
+
+    min-width: 100px;
+    max-width: 100px;
+}
+
+.HomePage_Container_Buttons_Item_Icon:hover {
+    cursor: pointer;
+    background-color: #eddcbe;
+}
+
+.HomePage_Container_Buttons_Item_Icon svg {
+    width: 40px;
+    height: 40px;
+    stroke-width: 25;
+    color: #4a4a3f;
+}
+
+.HomePage_Container_Buttons_Item_Content {
+    font-size: var(--font-size-base);
+    white-space: nowrap;
+    text-align: center;
+    padding-top: 10px;
+}
+
+
+/* MOBILE CSS */
+.MobileContainer {
+    width: 100vw;
+    padding: 0 10px;
+    box-sizing: border-box;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+
+}
+
+.MobileContainer_Content {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 10px;
+    box-sizing: border-box;
+}
+
+.MobileContainer_banner {
+    width: 100%;
+    margin-top: 20px;
+    padding-bottom: 20px;
+    box-sizing: border-box;
+}
+
+.MobileContainer_banner_Image {
+    width: 100%;
+    border-radius: 7px;
+
+}
+
+.MobileContainer_Items {
+
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    background-color: #f8edda;
+    border-radius: 6px;
+    font-family: 'Merriweather', serif;
+
+}
+
+.MobileContainer_Items_Welcome {
+    font-size: 15px;
+
+}
+
+.MobileContainer_Items_Tilte {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.9rem;
+    margin-top: 10px;
+
+}
+
+.MobileContainer_Items_Tilte_Text {
+    margin-bottom: 0;
+}
+
+.MobileContainer_Items_Tilte_Icon svg {
+    width: 20px;
+    height: 20px;
+    stroke-width: 25;
+    margin-right: 7px;
+    margin-top: 10px;
+    color: #4a4a3f;
+}
+
+.MobileContainer_Items_Content {
+    padding: 0 12px;
+    box-sizing: border-box;
+    font-size: var(--font-size-base);
+    line-height: 1.6;
+    font-weight: 400;
+    margin-top: 10px;
+}
+
+.MobileContainer_Guaranty {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+    gap: 16px;
+}
+
+.MobileContainer_Guaranty_Items {
+    width: 110px;
+    height: 138px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #f8edda;
+    border-radius: 6px;
+    padding: 10px 10px;
+    box-sizing: border-box;
+
+    align-items: center;
+
+}
+
+.MobileContainer_Guaranty_Items_Icon svg {
+    width: 20px;
+    height: 20px;
+    stroke-width: 25;
+    color: #4a4a3f;
+}
+
+.MobileContainer_Guaranty_Items_Title {
+    font-size: var(--font-size-title);
+    margin-bottom: 0;
+    font-weight: 600;
+}
+
+.MobileContainer_Guaranty_Items_Content {
+    font-size: var(--font-size-base);
+    line-height: 1.6;
+    font-weight: 400;
+    text-align: center;
+}
+
+.MobileContainer_Buttons {
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    margin-top: 10px;
+    padding: 0 10px;
+}
+
+.MobileContainer_Buttons_Item {
+
+    border: none;
+    font-size: var(--font-size-base);
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+
+}
+
+.MobileContainer_Buttons_Item_Icon {
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+    background-color: #f8edda;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.MobileContainer_Buttons_Item_Icon svg {
+    width: 25px;
+    height: 25px;
+    fill: none;
+    stroke-width: 25;
+    /* hoặc 0.5 nếu muốn mỏng hơn */
+}
+
+.MobileContainer_Buttons_Item_Navigate {
+    margin-top: 10px;
+    color: #4a4a3f;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-weight: 600;
+    width: 60px;
+}

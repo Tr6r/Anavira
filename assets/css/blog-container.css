@@ -1,0 +1,215 @@
+.Blog_Container
+{
+      width: 100%;
+      margin-top: 15px;
+      padding-left: 0;
+
+}
+.Blog_Container.active
+{
+      width: 100%;
+      padding-left: 265px;
+      box-sizing: border-box;
+      margin-left: auto;
+}
+
+.Blog_Container_Item {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 15px;
+  align-items: center;
+  justify-content: center;
+
+
+  background-color: #f8edda;
+  padding: 10px;
+  border-radius: 7px;
+  box-sizing: border-box;
+  font-family: 'Merriweather', serif;
+  color: #4a4a3f;
+
+}
+
+.Blog_Container_Item_Thumbnail img {
+  width: 300px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 7px;
+}
+
+.Blog_Container_Item_Content {
+
+  display: flex;
+  flex-direction: column;
+  margin-top: 10px;
+  padding: 10px 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+.Blog_Container_Item_Content h2 {
+
+  margin: 0 0 7px;
+  font-size: var(--font-size-title);
+  font-weight: 600;
+
+ display: -webkit-box;
+  -webkit-line-clamp: 1;
+  /* Số dòng muốn hiển thị */
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+
+}
+
+.wp-block-post-excerpt {
+  margin-top: 0 !important;
+}
+
+.Blog_Container_Item_Content p {
+  font-size: var(--font-size-base);
+  line-height: 1.6;
+
+  color: #4a4a3f;
+  max-width: 1200px;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  /* Số dòng muốn hiển thị */
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+
+}
+
+.Blog_Container_Item_Content_Title {
+    font-family: 'Merriweather', serif;
+  
+  text-decoration: none;
+}
+
+.wp-block-post-date {
+  text-align: right !important;
+  font-size: var(--font-size-base);
+  color: #4a4a3f;
+}
+
+
+.pagination {
+  margin-top: 30px;
+  text-align: right;
+}
+
+.pagination ul {
+  display: inline-flex;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.pagination li {
+  margin: 0 4px;
+}
+
+.pagination a,
+.pagination span {
+  padding: 8px 12px;
+  border: 1px solid #ccc;
+  text-decoration: none;
+  color: #333;
+  border-radius: 4px;
+}
+
+.pagination .current {
+  background-color: #333;
+  color: white;
+  pointer-events: none;
+}
+
+/* MOBILE */
+.MobileBlog_Container
+{
+      width: 100vw;
+      margin-top: 10px;
+        padding:  0 10px;
+    box-sizing: border-box;
+}
+
+.MobileBlog_Container_Item {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 10px;
+  align-items: center;
+  justify-content: center;
+
+
+  background-color: #f8edda;
+  padding: 10px;
+  border-radius: 7px;
+  box-sizing: border-box;
+  font-family: 'Merriweather', serif;
+  color: #4a4a3f;
+
+}
+.MobileBlog_Container_Item_Thumbnail img {
+  width: 110px;
+  height: 110px;
+  object-fit: cover;
+  border-radius: 7px;
+}
+
+.MobileBlog_Container_Item_Content {
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  
+  margin-top: 10px;
+  overflow: hidden;
+  text-decoration: none;
+}
+
+.MobileBlog_Container_Item_Content h2 {
+
+  margin: 0 0 7px;
+  font-size:var(--font-size-title);
+  font-weight: 600;
+  padding: 0;
+ display: -webkit-box;
+  -webkit-line-clamp: 1;
+  /* Số dòng muốn hiển thị */
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  margin-bottom: 10px;
+
+}
+.MobileBlog_Container_Item_Content p {
+  font-size:var(--font-size-base);
+  line-height: 1.6;
+
+  color: #4a4a3f;
+  max-width: 1200px;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  /* Số dòng muốn hiển thị */
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  margin:  0;
+
+}
+.MobileBlog_Container_Item_Content_Date 
+{
+
+  text-align: right !important;
+  font-size: var(--font-size-base);
+  color: #4a4a3f;
+  margin-top: 10px ! important;
+}
+
+.MobileBlog_Container_Item_Content_Title {
+    font-family: 'Merriweather', serif;
+  
+  text-decoration: none;
+}

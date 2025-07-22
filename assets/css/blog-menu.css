@@ -1,0 +1,155 @@
+.Blogmenu {
+  /* display: flex;
+    flex-direction: column;
+    align-items: center; */
+  color: white;
+  width: 100%;
+  font-size: var(--font-size-base);
+
+}
+
+.Blogmenu_List {
+
+  padding-left: 0;
+
+}
+
+.Blogmenu_List ul {
+  list-style: none;
+  /* hoặc bạn có thể bỏ dòng này nếu muốn giữ chấm tròn */
+  padding: 0;
+  width: 100%;
+  padding-left: 15px;
+}
+
+.Blogmenu_List_Item {
+  margin: 0;
+  width: 100%;
+  box-sizing: border-box;
+
+}
+
+.category-link {
+  display: block;
+  width: 100%;
+  text-decoration: none;
+  color: white;
+  padding: 10px 10px 10px 0;
+  box-sizing: border-box;
+}
+
+.category-link:hover {
+  cursor: pointer;
+  color: #aca395;
+
+
+}
+
+.category-posts {
+  padding-left: 20px;
+  box-sizing: border-box;
+
+}
+
+
+
+.category-posts li {
+  list-style-type: disc;
+  list-style-position: outside;
+  margin: 0;
+  width: 100%;
+  margin-top: 5px;
+
+  box-sizing: border-box;
+
+}
+
+.category-posts a {
+  color: white;
+  text-decoration: none;
+
+}
+
+.category-posts a:hover {
+  cursor: pointer;
+  color: #aca395;
+
+}
+
+/* MOBILE */
+
+.MobileBlogmenu {
+  display: flex;
+  flex-direction: column;
+  color: white;
+  width: 100%;
+  font-family: 'Merriweather', serif;
+
+}
+
+.MobileBlogmenu_Title {
+  font-size: var(--font-size-title);
+  font-weight: 600;
+}
+
+.MobileBlogmenu_List {
+  list-style: none;
+  padding: 0;
+  width: 100%;
+
+  text-align: left;
+}
+
+.MobileBlogmenu_List_Item {
+  margin-bottom: 8px;
+  width: 100%;
+
+  box-sizing: border-box;
+  text-align: left;
+  font-size: var(--font-size-title);
+  font-weight: 400;
+
+}
+
+.MobileBlogmenu-category-link {
+  padding-left: 0px;
+  font-size: var(--font-size-title);
+  font-weight: 600;
+  text-decoration: none;
+  color: white;
+}
+
+.MobileBlogmenu-category-posts {
+  padding-left: 10px;
+  box-sizing: border-box;
+}
+
+.MobileBlogmenu-category-posts ul {
+  padding-left: 17px;
+  padding-bottom: 15px;
+  box-sizing: border-box;
+
+}
+
+.MobileBlogmenu-category-posts li {
+  list-style-type: disc;
+  list-style-position: outside;
+  margin: 0;
+  width: 100%;
+
+}
+
+.MobileBlogmenu-category-posts a {
+  margin-top: 5px;
+  text-decoration: none;
+  color: white;
+  font-size: var(--font-size-title);
+  font-weight: 400;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  /* Giới hạn 3 dòng */
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: normal;
+}

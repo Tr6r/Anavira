@@ -1,0 +1,28 @@
+.Blog_Title
+{
+  font-size: 50px;
+  font-weight: 600;
+  color: #4a4a3f;
+  margin-top: 32px
+}
+/* MOBILE */
+.MobileBlog
+{
+  width: 100vw;
+
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  padding: 0 20px;
+  box-sizing: border-box;
+}
+/* Chữ Blog */
+.MobileBlog_Title
+{
+    font-size: 30px;
+  font-weight: 600;
+  color: #4a4a3f;
+  margin-top: 32px
+}

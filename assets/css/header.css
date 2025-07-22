@@ -1,0 +1,127 @@
+.HomeHeader {
+  height: fit-content;
+}
+
+.HomeHeader_Container {
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.HomeHeader_Container_Logo {
+
+  background-color: #f8edda;
+  width: 200px;
+  flex-direction: column;
+  padding: 30px 25px 30px 25px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* padding:10px ; */
+}
+
+.HomeHeader_Container_Logo_Image {
+  width: 100px;
+  height: 115px;
+
+}
+
+.HomeHeader_Container_Logo_Brand {
+
+  font-family: 'VnCenturySchoolbook', sans-serif;
+  color: #605e38;
+  margin-top: 5px;
+  font-size: 40px;
+  margin-top: 5px;
+
+}
+
+.HomeHeader_Container_Logo_Slogan {
+  font-family: Arial, sans-serif;
+  font-weight: 500;
+  margin-top: 5px;
+
+  letter-spacing: 5px;
+  color: #696741;
+  font-size: 20px;
+}
+.InnerHeader{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.InnerHeader_Container
+{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f8edda;
+  width: 500px;
+  padding: 25px 25px;
+  box-sizing: border-box;
+
+}
+.InnerHeader_Container_Logo {
+    width: 550px;
+  height: 180px;
+
+}
+/* MOBILE */
+
+.MobileHomeHeader
+{
+  width: 100vw;
+  height:100px;
+  background-color: #f8edda;
+  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 15 0;
+  padding-right: 15px;
+  padding-left:7px ;
+  box-sizing: border-box;
+}
+.MobileHomeHeader_Logo                            
+{
+  width: 65px;
+  height: 70px;
+}
+
+.MobileHomeHeader_Content
+{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  
+  padding-left: 25px;
+  padding-top: 10px;
+  box-sizing: border-box;
+}
+
+.MobileHomeHeader_Content_Brand
+{
+  font-family: 'VnCenturySchoolbook', sans-serif;
+  color: #605e38;
+  margin-top: 5px;
+  font-size: 25px;
+  margin-top: 5px;
+}
+.MobileHomeHeader_Content_Slogan
+{
+  font-family: 'HLTAphroditeSlimPro', sans-serif;
+  font-weight: 600;
+  margin-top: 5px;
+  color: #1a5e1a;
+  font-size: var(--font-size-slogan);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 5px 0 !important;
+}

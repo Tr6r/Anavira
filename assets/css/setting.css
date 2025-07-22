@@ -1,0 +1,159 @@
+.BlogSetting_Icon
+{
+    font-size: 30px;
+    color: #4a4a3f;
+    margin-right: 5px;
+    margin-top: 3px;
+    cursor: pointer;
+
+    position: relative;
+}
+#BlogSetting_Container {
+  opacity: 0;
+  transform: translateY(-10px);
+  pointer-events: none;
+  transition: transform 0.6s ease;
+  position: absolute;
+  top: 53px;
+  right: -10px;
+  z-index: 100;
+  width: 300px;
+  height: 200px;
+  background-color: #5e5c2c;
+  border-radius: 7px;
+  box-sizing: border-box;
+  color: #ffffff;
+  padding-right: 10px;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+#BlogSetting_Container.active {
+  opacity: 1;
+  transform: translateY(0);
+  pointer-events: auto;
+}
+
+.BlogSetting_Container_Title
+{
+  border-bottom: 1px solid #ffffff;
+}
+.BlogSetting_Container_Language
+{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: var(--font-size-base);
+  margin-top: 20px;
+}
+
+.BlogSetting_Container_Fontsize
+{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: var(--font-size-base);
+  margin-top: 20px;
+}
+.BlogSetting_Container_Fontsize_Option
+{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: var(--font-size-base);
+  width: 100px;
+  margin-right: 40px;
+}
+.BlogSetting_Container_Fontsize_Option button
+{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 30px;
+  width: 30px;
+  border-radius: 7px;
+  border: none;
+  background-color: #ffffff;
+  color: #4a4a3f;
+  cursor: pointer;
+}
+.BlogSetting_Container_Language_Option
+{
+  margin-left: 10px;
+}
+.BlogSetting_Container_Language_Title
+{
+  white-space: nowrap;
+}
+
+/* MOBILE */
+
+.Mobile_BlogSetting_Container_Title
+{
+  font-size: var(--font-size-title);
+  color: #fff;
+}
+.Mobile_BlogSetting_Container_Language
+{
+  font-size: var(--font-size-title);
+  color: #fff;
+  
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 20px;
+
+}
+.Mobile_BlogSetting_Container_Language_Title
+{
+  white-space: nowrap;
+}
+.Mobile_BlogSetting_Container_Language_Option
+{
+  width: 100%;
+  margin-left: 10px;
+}
+@media (max-width: 768px) {
+  .trp-ls-shortcode-current-language {
+    width: fit-content !important;
+  }
+  .trp-ls-shortcode-language
+  {
+        width: fit-content !important;
+
+  }
+
+}
+
+.Mobile_BlogSetting_Container_Fontsize
+{
+  margin-top: 20px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: var(--font-size-title);
+  color: #fff;
+}
+.Mobile_BlogSetting_Container_Fontsize_Option
+{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: var(--font-size-title);
+  width: 100px;
+}
+.Mobile_BlogSetting_Container_Fontsize_Option button
+{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  height: 30px;
+  width: 30px;
+  border-radius: 7px;
+  border: none;
+  background-color: #ffffff;
+  color: #4a4a3f;
+  cursor: pointer;
+}
