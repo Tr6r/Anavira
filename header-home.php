@@ -18,7 +18,7 @@
     <body <?php body_class(); ?>>
         <header class="HomeHeader">
             <div class="HomeHeader_Container">
-                <div class="HomeHeader_Container_Logo">
+                <!-- <div class="HomeHeader_Container_Logo">
                     <img class="HomeHeader_Container_Logo_Image"
                          src="<?php echo site_url(); ?>/wp-content/uploads/2025/07/9-nam-02-1.png" height="60" alt="Logo">
                     <div class="HomeHeader_Container_Logo_Brand">
@@ -28,7 +28,7 @@
                         WFPB
                     </div>
                 </div>
-                <p class="Slogan">Thức tỉnh - Mạnh mẽ - Tái sinh</p>
+                <p class="Slogan">Thức tỉnh - Mạnh mẽ - Tái sinh</p> -->
 
             </div>
         </header>
