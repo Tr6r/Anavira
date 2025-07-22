@@ -10,7 +10,18 @@
 
 <?php if (wp_is_mobile()): ?>
     <div class="MobileHomeHeader">
-        
+                
+        <img class="MobileHomeHeader_Logo"
+            src="<?php echo site_url(); ?>/wp-content/uploads/2025/07/9-nam-02-1.png" height="60" alt="Logo">
+
+
+        <div class="MobileHomeHeader_Content">
+            <div class="MobileHomeHeader_Content_Brand">
+                ANAVIRA
+            </div>
+            <p class="MobileHomeHeader_Content_Slogan">Thức tỉnh - Mạnh mẽ - Tái sinh</p>
+
+        </div>
        
     </div>
 <?php else: ?>
