@@ -132,7 +132,7 @@
   top: 50px;
   right: 0px;
   z-index: 100;
-  width: 240px;
+  /* width: 240px; */
   max-height: calc(100vh - 350px);
   background-color: #5e5c2c;
   border-radius: 7px 0 0 7px;

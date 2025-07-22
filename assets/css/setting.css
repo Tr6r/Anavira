@@ -135,6 +135,10 @@
   font-size: var(--font-size-title);
   color: #fff;
 }
+.trp-language-switcher
+{
+  width: fit-content !important;
+}
 .Mobile_BlogSetting_Container_Fontsize_Option
 {
   display: flex;
