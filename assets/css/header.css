@@ -1,5 +1,17 @@
+
+
+
+
+
+/* Mặc định: desktop hiển thị, mobile ẩn */
+.MobileHomeHeader {
+  display: none;
+}
+
 .HomeHeader {
-  height: fit-content;
+  display: block;
+    height: fit-content;
+
 }
 
 .HomeHeader_Container {
@@ -21,7 +33,6 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  /* padding:10px ; */
 }
 
 .HomeHeader_Container_Logo_Image {
@@ -71,8 +82,17 @@
   height: 180px;
 
 }
-/* MOBILE */
 
+/* Khi màn hình nhỏ hơn hoặc bằng 414px */
+@media (max-width: 414px) {
+  .MobileHomeHeader {
+    display: block;   /* hiện mobile */
+  }
+
+  .HomeHeader {
+    display: none;    /* ẩn desktop */
+  }
+  
 .MobileHomeHeader
 {
   width: 100vw;
@@ -124,4 +144,5 @@
   justify-content: center;
   align-items: center;
   margin: 5px 0 !important;
+}
 }

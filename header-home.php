@@ -8,7 +8,6 @@
     <?php wp_head(); ?>
 </head>
 
-<?php if (wp_is_mobile()): ?>
     <div class="MobileHomeHeader">
                 
         <img class="MobileHomeHeader_Logo"
@@ -24,7 +23,6 @@
         </div>
        
     </div>
-<?php else: ?>
 
     <body <?php body_class(); ?>>
         <header class="HomeHeader">
@@ -42,4 +40,3 @@
                 <p class="Slogan">Thức tỉnh - Mạnh mẽ - Tái sinh</p>
             </div>
         </header>
-    <?php endif; ?>
