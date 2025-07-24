@@ -123,23 +123,26 @@
   padding-left: 25px;
   padding-top: 10px;
   box-sizing: border-box;
+  color: #605e38;
+
 }
 
 .MobileHomeHeader_Content_Brand
 {
   font-family: 'VnCenturySchoolbook', sans-serif;
-  color: #605e38;
+  font-weight: 600;
+
   margin-top: 5px;
-  font-size: 25px;
+  font-size: 33px;
   margin-top: 5px;
 }
 .MobileHomeHeader_Content_Slogan
 {
-  font-family: 'HLTAphroditeSlimPro', sans-serif;
-  font-weight: 600;
+  font-family: 'UTMAlpineKT', sans-serif;
+  font-weight: 400;
+  letter-spacing: 0.01em; /* hoặc 0.1em */
   margin-top: 5px;
-  color: #1a5e1a;
-  font-size: var(--font-size-slogan);
+  font-size: 1.2em;
   display: flex;
   justify-content: center;
   align-items: center;

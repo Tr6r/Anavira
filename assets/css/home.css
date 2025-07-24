@@ -215,13 +215,12 @@
     }
 
     .Frontpage_Container_banner {
-        width: 100%;
-        margin-top: 20px;
-        padding-bottom: 20px;
-        box-sizing: border-box;
+        width: 100vw;
+        margin-top: 10px;
     }
 
     .Frontpage_Container_banner_Image {
+
         width: 100%;
         border-radius: 7px;
 
@@ -233,11 +232,18 @@
         display: flex;
         flex-direction: column;
         justify-content: center;
-        align-items: center;
 
         background-color: #f8edda;
         border-radius: 6px;
         font-family: 'Merriweather', serif;
+        margin-top: 10px;
+        padding-bottom: 10px;
+        box-sizing: border-box;
+
+    }
+
+    .Green_Background {
+        background-color: #605e38 !important;
 
     }
 
@@ -248,15 +254,27 @@
 
     .Frontpage_Container_Items_Tilte {
         display: flex;
-        justify-content: center;
+        padding: 0 12px;
+        box-sizing: border-box;
         align-items: center;
-        font-size: 0.9rem;
+
+    }
+
+    .Frontpage_Container_Items_Tilte h2 {
+
+        font-size: var(--font-size-title);
         margin-top: 10px;
+        color: #605e38;
+
+        font-family: 'UTMAlpineKT', sans-serif;
+        font-weight: 300;
 
     }
 
     .Frontpage_Container_Items_Tilte_Text {
         margin-bottom: 0;
+        font-size: var(--font-size-title);
+
     }
 
     .Frontpage_Container_Items_Tilte_Icon svg {
@@ -268,14 +286,53 @@
         color: #4a4a3f;
     }
 
-    .Frontpage_Container_Items_Content {
+    .Frontpage_Container_Items_Contents {
         padding: 0 12px;
         box-sizing: border-box;
-        font-size: var(--font-size-base);
-        line-height: 1.6;
-        font-weight: 400;
         margin-top: 10px;
+        display: flex;
+    flex-direction: column;
+        gap : 3px 0; 
+
     }
+
+    .Frontpage_Container_Items_Content {
+        font-size: var(--font-size-base);
+        font-weight: 400;
+        text-align: justify;
+        text-indent: 1em;
+        margin: 0 !important;
+    }
+    .Frontpage_Container_Items_Content p
+    {
+                color: #605e38;
+
+    }
+   
+    .Whitecolor {
+        color: white !important;
+    }
+
+    .bullet {
+        font-size: 40px;
+    }
+
+    .Frontpage_Container_Statement
+    {
+        font-family: 'UTMAlpineKT', sans-serif;
+  font-weight: 400;
+        font-size: var(--font-size-base);
+        font-weight: 400;
+        text-align: justify;
+        text-indent: 1em;
+        margin-top: 10px;
+        color: #605e38;
+    }
+    .Frontpage_Container_Statement p
+    {
+        margin: 0 !important;
+    }
+    
 
     .Frontpage_Container_Guaranty {
         display: flex;

@@ -25,7 +25,5 @@
 
       getPostById();
 
-
-
     });
   </script>
