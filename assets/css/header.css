@@ -84,7 +84,7 @@
 }
 
 /* Khi màn hình nhỏ hơn hoặc bằng 414px */
-@media (max-width: 414px) {
+@media (max-width: 450px) {
   .MobileHomeHeader {
     display: block;   /* hiện mobile */
   }

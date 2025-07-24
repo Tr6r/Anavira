@@ -1,13 +1,3 @@
-.BlogSetting_Icon
-{
-    font-size: 30px;
-    color: #4a4a3f;
-    margin-right: 5px;
-    margin-top: 3px;
-    cursor: pointer;
-
-    position: relative;
-}
 #BlogSetting_Container {
   opacity: 0;
   transform: translateY(-10px);
@@ -34,12 +24,11 @@
   pointer-events: auto;
 }
 
-.BlogSetting_Container_Title
-{
+.BlogSetting_Container_Title {
   border-bottom: 1px solid #ffffff;
 }
-.BlogSetting_Container_Language
-{
+
+.BlogSetting_Container_Language {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -47,16 +36,15 @@
   margin-top: 20px;
 }
 
-.BlogSetting_Container_Fontsize
-{
+.BlogSetting_Container_Fontsize {
   display: flex;
   justify-content: space-between;
   align-items: center;
   font-size: var(--font-size-base);
   margin-top: 20px;
 }
-.BlogSetting_Container_Fontsize_Option
-{
+
+.BlogSetting_Container_Fontsize_Option {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -64,8 +52,8 @@
   width: 100px;
   margin-right: 40px;
 }
-.BlogSetting_Container_Fontsize_Option button
-{
+
+.BlogSetting_Container_Fontsize_Option button {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -77,87 +65,87 @@
   color: #4a4a3f;
   cursor: pointer;
 }
-.BlogSetting_Container_Language_Option
-{
+
+.BlogSetting_Container_Language_Option {
   margin-left: 10px;
 }
-.BlogSetting_Container_Language_Title
-{
+
+.BlogSetting_Container_Language_Title {
   white-space: nowrap;
 }
 
 /* MOBILE */
 
-.Mobile_BlogSetting_Container_Title
-{
-  font-size: var(--font-size-title);
-  color: #fff;
-}
-.Mobile_BlogSetting_Container_Language
-{
-  font-size: var(--font-size-title);
-  color: #fff;
-  
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-top: 20px;
 
-}
-.Mobile_BlogSetting_Container_Language_Title
-{
-  white-space: nowrap;
-}
-.Mobile_BlogSetting_Container_Language_Option
-{
-  width: 100%;
-  margin-left: 10px;
-}
-@media (max-width: 768px) {
-  .trp-ls-shortcode-current-language {
+@media (max-width: 450px) {
+  .Toolbar_Setting_Dropdown_Title {
+    font-size: var(--font-size-title);
+    color: #fff;
+  }
+
+  .Toolbar_Setting_Dropdown_Language {
+    font-size: var(--font-size-title);
+    color: #fff;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+
+  }
+
+  .Toolbar_Setting_Dropdown_Language_Title {
+    white-space: nowrap;
+  }
+
+  .Toolbar_Setting_Dropdown_Language_Option {
+    width: 100%;
+    margin-left: 10px;
+  }
+  
+    .trp-ls-shortcode-current-language {
+      width: fit-content !important;
+    }
+
+    .trp-ls-shortcode-language {
+      width: fit-content !important;
+
+    }
+  
+
+  .Toolbar_Setting_Dropdown_Fontsize {
+    margin-top: 20px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: var(--font-size-title);
+    color: #fff;
+  }
+
+  .trp-language-switcher {
     width: fit-content !important;
   }
-  .trp-ls-shortcode-language
-  {
-        width: fit-content !important;
 
+  .Toolbar_Setting_Dropdown_Fontsize_Option {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: var(--font-size-title);
+    width: 100px;
   }
 
-}
+  .Toolbar_Setting_Dropdown_Fontsize_Option button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
 
-.Mobile_BlogSetting_Container_Fontsize
-{
-  margin-top: 20px;
-
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  font-size: var(--font-size-title);
-  color: #fff;
-}
-.trp-language-switcher
-{
-  width: fit-content !important;
-}
-.Mobile_BlogSetting_Container_Fontsize_Option
-{
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  font-size: var(--font-size-title);
-  width: 100px;
-}
-.Mobile_BlogSetting_Container_Fontsize_Option button
-{
-  display: flex;
-  align-items: center;
-  justify-content: center;
-
-  height: 30px;
-  width: 30px;
-  border-radius: 7px;
-  border: none;
-  background-color: #ffffff;
-  color: #4a4a3f;
-  cursor: pointer;
+    height: 30px;
+    width: 30px;
+    border-radius: 7px;
+    border: none;
+    background-color: #ffffff;
+    color: #4a4a3f;
+    cursor: pointer;
+  }
 }

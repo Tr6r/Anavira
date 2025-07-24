@@ -70,73 +70,88 @@
 }
 
 /* MOBILE */
-.MobileToolbar {
-  width: 100vw;
-  height: 40px;
-  padding: 5px 5px;
-  box-sizing: border-box;
 
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
+@media (max-width: 450px) {
 
-  position: sticky;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  top: 0;
-  z-index: 1000;
+  .Toolbar {
+    width: 100vw;
+    height: 40px;
+    padding: 5px 5px;
+    box-sizing: border-box;
 
-  margin-top: 10px;
-  background-color: #f8edda;
-  border-radius: 7px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    position: sticky;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    top: 0;
+    z-index: 1000;
+
+    margin-top: 10px;
+    background-color: #f8edda;
+    border-radius: 7px;
+  }
+
+  .Toolbar_Back {
+
+    font-size: 34px;
+    color: #4a4a3f;
+    margin-top: 5px;
+  }
+
+  .Toolbar_Icon
+{
+    font-size: 30px;
+    color: #4a4a3f;
+    margin-right: 5px;
+    margin-top: 3px;
+    cursor: pointer;
+
+    position: relative;
 }
 
-.MobileToolbar_Icon {
+  .Toolbar_Menu_Dropdown {
+    display: none;
+  }
 
-  font-size: 34px;
-  color: #4a4a3f;
-  margin-top: 5px;
-}
-
-.MobileToolbar_Menu {
-  display: none;
-}
-
-.MobileToolbar_Menu.active {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  position: absolute;
-  top: 50px;
-  left: 0px;
-  z-index: 100;
+  .Toolbar_Menu_Dropdown.active {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    top: 50px;
+    left: 0px;
+    z-index: 100;
 
 
-  width: 240px;
-  max-height: calc(100vh - 350px);
+    width: 240px;
+    max-height: calc(100vh - 350px);
 
-  background-color: #5e5c2c;
-  border-radius: 0 7px 7px 0;
-  padding: 10px;
-  box-sizing: border-box;
-  overflow: auto;
-}
+    background-color: #5e5c2c;
+    border-radius: 0 7px 7px 0;
+    padding: 10px;
+    box-sizing: border-box;
+    overflow: auto;
+  }
 
-.MobileToolbar_Setting {
-  display: none;
-}
+  .Toolbar_Setting_Dropdown {
+    display: none;
+  }
 
-.MobileToolbar_Setting.active {
-  display: flex;
-  flex-direction: column;
-  position: absolute;
-  top: 50px;
-  right: 0px;
-  z-index: 100;
-  /* width: 240px; */
-  max-height: calc(100vh - 350px);
-  background-color: #5e5c2c;
-  border-radius: 7px 0 0 7px;
-  padding: 10px;
-  box-sizing: border-box;
-  overflow: auto;
+  .Toolbar_Setting_Dropdown.active {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 50px;
+    right: 0px;
+    z-index: 100;
+    /* width: 240px; */
+    max-height: calc(100vh - 350px);
+    background-color: #5e5c2c;
+    border-radius: 7px 0 0 7px;
+    padding: 10px;
+    box-sizing: border-box;
+    overflow: auto;
+  }
 }
