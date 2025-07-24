@@ -6,15 +6,13 @@
         <?php get_footer(); ?>
     </body>
     
-  <script src="<?php echo get_template_directory_uri(); ?>/assets/js/route_manager.js"></script>
-  <script src="<?php echo get_template_directory_uri(); ?>/assets/js/dropdown_manager.js"></script>
-  <script src="<?php echo get_template_directory_uri(); ?>/assets/js/change-font-size.js"></script>
   <script src="<?php echo get_template_directory_uri(); ?>/assets/js/post_manager.js"></script>
+  <script src="<?php echo get_template_directory_uri(); ?>/assets/js/dropdown_manager.js"></script>
+  <script src="<?php echo get_template_directory_uri(); ?>/assets/js/route_manager.js"></script>
+  <script src="<?php echo get_template_directory_uri(); ?>/assets/js/fontsize_manager.js"></script>
 
-     <script>
+  <script>
     document.addEventListener('DOMContentLoaded', () => {
-
-      mobileApplyFontSizes();
       RouteNavigation();
 
       handleSettingDropdown();
@@ -26,9 +24,6 @@
       preventDropDownCloseOnClickInside();
 
       getPostById();
-
-
-      mobileAdjustFontSize();
 
     });
   </script>

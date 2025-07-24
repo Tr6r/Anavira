@@ -1,15 +1,18 @@
   <?php
   $iconState;
   if (! is_front_page()) {
-    $iconState = true;
+    $iconState = true; //front page là false
   } else {
-    // $iconState = false;
-    $iconState = true;
+    $iconState = false;
   }
   ?>
 
   <div class="Toolbar">
+    <?php if ($iconState) : ?>
     <i class='bx  bx-caret-left bx-flip-vertical Toolbar_Back' id="Toolbar_Back"></i>
+    <?php else : ?>
+      <div></div>
+    <?php endif; ?>
     <div>
 
 

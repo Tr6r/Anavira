@@ -12,11 +12,11 @@
     <div class="Toolbar_Setting_Dropdown_Fontsize">
         Cỡ chữ
         <div class="Toolbar_Setting_Dropdown_Fontsize_Option">
-            <button id="decreaseBtn">
+            <button id="decreaseBtn" onclick="decreaseFontSize()">
                 <i class="bx bx-minus"></i>
             </button>
 
-            <button id="increaseBtn">
+            <button id="increaseBtn" onclick="increaseFontSize()">
                 <i class="bx bx-plus"></i>
             </button>
         </div>
