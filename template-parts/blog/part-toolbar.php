@@ -12,7 +12,7 @@
       <i class='bx  bx-caret-left bx-flip-vertical Toolbar_Back' id="Toolbar_Back"></i>
     <?php else : ?>
 
-      <div ></div>
+      <div class="Toolbar_Back_Blank" id="Toolbar_Back_Blank"></div>
     <?php endif; ?>
     <i class='bx bx-menu Toolbar_Icon' id="Toolbar_Menu_Left"></i>
 

@@ -110,6 +110,10 @@
 {
   display: block;
 }
+#Toolbar_Back_Blank
+{
+  display: none;
+}
 
 /* MOBILE */
 
@@ -123,6 +127,10 @@
 {
   display: none;
 
+}
+#Toolbar_Back_Blank
+{
+  display: block;
 }
 #Toolbar_Back {
   display: block;
