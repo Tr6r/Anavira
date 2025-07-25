@@ -13,6 +13,7 @@ function folds_enqueue_assets()
   wp_enqueue_style('blog-menu-style', get_template_directory_uri() . '/assets/css/menu.css');
   wp_enqueue_style('blog-container-style', get_template_directory_uri() . '/assets/css/blog-container.css');
   wp_enqueue_style('blog-single-style', get_template_directory_uri() . '/assets/css/blog-single.css');
+  wp_enqueue_style('about-style', get_template_directory_uri() . '/assets/css/about.css');
 
 
 
