@@ -7,5 +7,5 @@
 
 
 <?php
-include get_theme_file_path('templates/blog/blog-page.php');
+include get_theme_file_path('templates/about/about-page.php');
 ?>
