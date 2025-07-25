@@ -20,6 +20,9 @@ function RouteNavigation()
         });
     });
 }
+
+
+changeToHomePage();
 function changeToHomePage()
 {
     const btn_header = window.innerWidth < 450 ? document.getElementById('mobileHeader') : document.getElementById('desktopHeader');
