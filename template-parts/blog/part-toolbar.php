@@ -9,16 +9,19 @@
 
   <div class="Toolbar">
     <?php if ($iconState) : ?>
-    <i class='bx  bx-caret-left bx-flip-vertical Toolbar_Back' id="Toolbar_Back"></i>
+      <i class='bx  bx-caret-left bx-flip-vertical Toolbar_Back' id="Toolbar_Back"></i>
     <?php else : ?>
-      <div></div>
+
+      <div ></div>
     <?php endif; ?>
-    <div>
+    <i class='bx bx-menu Toolbar_Icon' id="Toolbar_Menu_Left"></i>
+
+    <div class="Toolbar_Right">
 
 
       <i class='bx  bx-cog Toolbar_Icon' id="Toolbar_Setting"></i>
       <?php if ($iconState) : ?>
-        <i class='bx bx-menu Toolbar_Icon' id="Toolbar_Menu"></i>
+        <i class='bx bx-menu Toolbar_Icon' id="Toolbar_Menu_Right"></i>
 
       <?php endif; ?>
 

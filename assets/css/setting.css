@@ -1,79 +1,73 @@
-#BlogSetting_Container {
-  opacity: 0;
-  transform: translateY(-10px);
-  pointer-events: none;
-  transition: transform 0.6s ease;
-  position: absolute;
-  top: 53px;
-  right: -10px;
-  z-index: 100;
-  width: 300px;
-  height: 200px;
-  background-color: #5e5c2c;
-  border-radius: 7px;
-  box-sizing: border-box;
-  color: #ffffff;
-  padding-right: 10px;
-  box-sizing: border-box;
-  overflow: hidden;
-}
+.Toolbar_Setting_Dropdown_Title {
+    font-size: var(--font-size-title);
+    color: #fff;
+  }
 
-#BlogSetting_Container.active {
-  opacity: 1;
-  transform: translateY(0);
-  pointer-events: auto;
-}
+  .Toolbar_Setting_Dropdown_Language {
+    font-size: var(--font-size-title);
+    color: #fff;
 
-.BlogSetting_Container_Title {
-  border-bottom: 1px solid #ffffff;
-}
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
 
-.BlogSetting_Container_Language {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  font-size: var(--font-size-base);
-  margin-top: 20px;
-}
+  }
 
-.BlogSetting_Container_Fontsize {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  font-size: var(--font-size-base);
-  margin-top: 20px;
-}
+  .Toolbar_Setting_Dropdown_Language_Title {
+    white-space: nowrap;
+  }
 
-.BlogSetting_Container_Fontsize_Option {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  font-size: var(--font-size-base);
-  width: 100px;
-  margin-right: 40px;
-}
+  .Toolbar_Setting_Dropdown_Language_Option {
+    width: 100%;
+    margin-left: 10px;
+  }
+  
+    .trp-ls-shortcode-current-language {
+      width: fit-content !important;
+    }
 
-.BlogSetting_Container_Fontsize_Option button {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 30px;
-  width: 30px;
-  border-radius: 7px;
-  border: none;
-  background-color: #ffffff;
-  color: #4a4a3f;
-  cursor: pointer;
-}
+    .trp-ls-shortcode-language {
+      width: fit-content !important;
 
-.BlogSetting_Container_Language_Option {
-  margin-left: 10px;
-}
+    }
+  
 
-.BlogSetting_Container_Language_Title {
-  white-space: nowrap;
-}
+  .Toolbar_Setting_Dropdown_Fontsize {
+    margin-top: 20px;
 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: var(--font-size-title);
+    color: #fff;
+  }
+
+  .trp-language-switcher {
+    width: fit-content !important;
+  }
+
+  .Toolbar_Setting_Dropdown_Fontsize_Option {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: var(--font-size-title);
+    width: 100px;
+  }
+
+  .Toolbar_Setting_Dropdown_Fontsize_Option button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    height: 30px;
+    width: 30px;
+    border-radius: 7px;
+    border: none;
+    background-color: #ffffff;
+    color: #4a4a3f;
+    cursor: pointer;
+  }
 /* MOBILE */
 
 

@@ -1,15 +1,15 @@
-var Device = detectDevice();
+var Device = detectDevice(); // true: mobile, false: desktop
 var flagIsChangeDevice = Device;
 const fontVarsDesktop = {
-    '--font-size-title': '1.5rem',
+    '--font-size-title': '1.3rem',
     '--font-size-base': '1rem',
     '--font-size-slogan': '1.875rem'
 };
 
 const fontVarsMobile = {
-    '--font-size-title': '0.9rem',
+    '--font-size-title': '1rem',
     '--font-size-base': '0.7rem',
-    '--font-size-slogan': '0.9rem'
+    '--font-size-slogan': '1rem'
 }
 
 
@@ -19,9 +19,9 @@ window.addEventListener('resize', function () {
     if (flagIsChangeDevice != Device) {
         flagIsChangeDevice = Device;
         if (Device)
-            applyFontSizes(fontVarsMobile);
+            applyFontSizesWhenChangeDevice(fontVarsMobile);
         else
-            applyFontSizes(fontVarsDesktop);
+            applyFontSizesWhenChangeDevice(fontVarsDesktop);
     }
 
 });
@@ -36,14 +36,29 @@ function detectDevice()
         return false;
 }
 
+function applyFontSizesWhenChangeDevice(fontVars)
+{
+    Object.entries(fontVars).forEach(([key, defaultValue]) => {
+
+        const value = defaultValue;
+
+        const finalValue = typeof value === 'string' && value.endsWith('rem') ? value : `${value}rem`;
+        console.log(finalValue);
+        document.documentElement.style.setProperty(key, finalValue);
+
+            localStorage.setItem(key, defaultValue); // lưu số thôi
+        
+    });
+}
+
 function applyFontSizes(fontVars) {
 
     Object.entries(fontVars).forEach(([key, defaultValue]) => {
+
         const saved = localStorage.getItem(key);
         const value = saved || defaultValue;
 
         const finalValue = typeof value === 'string' && value.endsWith('rem') ? value : `${value}rem`;
-
         document.documentElement.style.setProperty(key, finalValue);
 
         if (!saved) {

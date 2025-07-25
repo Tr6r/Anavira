@@ -33,10 +33,10 @@
                     <div class="HomeHeader_Container_Logo_Brand">
                         ANAVIRA
                     </div>
-                    <div class="HomeHeader_Container_Logo_Slogan">
+                    <div class="HomeHeader_Container_Logo_WFPB">
                         WFPB
                     </div>
                 </div>
-                <p class="Slogan">Thức tỉnh - Mạnh mẽ - Tái sinh</p>
+                <p class="HomeHeader_Container_Logo_Slogan">Thức tỉnh - Mạnh mẽ - Tái sinh</p>
             </div>
         </header>

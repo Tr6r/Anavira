@@ -54,3 +54,7 @@ function anavira_theme_setup() {
     add_theme_support('post-thumbnails');
 }
 add_action('after_setup_theme', 'anavira_theme_setup');
+function custom_excerpt_length( $length ) {
+    return 200; // Hiển thị 200 từ
+}
+add_filter( 'excerpt_length', 'custom_excerpt_length' );

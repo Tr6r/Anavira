@@ -1,8 +1,3 @@
-
-
-
-
-
 /* Mặc định: desktop hiển thị, mobile ẩn */
 .MobileHomeHeader {
   display: none;
@@ -10,7 +5,7 @@
 
 .HomeHeader {
   display: block;
-    height: fit-content;
+  height: fit-content;
 
 }
 
@@ -51,7 +46,7 @@
 
 }
 
-.HomeHeader_Container_Logo_Slogan {
+.HomeHeader_Container_Logo_WFPB {
   font-family: Arial, sans-serif;
   font-weight: 500;
   margin-top: 5px;
@@ -60,14 +55,23 @@
   color: #696741;
   font-size: 20px;
 }
-.InnerHeader{
+
+.HomeHeader_Container_Logo_Slogan {
+  color: #1a5e1a;
+  font-family: 'UTMAlpineKT', sans-serif;
+  font-size: var(--font-size-slogan);
+}
+
+
+
+
+.InnerHeader {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.InnerHeader_Container
-{
+.InnerHeader_Container {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -77,75 +81,73 @@
   box-sizing: border-box;
 
 }
+
 .InnerHeader_Container_Logo {
-    width: 550px;
+  width: 550px;
   height: 180px;
 
 }
 
-/* Khi màn hình nhỏ hơn hoặc bằng 414px */
 @media (max-width: 450px) {
   .MobileHomeHeader {
-    display: block;   /* hiện mobile */
+    display: block;
   }
 
   .HomeHeader {
-    display: none;    /* ẩn desktop */
+    display: none;
   }
-  
-.MobileHomeHeader
-{
-  width: 100vw;
-  height:100px;
-  background-color: #f8edda;
-  
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 15 0;
-  padding-right: 15px;
-  padding-left:7px ;
-  box-sizing: border-box;
-}
-.MobileHomeHeader_Logo                            
-{
-  width: 65px;
-  height: 70px;
-}
 
-.MobileHomeHeader_Content
-{
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  
-  padding-left: 25px;
-  padding-top: 10px;
-  box-sizing: border-box;
-  color: #605e38;
+  .MobileHomeHeader {
+    width: 100vw;
+    height: 100px;
+    background-color: #f8edda;
 
-}
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15 0;
+    padding-right: 15px;
+    padding-left: 7px;
+    box-sizing: border-box;
+  }
 
-.MobileHomeHeader_Content_Brand
-{
-  font-family: 'VnCenturySchoolbook', sans-serif;
-  font-weight: 600;
+  .MobileHomeHeader_Logo {
+    width: 65px;
+    height: 70px;
+  }
 
-  margin-top: 5px;
-  font-size: 33px;
-  margin-top: 5px;
-}
-.MobileHomeHeader_Content_Slogan
-{
-  font-family: 'UTMAlpineKT', sans-serif;
-  font-weight: 400;
-  letter-spacing: 0.01em; /* hoặc 0.1em */
-  margin-top: 5px;
-  font-size: 1.2em;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: 5px 0 !important;
-}
+  .MobileHomeHeader_Content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    padding-left: 25px;
+    padding-top: 10px;
+    box-sizing: border-box;
+    color: #605e38;
+
+  }
+
+  .MobileHomeHeader_Content_Brand {
+    font-family: 'VnCenturySchoolbook', sans-serif;
+    font-weight: 600;
+
+    margin-top: 5px;
+    font-size: 33px;
+    margin-top: 5px;
+  }
+
+  .MobileHomeHeader_Content_Slogan {
+    font-family: 'UTMAlpineKT', sans-serif;
+    font-weight: 400;
+    letter-spacing: 0.01em;
+    /* hoặc 0.1em */
+    margin-top: 5px;
+    font-size: 1.2em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 5px 0 !important;
+  }
 }

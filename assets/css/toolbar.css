@@ -1,9 +1,21 @@
 .Toolbar {
-  display: flex;
-  align-items: center;
-  justify-content: flex-end;
-  width: 100%;
-  position: relative;
+  width: 100vw;
+    height: 40px;
+    padding: 5px 15px;
+    box-sizing: border-box;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    position: sticky;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    top: 0;
+    z-index: 1000;
+
+    margin-top: 10px;
+    background-color: #f8edda;
+    border-radius: 7px;
 }
 
 .Toolbar.has-icon {
@@ -23,12 +35,18 @@
   cursor: pointer;
 }
 
-.Toolbar_Menu {
+.Toolbar_Right
+{
+  display: flex;
+  align-items: center;
+}
+
+.Toolbar_Menu_Dropdown {
   display: none;
 
 }
 
-.Toolbar_Menu.active {
+.Toolbar_Menu_Dropdown.active {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -42,37 +60,78 @@
 
   background-color: #5e5c2c;
   border-radius: 7px;
-  padding: 10px;
+  padding: 10px 10px 10px 20px;
   box-sizing: border-box;
 
   overflow: auto;
 }
 
-.Toolbar_Menu::-webkit-scrollbar {
+.Toolbar_Menu_Dropdown::-webkit-scrollbar {
   width: 6px;
   height: 6px;
 }
 
-.Toolbar_Menu::-webkit-scrollbar-thumb {
+.Toolbar_Menu_Dropdown::-webkit-scrollbar-thumb {
   background-color: rgba(0, 0, 0, 0.3);
   border-radius: 3px;
 }
 
-.Toolbar_Menu::-webkit-scrollbar-track {
+.Toolbar_Menu_Dropdown::-webkit-scrollbar-track {
   background: transparent;
 }
 
-/* Cho Firefox */
-.Blogmenu_List {
-  scrollbar-width: thin;
-  /* hoặc "none", "auto" */
-  scrollbar-color: rgba(0, 0, 0, 0.3) transparent;
+  .Toolbar_Setting_Dropdown {
+    display: none;
+  }
+
+  .Toolbar_Setting_Dropdown.active {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 50px;
+    right: 0px;
+    z-index: 100;
+    /* width: 240px; */
+    max-height: calc(100vh - 350px);
+    background-color: #5e5c2c;
+    border-radius: 7px 0 0 7px;
+    padding: 10px;
+    box-sizing: border-box;
+    overflow: auto;
+  }
+  #Toolbar_Back {
+  display: none;
+  }
+#Toolbar_Menu_Right
+{
+  display: none;
+}
+ #Toolbar_Menu_Left
+{
+  display: block;
 }
 
 /* MOBILE */
 
 @media (max-width: 450px) {
+#Toolbar_Menu_Right
+{
+  display: block;
 
+}
+#Toolbar_Menu_Left
+{
+  display: none;
+
+}
+#Toolbar_Back {
+  display: block;
+  }
+.Toolbar_Right
+{
+  display: flex;
+  align-items: center;
+}
   .Toolbar {
     width: 100vw;
     height: 40px;
@@ -94,14 +153,12 @@
   }
 
   .Toolbar_Back {
-
     font-size: 34px;
     color: #4a4a3f;
     margin-top: 5px;
   }
 
-  .Toolbar_Icon
-{
+  .Toolbar_Icon {
     font-size: 30px;
     color: #4a4a3f;
     margin-right: 5px;
@@ -109,7 +166,7 @@
     cursor: pointer;
 
     position: relative;
-}
+  }
 
   .Toolbar_Menu_Dropdown {
     display: none;

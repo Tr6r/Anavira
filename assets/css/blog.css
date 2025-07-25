@@ -1,11 +1,141 @@
-.Blog_Title {
-  font-size: 50px;
-  font-weight: 600;
-  color: #4a4a3f;
-  margin-top: 32px
-}
+ .Blog_Container {
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    /* padding: 0 20px;
+    box-sizing: border-box; */
+  }
 
-/* MOBILE */
+  /* Chữ Blog */
+  .Blog_Container_Title {
+    font-size: 30px;
+    font-weight: 600;
+    color: #4a4a3f;
+    margin-top: 32px
+  }
+
+  .Blog_Container_Content {
+    width: 100vw;
+    margin-top: 10px;
+    padding: 0 30px;
+    box-sizing: border-box;
+  }
+
+  .Blog_Container_Content_Item {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 10px;
+    align-items: center;
+    justify-content: center;
+
+    height: 270px;
+    background-color: #f8edda;
+    padding: 10px;
+    border-radius: 7px;
+    box-sizing: border-box;
+    font-family: 'Merriweather', serif;
+    color: #4a4a3f;
+
+  }
+
+  .Blog_Container_Content_Item_Thumbnail img {
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 7px;
+  }
+
+  .Blog_Container_Content_Item_Content {
+    display: flex;
+    flex-direction: column;
+    height: fit-content;
+    margin-top: 10px;
+    overflow: hidden;
+    text-decoration: none;
+  }
+
+  .Blog_Container_Content_Item_Content h2 {
+
+    margin: 0 0 7px;
+    
+    font-weight: 600;
+    padding: 0;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    /* Số dòng muốn hiển thị */
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    margin-bottom: 10px;
+    height: fit-content;
+  }
+  .Blog_Container_Content_Item_Content h2 a{
+  font-size: var(--font-size-title);
+  }
+  .Blog_Container_Content_Item_Content p {
+    font-size: var(--font-size-base);
+    line-height: 1.6;
+
+    color: #4a4a3f;
+    max-width: 1200px;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    /* Số dòng muốn hiển thị */
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    margin: 0;
+    height: fit-content;
+
+  }
+
+  .Blog_Container_Content_Item_Content_Date {
+
+    text-align: right !important;
+    font-size: var(--font-size-base);
+    color: #4a4a3f;
+        height: 50px !important;
+
+    margin-top: 10px ! important;
+  }
+
+  .Blog_Container_Content_Item_Content_Title {
+    font-family: 'Merriweather', serif;
+
+    text-decoration: none;
+  }
+
+  /* Single Page */
+  .Blog_Container_Content_Single_Post
+{
+    width: 100%;
+    padding: 10px 10px;
+    background-color: #f8edda;
+    box-sizing: border-box;
+    border-radius: 7px;
+    font-family: 'Merriweather', serif;
+    color: #4a4a3f;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.Blog_Container_Content_Single_Post_Title
+{
+    text-align: center;
+    font-size: var(--font-size-title);
+}
+.Blog_Container_Content_Single_Post_Content
+{
+  width: 100%;
+  box-sizing: border-box;
+}
+.Blog_Container_Content_Single_Post_Content p
+{
+    font-size: var(--font-size-base);
+}
 
 
 @media (max-width: 450px) {
@@ -41,7 +171,7 @@
     align-items: center;
     justify-content: center;
 
-
+    height: 150px;
     background-color: #f8edda;
     padding: 10px;
     border-radius: 7px;
@@ -52,8 +182,8 @@
   }
 
   .Blog_Container_Content_Item_Thumbnail img {
-    width: 110px;
-    height: 110px;
+    width: 120px;
+    height: 120px;
     object-fit: cover;
     border-radius: 7px;
   }
@@ -63,20 +193,21 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-
-    margin-top: 10px;
+    
+    height: fit-content;
+    margin-top: 30px;
     overflow: hidden;
     text-decoration: none;
   }
 
   .Blog_Container_Content_Item_Content h2 {
-
     margin: 0 0 7px;
     font-size: var(--font-size-title);
     font-weight: 600;
     padding: 0;
+    height: fit-content;
     display: -webkit-box;
-    -webkit-line-clamp: 1;
+    -webkit-line-clamp: 2;
     /* Số dòng muốn hiển thị */
     -webkit-box-orient: vertical;
     overflow: hidden;
@@ -90,9 +221,10 @@
     line-height: 1.6;
 
     color: #4a4a3f;
-    max-width: 1200px;
+        height: fit-content;
+
     display: -webkit-box;
-    -webkit-line-clamp: 2;
+    -webkit-line-clamp:2 ;
     /* Số dòng muốn hiển thị */
     -webkit-box-orient: vertical;
     overflow: hidden;
