@@ -81,7 +81,7 @@
     color: #4a4a3f;
     max-width: 1200px;
     display: -webkit-box;
-    -webkit-line-clamp: 3;
+    -webkit-line-clamp: 4;
     /* Số dòng muốn hiển thị */
     -webkit-box-orient: vertical;
     overflow: hidden;
