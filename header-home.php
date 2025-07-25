@@ -8,7 +8,7 @@
     <?php wp_head(); ?>
 </head>
 
-    <div class="MobileHomeHeader">
+    <div class="MobileHomeHeader" id ="mobileHeader">
                 
         <img class="MobileHomeHeader_Logo"
             src="<?php echo site_url(); ?>/wp-content/uploads/2025/07/9-nam-02-1.png" height="60" alt="Logo">
@@ -25,7 +25,7 @@
     </div>
 
     <body <?php body_class(); ?>>
-        <header class="HomeHeader">
+        <header class="HomeHeader" id ="desktopHeader">
             <div class="HomeHeader_Container">
                 <div class="HomeHeader_Container_Logo">
                     <img class="HomeHeader_Container_Logo_Image"
