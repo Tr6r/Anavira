@@ -179,11 +179,11 @@
 
 
     <div class="Frontpage_Container_Buttons">
-        <div class="Frontpage_Container_Buttons_Item" data-url="/">
+        <div class="Frontpage_Container_Buttons_Item" data-url="/about-us">
             <div class="Frontpage_Container_Buttons_Item_Icon">
                 <?php echo file_get_contents(get_template_directory() . '/assets/images/leaf.svg'); ?>
             </div>
-            <a class="Frontpage_Container_Buttons_Item_Navigate" href="">Giới thiệu</a>
+            <a class="Frontpage_Container_Buttons_Item_Navigate" href="/about-us">Giới thiệu</a>
 
         </div>
         <div class="Frontpage_Container_Buttons_Item" data-url="/">

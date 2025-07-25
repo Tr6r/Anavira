@@ -43,7 +43,7 @@ function applyFontSizesWhenChangeDevice(fontVars)
         const value = defaultValue;
 
         const finalValue = typeof value === 'string' && value.endsWith('rem') ? value : `${value}rem`;
-        console.log(finalValue);
+        // console.log(finalValue);
         document.documentElement.style.setProperty(key, finalValue);
 
             localStorage.setItem(key, defaultValue); // lưu số thôi
