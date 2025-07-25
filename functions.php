@@ -1,8 +1,6 @@
 <?php
 
-header("Cache-Control: no-store, no-cache, must-revalidate, max-age=0");
-header("Cache-Control: post-check=0, pre-check=0", false);
-header("Pragma: no-cache");
+
 // Load các file logic chia nhỏ trong inc/
 require get_template_directory() . '/inc/function-js.php';
 require get_template_directory() . '/inc/ajax.php';
