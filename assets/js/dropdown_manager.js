@@ -15,7 +15,8 @@ function handleSettingDropdown() {
   });
 }
 function handleMenuDropdown() {
-  const btn_menu = document.getElementById('Toolbar_Menu');
+  
+const btn_menu = window.innerWidth < 450 ? document.getElementById('Toolbar_Menu_Right') : document.getElementById('Toolbar_Menu_Left');
  const menu_dropdown = document.getElementById('Toolbar_Menu_Dropdown');
   const setting_dropdown = document.getElementById('Toolbar_Setting_Dropdown');
 
