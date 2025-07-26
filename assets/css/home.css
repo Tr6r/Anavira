@@ -20,7 +20,7 @@
 }
 
 .Frontpage_Container_banner {
-    margin-top: 10px;
+    /* margin-top: 10px; */
     width: 100%;
 
 }
@@ -41,7 +41,7 @@
     background-color: #f8edda;
     border-radius: 6px;
     font-family: 'Merriweather', serif;
-    margin-top: 20px;
+    margin-top: 10px;
     padding-bottom: 10px;
     box-sizing: border-box;
 
