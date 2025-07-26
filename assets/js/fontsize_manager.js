@@ -22,8 +22,8 @@ window.addEventListener('resize', function () {
             applyFontSizesWhenChangeDevice(fontVarsMobile);
         else
             applyFontSizesWhenChangeDevice(fontVarsDesktop);
+        location.reload();
     }
-
 });
 
 applyFontSizes(Device ? fontVarsMobile : fontVarsDesktop);
@@ -49,6 +49,7 @@ function applyFontSizesWhenChangeDevice(fontVars)
             localStorage.setItem(key, defaultValue); // lưu số thôi
         
     });
+    
 }
 
 function applyFontSizes(fontVars) {

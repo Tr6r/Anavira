@@ -1,4 +1,4 @@
-.Toolbar {
+.Desktop_Toolbar {
   width: 100%;
     height: 40px;
     padding: 5px 15px;
@@ -17,7 +17,9 @@
     background-color: #f8edda;
     border-radius: 7px;
 }
-
+.Mobile_Toolbar {
+  display: none;
+}
 .Toolbar.has-icon {
   justify-content: space-between;
 
@@ -99,7 +101,7 @@
     box-sizing: border-box;
     overflow: auto;
   }
-  #Toolbar_Back {
+  /* #Toolbar_Back {
   display: none;
   }
 #Toolbar_Menu_Right
@@ -113,12 +115,12 @@
 #Toolbar_Back_Blank
 {
   display: none;
-}
+} */
 
 /* MOBILE */
 
 @media (max-width: 450px) {
-#Toolbar_Menu_Right
+/* #Toolbar_Menu_Right
 {
   display: block;
 
@@ -134,13 +136,16 @@
 }
 #Toolbar_Back {
   display: block;
+  } */
+     .Desktop_Toolbar {
+    display: none;
   }
 .Toolbar_Right
 {
   display: flex;
   align-items: center;
 }
-  .Toolbar {
+  .Mobile_Toolbar {
     width: 100vw;
     height: 40px;
     padding: 5px 5px;
@@ -159,6 +164,7 @@
     background-color: #f8edda;
     border-radius: 7px;
   }
+
 
   .Toolbar_Back {
     font-size: 34px;
