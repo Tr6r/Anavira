@@ -1,25 +1,29 @@
 .Desktop_Toolbar {
   width: 100%;
-    height: 40px;
-    padding: 5px 15px;
-    box-sizing: border-box;
+  min-width: 710px;
 
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+  height: 40px;
+  padding: 5px 15px;
+  box-sizing: border-box;
 
-    position: sticky;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    top: 0;
-    z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 
-    margin-top: 10px;
-    background-color: #f8edda;
-    border-radius: 7px;
+  position: sticky;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  top: 0;
+  z-index: 1000;
+
+  margin-top: 10px;
+  background-color: #f8edda;
+  border-radius: 7px;
 }
+
 .Mobile_Toolbar {
   display: none;
 }
+
 .Toolbar.has-icon {
   justify-content: space-between;
 
@@ -37,8 +41,14 @@
   cursor: pointer;
 }
 
-.Toolbar_Right
-{
+.Desktop_Toolbar_Midle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1em;
+}
+
+.Toolbar_Right {
   display: flex;
   align-items: center;
 }
@@ -82,69 +92,37 @@
   background: transparent;
 }
 
-  .Toolbar_Setting_Dropdown {
-    display: none;
-  }
-
-  .Toolbar_Setting_Dropdown.active {
-    display: flex;
-    flex-direction: column;
-    position: absolute;
-    top: 50px;
-    right: 0px;
-    z-index: 100;
-    /* width: 240px; */
-    max-height: calc(100vh - 350px);
-    background-color: #5e5c2c;
-    border-radius: 7px;
-    padding: 10px;
-    box-sizing: border-box;
-    overflow: auto;
-  }
-  /* #Toolbar_Back {
-  display: none;
-  }
-#Toolbar_Menu_Right
-{
+.Toolbar_Setting_Dropdown {
   display: none;
 }
- #Toolbar_Menu_Left
-{
-  display: block;
-}
-#Toolbar_Back_Blank
-{
-  display: none;
-} */
 
-/* MOBILE */
+.Toolbar_Setting_Dropdown.active {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 50px;
+  right: 0px;
+  z-index: 100;
+  /* width: 240px; */
+  max-height: calc(100vh - 350px);
+  background-color: #5e5c2c;
+  border-radius: 7px;
+  padding: 10px;
+  box-sizing: border-box;
+  overflow: auto;
+}
 
 @media (max-width: 450px) {
-/* #Toolbar_Menu_Right
-{
-  display: block;
 
-}
-#Toolbar_Menu_Left
-{
-  display: none;
-
-}
-#Toolbar_Back_Blank
-{
-  display: block;
-}
-#Toolbar_Back {
-  display: block;
-  } */
-     .Desktop_Toolbar {
+  .Desktop_Toolbar {
     display: none;
   }
-.Toolbar_Right
-{
-  display: flex;
-  align-items: center;
-}
+
+  .Toolbar_Right {
+    display: flex;
+    align-items: center;
+  }
+
   .Mobile_Toolbar {
     width: 100vw;
     height: 40px;

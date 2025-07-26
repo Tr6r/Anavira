@@ -17,11 +17,14 @@
     align-items: center;
     padding-bottom: 10px;
     box-sizing: border-box;
+
+    min-width: 710px;
 }
 
 .Frontpage_Container_banner {
     /* margin-top: 10px; */
     width: 100%;
+    min-width: 710px;
 
 }
 
