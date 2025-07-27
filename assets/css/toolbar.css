@@ -1,8 +1,8 @@
 .Desktop_Toolbar {
   width: 100%;
-  min-width: 710px;
+  /* min-width: 710px; */
 
-  height: 40px;
+  height: 50px;
   padding: 5px 15px;
   box-sizing: border-box;
 
@@ -33,7 +33,7 @@
 
   font-size: 30px;
   color: #4a4a3f;
-  margin-top: 5px;
+  /* margin-top: 5px; */
 
 }
 
@@ -45,7 +45,31 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 1em;
+  gap: 3em;
+}
+.Desktop_Toolbar_Midle_Icon
+{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 10px;
+  box-sizing: border-box;
+  border-radius: 50%;
+  
+}
+
+.Desktop_Toolbar_Midle_Icon:hover {
+  cursor: pointer;
+  background-color: bisque;
+}
+
+.Desktop_Toolbar_Midle_Icon svg
+{
+  width: 25px;
+  height: 25px;
+  stroke-width: 30;
+  stroke: #515045;
+  /* hoặc 0.5 nếu muốn mỏng hơn */
 }
 
 .Toolbar_Right {
@@ -159,7 +183,22 @@
 
     position: relative;
   }
-
+.Desktop_Toolbar_Midle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0;
+}
+.Desktop_Toolbar_Midle_Icon
+{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 10px;
+  box-sizing: border-box;
+  border-radius: 50%;
+  
+}
   .Toolbar_Menu_Dropdown {
     display: none;
   }

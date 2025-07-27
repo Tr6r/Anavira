@@ -11,7 +11,7 @@
 
 .HomeHeader_Container {
   height: fit-content;
-  min-width: 710px;
+  /* min-width: 710px; */
 
   display: flex;
   flex-direction: column;
