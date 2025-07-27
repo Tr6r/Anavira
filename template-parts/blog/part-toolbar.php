@@ -16,6 +16,24 @@
       <div></div>
     <?php endif; ?>
 
+    <div class="Desktop_Toolbar_Midle">
+      <div class="Desktop_Toolbar_Midle_Icon" data-url="/about-us">
+        <?php echo file_get_contents(get_template_directory() . '/assets/images/leaf.svg'); ?>
+      </div>
+      <div class="Desktop_Toolbar_Midle_Icon" data-url="/">
+        <?php echo file_get_contents(get_template_directory() . '/assets/images/food.svg'); ?>
+      </div>
+      <div class="Desktop_Toolbar_Midle_Icon" data-url="/blog">
+        <?php echo file_get_contents(get_template_directory() . '/assets/images/pen.svg'); ?>
+      </div>
+      <div class="Desktop_Toolbar_Midle_Icon" data-url="/">
+        <?php echo file_get_contents(get_template_directory() . '/assets/images/recipe.svg'); ?>
+      </div>
+      <div class="Desktop_Toolbar_Midle_Icon" data-url="/">
+        <?php echo file_get_contents(get_template_directory() . '/assets/images/cart.svg'); ?>
+      </div>
+    </div>
+
 
 
     <i class='bx  bx-cog Toolbar_Icon' id="Toolbar_Setting"></i>
@@ -38,6 +56,24 @@
 
       <div></div>
     <?php endif; ?>
+  <div class="Desktop_Toolbar_Midle">
+      <div class="Desktop_Toolbar_Midle_Icon" data-url="/about-us">
+            <?php echo file_get_contents(get_template_directory() . '/assets/images/leaf.svg'); ?>
+      </div>
+      <div class="Desktop_Toolbar_Midle_Icon"  data-url="/">
+            <?php echo file_get_contents(get_template_directory() . '/assets/images/food.svg'); ?>
+      </div>
+      <div class="Desktop_Toolbar_Midle_Icon"  data-url="/blog">
+            <?php echo file_get_contents(get_template_directory() . '/assets/images/pen.svg'); ?>
+      </div>
+      <div class="Desktop_Toolbar_Midle_Icon"  data-url="/">
+            <?php echo file_get_contents(get_template_directory() . '/assets/images/recipe.svg'); ?>
+      </div>
+      <div class="Desktop_Toolbar_Midle_Icon"  data-url="/">
+            <?php echo file_get_contents(get_template_directory() . '/assets/images/cart.svg'); ?>
+      </div>
+    </div>
+
 
     <div class="Toolbar_Right">
 

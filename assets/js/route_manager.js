@@ -11,7 +11,7 @@
 // }
 function RouteNavigation()
 {
-    document.querySelectorAll('.Frontpage_Container_Buttons_Item').forEach(item => {
+    document.querySelectorAll('.Desktop_Toolbar_Midle_Icon').forEach(item => {
         item.addEventListener('click', () => {
             const url = item.getAttribute('data-url');
             if (url) {
