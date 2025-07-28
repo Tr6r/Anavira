@@ -82,7 +82,7 @@ const setRem = (variable, value) => {
 function increaseFontSize() {
     const base = getCurrentRem('--font-size-base');
     if (base >= 1.4 && !Device) return;
-    if (base >= 0.9 && Device) return;
+    if (base >= 1.2 && Device) return;
 
     const fontVars = Object.keys(fontVarsDesktop);
 
