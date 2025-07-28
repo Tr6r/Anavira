@@ -2,7 +2,7 @@
     width: 100%;
     padding-left: 0;
     margin-top: 15px;
-    /* min-width: 710px;s */
+    min-width: 710px;
 
 }
 
@@ -39,3 +39,14 @@
 }
 
 /* MOBILE */
+
+@media (max-width: 450px) {
+    .Single_Post_Container {
+    width: 100%;
+    padding-left: 0;
+    margin-top: 15px;
+    min-width: 0px;
+    
+}
+
+}
