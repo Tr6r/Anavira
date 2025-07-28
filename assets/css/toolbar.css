@@ -2,8 +2,12 @@
 {
   width: 100%;
     min-width: 710px;
-  position: relative;
+      margin-top: 10px;
 
+ position: sticky;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  top: 0;
+  z-index: 1000;
 }
 .Desktop_Toolbar {
   width: 100%;
@@ -16,12 +20,8 @@
   align-items: center;
   justify-content: space-between;
 
-  position: sticky;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  top: 0;
-  z-index: 1000;
+ 
 
-  margin-top: 10px;
   background-color: #f8edda;
   border-radius: 7px;
 }
@@ -93,7 +93,7 @@
   flex-direction: column;
   align-items: center;
   position: absolute;
-  top: 80px;
+  top: 60px;
   left: 0;
   z-index: 100;
 
@@ -130,7 +130,7 @@
   display: flex;
   flex-direction: column;
   position: absolute;
-  top:80px;
+  top:60px;
   right: 0px;
   z-index: 100;
   /* width: 240px; */
@@ -147,6 +147,11 @@
   .Toolbar_Container {
     width: 100vw;
       min-width: 0px;
+    position: sticky;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    top: 0;
+    z-index: 1000;
+        margin-top: 10px;
 
   }
   .Desktop_Toolbar {
@@ -168,12 +173,8 @@
     align-items: center;
     justify-content: space-between;
 
-    position: sticky;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    top: 0;
-    z-index: 1000;
 
-    margin-top: 10px;
+
     background-color: #f8edda;
     border-radius: 7px;
   }
@@ -228,7 +229,7 @@
     flex-direction: column;
     align-items: center;
     position: absolute;
-    top: 70px;
+    top: 50px;
     left: 0px;
     z-index: 100;
 
@@ -251,7 +252,7 @@
     display: flex;
     flex-direction: column;
     position: absolute;
-    top: 70px;
+    top: 50px;
     right: 0px;
     z-index: 100;
     /* width: 240px; */

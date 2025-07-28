@@ -22,7 +22,6 @@
 }
 
 .About_Container_banner {
-    margin-top: 10px;
     width: 100%;
     min-width: 710px;
 
@@ -264,7 +263,6 @@
 
     .About_Container_banner {
         width: 100vw;
-        margin-top: 10px;
                 min-width: 0px;
 
     }
