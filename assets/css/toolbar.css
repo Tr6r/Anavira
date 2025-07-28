@@ -1,11 +1,17 @@
+.Toolbar_Container
+{
+  width: 100%;
+    min-width: 710px;
+  position: relative;
+
+}
 .Desktop_Toolbar {
   width: 100%;
-  min-width: 710px;
 
   height: 50px;
   padding: 5px 15px;
   box-sizing: border-box;
-
+  
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -87,7 +93,7 @@
   flex-direction: column;
   align-items: center;
   position: absolute;
-  top: 60px;
+  top: 80px;
   left: 0;
   z-index: 100;
 
@@ -124,7 +130,7 @@
   display: flex;
   flex-direction: column;
   position: absolute;
-  top: 60px;
+  top:80px;
   right: 0px;
   z-index: 100;
   /* width: 240px; */
@@ -138,6 +144,11 @@
 
 @media (max-width: 450px) {
 
+  .Toolbar_Container {
+    width: 100vw;
+      min-width: 0px;
+
+  }
   .Desktop_Toolbar {
     display: none;
   }
@@ -217,7 +228,7 @@
     flex-direction: column;
     align-items: center;
     position: absolute;
-    top: 50px;
+    top: 70px;
     left: 0px;
     z-index: 100;
 
@@ -240,7 +251,7 @@
     display: flex;
     flex-direction: column;
     position: absolute;
-    top: 50px;
+    top: 70px;
     right: 0px;
     z-index: 100;
     /* width: 240px; */
