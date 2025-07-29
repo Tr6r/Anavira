@@ -20,12 +20,13 @@
       <?php endif; ?>
 
       <div class="Desktop_Toolbar_Midle">
-        <div class="Desktop_Toolbar_Midle_Icon" data-url="/about-us">
+        <div class="Desktop_Toolbar_Midle_Icon" data-url="/">
+          <?php echo file_get_contents(get_template_directory() . '/assets/images/home.svg'); ?>
+        </div>
+        <div class="Desktop_Toolbar_Midle_Icon" title="Đây là biểu tượng Cài đặt ⚙️" data-url="/about-us">
           <?php echo file_get_contents(get_template_directory() . '/assets/images/leaf.svg'); ?>
         </div>
-        <div class="Desktop_Toolbar_Midle_Icon" data-url="/">
-          <?php echo file_get_contents(get_template_directory() . '/assets/images/loaf.svg'); ?>
-        </div>
+
         <div class="Desktop_Toolbar_Midle_Icon" data-url="/blog">
           <?php echo file_get_contents(get_template_directory() . '/assets/images/pen.svg'); ?>
         </div>
@@ -38,36 +39,35 @@
       </div>
 
 
-
-      <i class='bx  bx-cog Toolbar_Icon' id="Toolbar_Setting"></i>
-
+<img class="Toolbar_Avatar" id="Toolbar_Setting" src="<?php echo get_template_directory_uri(); ?>/assets/images/avatar_default.png" alt="Avatar">
 
     </div>
 
     <div class="Mobile_Toolbar">
 
       <div class="Mobile_Toolbar_Midle">
+        <div class="Mobile_Toolbar_Midle_Icon" data-url="/">
+          <?php echo file_get_contents(get_template_directory() . '/assets/images/home.svg'); ?>
+        </div>
         <div class="Mobile_Toolbar_Midle_Icon" data-url="/about-us">
           <?php echo file_get_contents(get_template_directory() . '/assets/images/leaf.svg'); ?>
         </div>
-        <div class="Mobile_Toolbar_Midle_Icon" data-url="/">
-          <?php echo file_get_contents(get_template_directory() . '/assets/images/food.svg'); ?>
-        </div>
+        
         <div class="Mobile_Toolbar_Midle_Icon" data-url="/blog">
           <?php echo file_get_contents(get_template_directory() . '/assets/images/pen.svg'); ?>
         </div>
         <div class="Mobile_Toolbar_Midle_Icon" data-url="/">
-          <?php echo file_get_contents(get_template_directory() . '/assets/images/recipe.svg'); ?>
+          <?php echo file_get_contents(get_template_directory() . '/assets/images/checklist.svg'); ?>
         </div>
-        <div class="Mobile_Toolbar_Midle_Icon" data-url="/">
+        <!-- <div class="Mobile_Toolbar_Midle_Icon" data-url="/">
           <?php echo file_get_contents(get_template_directory() . '/assets/images/cart.svg'); ?>
-        </div>
-        <div class="Mobile_Toolbar_Midle_Icon" data-url="/">
-          <i class='bx  bx-cog Toolbar_Icon' id="Mobile_Toolbar_Setting"></i>
-        </div>
-        <div class="Mobile_Toolbar_Midle_Icon" data-url="/">
+        </div> -->
+        
+        <!-- <div class="Mobile_Toolbar_Midle_Icon" data-url="/">
           <i class='bx bx-menu Toolbar_Icon' id="Mobile_Toolbar_Menu"></i>
-        </div>
+        </div> -->
+        <img class="Toolbar_Avatar" id="Mobile_Toolbar_Setting" src="<?php echo get_template_directory_uri(); ?>/assets/images/avatar_default.png" alt="Avatar">
+
       </div>
 
 
@@ -76,7 +76,7 @@
     </div>
 
 
-        
+
     <div class="Toolbar_Setting_Dropdown" id="Toolbar_Setting_Dropdown">
       <?php get_template_part('template-parts/blog/part-setting'); ?>
     </div>

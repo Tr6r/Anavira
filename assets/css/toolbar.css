@@ -12,7 +12,7 @@
 .Desktop_Toolbar {
   width: 100%;
 
-  height: 50px;
+  height: 60px;
   padding: 5px 15px;
   box-sizing: border-box;
   
@@ -35,12 +35,16 @@
 
 }
 
-.Toolbar_Icon {
+.Toolbar_Avatar {
 
-  font-size: 30px;
-  color: #4a4a3f;
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
   /* margin-top: 5px; */
 
+}
+.Toolbar_Avatar:hover {
+  cursor: pointer;
 }
 
 .Toolbar_Icon:hover {
@@ -71,12 +75,13 @@
 
 .Desktop_Toolbar_Midle_Icon svg
 {
-  width: 25px;
-  height: 25px;
-  stroke-width: 30;
+  width: 35px;
+  height: 35px;
+  stroke-width: 40;
   stroke: #515045;
   /* hoặc 0.5 nếu muốn mỏng hơn */
 }
+
 
 .Toolbar_Right {
   display: flex;
@@ -96,7 +101,7 @@
   top: 60px;
   left: 0;
   z-index: 100;
-
+  margin-top: 10px;
   max-height: calc(100vh - 90px);
   width: 250px;
 
@@ -133,6 +138,7 @@
   top:60px;
   right: 0px;
   z-index: 100;
+  margin-top: 10px;
   /* width: 240px; */
   max-height: calc(100vh - 350px);
   background-color: #5e5c2c;
@@ -165,7 +171,7 @@
 
   .Mobile_Toolbar {
     width: 100vw;
-    height: 40px;
+    height: 60px;
     padding: 5px 5px;
     box-sizing: border-box;
 
@@ -177,6 +183,12 @@
 
     background-color: #f8edda;
     border-radius: 7px;
+  }
+  .Toolbar_Avatar
+  {
+    width: 45px;
+    height: 45px;
+
   }
 
 
@@ -214,9 +226,9 @@
 }
 .Mobile_Toolbar_Midle_Icon svg
 {
-  width: 25px;
-  height: 25px;
-  stroke-width: 30;
+  width: 40px;
+  height: 40px;
+  stroke-width: 35;
   stroke: #515045;
   /* hoặc 0.5 nếu muốn mỏng hơn */
 }
@@ -232,7 +244,7 @@
     top: 50px;
     left: 0px;
     z-index: 100;
-
+    margin-top: 20px;
 
     width: 240px;
     max-height: calc(100vh - 350px);
@@ -255,6 +267,8 @@
     top: 50px;
     right: 0px;
     z-index: 100;
+  margin-top: 20px;
+
     /* width: 240px; */
     max-height: calc(100vh - 350px);
     background-color: #5e5c2c;
