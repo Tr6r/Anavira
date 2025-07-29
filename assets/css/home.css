@@ -86,9 +86,10 @@
 }
 
 .Frontpage_Container_Items_Tilte_Icon svg {
-    width: 20px;
-    height: 20px;
-    stroke-width: 25;
+    width: 35px;
+    height: 35px;
+    stroke: #605e38;
+    stroke-width: 35;
     margin-right: 7px;
     margin-top: 10px;
     color: #4a4a3f;
@@ -328,9 +329,9 @@
     }
 
     .Frontpage_Container_Items_Tilte_Icon svg {
-        width: 20px;
-        height: 20px;
-        stroke-width: 25;
+        width: 30px;
+        height: 30px;
+        stroke-width: 30;
         margin-right: 7px;
         margin-top: 10px;
         color: #4a4a3f;
@@ -361,6 +362,10 @@
 
     .Whitecolor {
         color: white !important;
+    }
+    .Whitecolor svg {
+        color: white !important;
+        stroke : white !important;
     }
 
     .bullet {

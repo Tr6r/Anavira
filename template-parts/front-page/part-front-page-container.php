@@ -3,7 +3,7 @@
     <div class="Frontpage_Container_Items">
         <div class="Frontpage_Container_Items_Tilte">
             <div class="Frontpage_Container_Items_Tilte_Icon">
-                <?php echo file_get_contents(get_template_directory() . '/assets/images/willow.svg'); ?>
+                <?php echo file_get_contents(get_template_directory() . '/assets/images/leaf3.svg'); ?>
             </div>
             <h2 class='Frontpage_Container_Items_Tilte_Text'>Vì sao là ngọn lửa – không phải mầm cây? </h2>
         </div>
@@ -39,7 +39,7 @@
     <div class="Frontpage_Container_Items">
         <div class="Frontpage_Container_Items_Tilte">
             <div class="Frontpage_Container_Items_Tilte_Icon">
-                <?php echo file_get_contents(get_template_directory() . '/assets/images/willow.svg'); ?>
+                <?php echo file_get_contents(get_template_directory() . '/assets/images/leaf3.svg'); ?>
             </div>
             <h2 class='Frontpage_Container_Items_Tilte_Text'>Anavira là gì?</h2>
         </div>
@@ -63,7 +63,7 @@
     <div class="Frontpage_Container_Items">
         <div class="Frontpage_Container_Items_Tilte">
             <div class="Frontpage_Container_Items_Tilte_Icon">
-                <?php echo file_get_contents(get_template_directory() . '/assets/images/willow.svg'); ?>
+                <?php echo file_get_contents(get_template_directory() . '/assets/images/leaf3.svg'); ?>
             </div>
             <h2 class='Frontpage_Container_Items_Tilte_Text'>W.F.P.B là gì?</h2>
         </div>
@@ -81,8 +81,8 @@
     </div>
     <div class="Frontpage_Container_Items Green_Background">
         <div class="Frontpage_Container_Items_Tilte">
-            <div class="Frontpage_Container_Items_Tilte_Icon">
-                <?php echo file_get_contents(get_template_directory() . '/assets/images/willow.svg'); ?>
+            <div class="Frontpage_Container_Items_Tilte_Icon Whitecolor">
+                <?php echo file_get_contents(get_template_directory() . '/assets/images/leaf3.svg'); ?>
             </div>
             <h2 class='Frontpage_Container_Items_Tilte_Text Whitecolor'>Sản phẩm của chúng tôi</h2>
         </div>
@@ -114,7 +114,7 @@
     <div class="Frontpage_Container_Items">
         <div class="Frontpage_Container_Items_Tilte">
             <div class="Frontpage_Container_Items_Tilte_Icon">
-                <?php echo file_get_contents(get_template_directory() . '/assets/images/willow.svg'); ?>
+                <?php echo file_get_contents(get_template_directory() . '/assets/images/leaf3.svg'); ?>
             </div>
             <h2 class='Frontpage_Container_Items_Tilte_Text'>Vì sao chọn Anavira?</h2>
         </div>
@@ -135,7 +135,7 @@
     <div class="Frontpage_Container_Items">
         <div class="Frontpage_Container_Items_Tilte">
             <div class="Frontpage_Container_Items_Tilte_Icon">
-                <?php echo file_get_contents(get_template_directory() . '/assets/images/willow.svg'); ?>
+                <?php echo file_get_contents(get_template_directory() . '/assets/images/leaf3.svg'); ?>
             </div>
             <h2 class='Frontpage_Container_Items_Tilte_Text'>Sứ mệnh của chúng tôi</h2>
         </div>
@@ -160,7 +160,7 @@
     <div class="Frontpage_Container_Items">
         <div class="Frontpage_Container_Items_Tilte">
             <div class="Frontpage_Container_Items_Tilte_Icon">
-                <?php echo file_get_contents(get_template_directory() . '/assets/images/willow.svg'); ?>
+                <?php echo file_get_contents(get_template_directory() . '/assets/images/leaf3.svg'); ?>
             </div>
             <h2 class='Frontpage_Container_Items_Tilte_Text'>Trái tim Anavira</h2>
         </div>
