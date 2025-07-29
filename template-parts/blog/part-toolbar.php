@@ -24,13 +24,13 @@
           <?php echo file_get_contents(get_template_directory() . '/assets/images/leaf.svg'); ?>
         </div>
         <div class="Desktop_Toolbar_Midle_Icon" data-url="/">
-          <?php echo file_get_contents(get_template_directory() . '/assets/images/food.svg'); ?>
+          <?php echo file_get_contents(get_template_directory() . '/assets/images/loaf.svg'); ?>
         </div>
         <div class="Desktop_Toolbar_Midle_Icon" data-url="/blog">
           <?php echo file_get_contents(get_template_directory() . '/assets/images/pen.svg'); ?>
         </div>
         <div class="Desktop_Toolbar_Midle_Icon" data-url="/">
-          <?php echo file_get_contents(get_template_directory() . '/assets/images/recipe.svg'); ?>
+          <?php echo file_get_contents(get_template_directory() . '/assets/images/checklist.svg'); ?>
         </div>
         <div class="Desktop_Toolbar_Midle_Icon" data-url="/">
           <?php echo file_get_contents(get_template_directory() . '/assets/images/cart.svg'); ?>
