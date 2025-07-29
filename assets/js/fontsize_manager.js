@@ -1,15 +1,15 @@
 var Device = detectDevice(); // true: mobile, false: desktop
 var flagIsChangeDevice = Device;
 const fontVarsDesktop = {
-    '--font-size-title': '1.3rem',
-    '--font-size-base': '1rem',
+    '--font-size-title': '1.5rem',
+    '--font-size-base': '1.2rem',
     '--font-size-slogan': '1.875rem'
 };
 
 const fontVarsMobile = {
-    '--font-size-title': '1rem',
-    '--font-size-base': '0.7rem',
-    '--font-size-slogan': '1rem'
+    '--font-size-title': '1.4rem',
+    '--font-size-base': '1.1rem',
+    '--font-size-slogan': '1.4rem'
 }
 
 
@@ -81,8 +81,8 @@ const setRem = (variable, value) => {
 
 function increaseFontSize() {
     const base = getCurrentRem('--font-size-base');
-    if (base >= 1.4 && !Device) return;
-    if (base >= 1.2 && Device) return;
+    if (base >= 1.6 && !Device) return;
+    if (base >= 1.6 && Device) return;
 
     const fontVars = Object.keys(fontVarsDesktop);
 
@@ -94,8 +94,8 @@ function increaseFontSize() {
 
 function decreaseFontSize() {
     const base = getCurrentRem('--font-size-base');
-    if (base <= 1 && !Device) return;
-    if (base <= 0.7 && Device) return;
+    if (base <= 1.2 && !Device) return;
+    if (base <= 1.1 && Device) return;
 
     const fontVars = Object.keys(fontVarsDesktop);
     fontVars.forEach(variable => {
