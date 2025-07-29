@@ -10,27 +10,24 @@
 //     });
 // }
 function RouteNavigation() {
-    var width = window.innerWidth;
-    if (width < 450) {
-        document.querySelectorAll('.Mobile_Toolbar_Midle_Icon').forEach(item => {
-            item.addEventListener('click', () => {
-                const url = item.getAttribute('data-url');
-                if (url) {
-                    window.location.href = url;
-                }
-            });
-        });
-        return
-    }
-    document.querySelectorAll('.Desktop_Toolbar_Midle_Icon').forEach(item => {
-        item.addEventListener('click', () => {
-            const url = item.getAttribute('data-url');
-            if (url) {
-                window.location.href = url;
-            }
-        });
+  var lang = getCurrentLanguage();
+
+  const width = window.innerWidth;
+  const selector = width < 450 ? '.Mobile_Toolbar_Midle_Icon' : '.Desktop_Toolbar_Midle_Icon';
+
+  document.querySelectorAll(selector).forEach(item => {
+    item.addEventListener('click', () => {
+      let url = item.getAttribute('data-url');
+      if (url) {
+        // Đảm bảo không có dấu / thừa
+        if (url.startsWith('/')) url = url.slice(1);
+        const finalUrl = (lang === 'vi' ? '/' : `/${lang}/`) + url;
+        window.location.href = finalUrl;
+      }
     });
+  });
 }
+
 
 
 changeToHomePage();

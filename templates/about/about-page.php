@@ -10,6 +10,7 @@
   <script src="<?php echo get_template_directory_uri(); ?>/assets/js/dropdown_manager.js"></script>
   <script src="<?php echo get_template_directory_uri(); ?>/assets/js/route_manager.js"></script>
   <script src="<?php echo get_template_directory_uri(); ?>/assets/js/fontsize_manager.js"></script>
+  <script src="<?php echo get_template_directory_uri(); ?>/assets/js/language_manager.js"></script>
 
   <script>
     document.addEventListener('DOMContentLoaded', () => {
