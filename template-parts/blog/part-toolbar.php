@@ -38,7 +38,6 @@
         </div>
       </div>
 
-
 <img class="Toolbar_Avatar" id="Toolbar_Setting" src="<?php echo get_template_directory_uri(); ?>/assets/images/avatar_default.png" alt="Avatar">
 
     </div>

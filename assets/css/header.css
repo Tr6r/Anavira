@@ -22,7 +22,7 @@
 
 .HomeHeader_Container_Logo {
 
-  background-color: #f8edda;
+  background-color: #f1dfc1;
   width: 200px;
   flex-direction: column;
   padding: 30px 25px 30px 25px;
@@ -77,7 +77,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #f8edda;
+  background-color: #f1dfc1;
   width: 500px;
   padding: 25px 25px;
   box-sizing: border-box;
@@ -102,7 +102,7 @@
   .MobileHomeHeader {
     width: 100vw;
     height: 100px;
-    background-color: #f8edda;
+    background-color: #f1dfc1;
 
     display: flex;
     justify-content: center;
