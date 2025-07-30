@@ -1,6 +1,6 @@
   <?php
   $iconState;
-  if (! is_front_page()) {
+if ( ! is_front_page() && ! is_page('About') ) {
     $iconState = true; //front page là false
   } else {
     $iconState = false;
@@ -64,10 +64,12 @@
               <img class="Toolbar_Avatar" id="Mobile_Toolbar_Setting" src="<?php echo get_template_directory_uri(); ?>/assets/images/avatar_default.png" alt="Avatar">
 
             </div>
-
+      <?php if ($iconState) : ?>
         <div class="Toolbar_Icon" id="Mobile_Toolbar_Menu">
           <i class='bx bx-menu ' ></i>
         </div>
+      <?php endif; ?>
+        
 
           </div>
 
