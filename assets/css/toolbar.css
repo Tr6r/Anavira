@@ -1,26 +1,26 @@
-.Toolbar_Container
-{
+.Toolbar_Container {
   width: 100%;
-    min-width: 710px;
-      margin-top: 10px;
+  min-width: 710px;
+  margin-top: 10px;
 
- position: sticky;
+  position: sticky;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   top: 0;
   z-index: 1000;
 }
+
 .Desktop_Toolbar {
   width: 100%;
 
   height: 60px;
   padding: 5px 15px;
   box-sizing: border-box;
-  
+
   display: flex;
   align-items: center;
   justify-content: space-between;
 
- 
+
 
   background-color: #f1dfc1;
   border-radius: 7px;
@@ -43,8 +43,21 @@
   /* margin-top: 5px; */
 
 }
+
 .Toolbar_Avatar:hover {
   cursor: pointer;
+}
+
+.Toolbar_Icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.Toolbar_Icon i {
+  font-size: 45px;
+  color: #605e38;
+
 }
 
 .Toolbar_Icon:hover {
@@ -57,15 +70,15 @@
   justify-content: center;
   gap: 3em;
 }
-.Desktop_Toolbar_Midle_Icon
-{
+
+.Desktop_Toolbar_Midle_Icon {
   display: flex;
   align-items: center;
   justify-content: center;
   padding: 10px 10px;
   box-sizing: border-box;
   border-radius: 50%;
-  
+
 }
 
 .Desktop_Toolbar_Midle_Icon:hover {
@@ -73,13 +86,11 @@
   background-color: bisque;
 }
 
-.Desktop_Toolbar_Midle_Icon svg
-{
+.Desktop_Toolbar_Midle_Icon svg {
   width: 35px;
   height: 35px;
   stroke-width: 40;
   stroke: #605e38;
-    /* color: #605e38; */
 
   /* hoặc 0.5 nếu muốn mỏng hơn */
 }
@@ -137,7 +148,7 @@
   display: flex;
   flex-direction: column;
   position: absolute;
-  top:60px;
+  top: 60px;
   right: 0px;
   z-index: 100;
   margin-top: 10px;
@@ -154,14 +165,15 @@
 
   .Toolbar_Container {
     width: 100vw;
-      min-width: 0px;
+    min-width: 0px;
     position: sticky;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     top: 0;
     z-index: 1000;
-        margin-top: 10px;
+    margin-top: 10px;
 
   }
+
   .Desktop_Toolbar {
     display: none;
   }
@@ -175,8 +187,9 @@
     width: 100vw;
     height: 60px;
     padding: 5px 5px;
-    box-sizing: border-box;
 
+    box-sizing: border-box;
+    position: relative;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -186,8 +199,8 @@
     background-color: #f1dfc1;
     border-radius: 7px;
   }
-  .Toolbar_Avatar
-  {
+
+  .Toolbar_Avatar {
     width: 45px;
     height: 45px;
 
@@ -202,38 +215,52 @@
 
   .Toolbar_Icon {
     font-size: 25px;
-    color: #4a4a3f;
-    margin-right: 5px;
-    margin-top: 3px;
-    cursor: pointer;
+    background-color: #605e38;
+    border-radius: 0 5px 5px 0;
 
-    position: relative;
+    position: absolute;
+    left: 0;
+
+    top: 70px;
+    z-index: 100;
   }
-.Mobile_Toolbar_Midle {
-  width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 0;
-}
-.Mobile_Toolbar_Midle_Icon
-{
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 10px 10px;
-  box-sizing: border-box;
-  border-radius: 50%;
-  
-}
-.Mobile_Toolbar_Midle_Icon svg
-{
-  width: 40px;
-  height: 40px;
-  stroke-width: 35;
-  stroke: #605e38;
-  /* hoặc 0.5 nếu muốn mỏng hơn */
-}
+
+  .Toolbar_Icon.active {
+   left: 240px;
+
+  }
+
+  .Toolbar_Icon i {
+    font-size: 50px;
+    color: #f1dfc1;
+  }
+
+  .Mobile_Toolbar_Midle {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 0;
+  }
+
+  .Mobile_Toolbar_Midle_Icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 10px;
+    box-sizing: border-box;
+    border-radius: 50%;
+
+  }
+
+  .Mobile_Toolbar_Midle_Icon svg {
+    width: 40px;
+    height: 40px;
+    stroke-width: 35;
+    stroke: #605e38;
+    /* hoặc 0.5 nếu muốn mỏng hơn */
+  }
+
   .Toolbar_Menu_Dropdown {
     display: none;
   }
@@ -251,8 +278,8 @@
     width: 240px;
     max-height: calc(100vh - 350px);
 
-    background-color: #5e5c2c;
-    border-radius: 0 7px 7px 0;
+    background-color: #605e38;
+    border-radius: 0 0 7px 0;
     padding: 10px;
     box-sizing: border-box;
     overflow: auto;
@@ -269,7 +296,7 @@
     top: 50px;
     right: 0px;
     z-index: 100;
-  margin-top: 20px;
+    margin-top: 20px;
 
     /* width: 240px; */
     max-height: calc(100vh - 350px);

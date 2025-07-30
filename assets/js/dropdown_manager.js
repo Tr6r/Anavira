@@ -31,9 +31,12 @@ const menu_dropdown =document.getElementById('Toolbar_Menu_Dropdown');
   btn_menu.addEventListener('click', (e) => {
     e.stopPropagation(); // Ngăn không cho lan ra ngoài
     if (setting_dropdown && setting_dropdown.classList.contains('active')) {
+      btn_menu.classList.remove('active');
+
       setting_dropdown.classList.remove('active');
     }
     menu_dropdown.classList.toggle('active');
+    btn_menu.classList.toggle('active');
   });
 
 }
