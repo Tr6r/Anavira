@@ -78,7 +78,9 @@
   width: 35px;
   height: 35px;
   stroke-width: 40;
-  stroke: #515045;
+  stroke: #605e38;
+    /* color: #605e38; */
+
   /* hoặc 0.5 nếu muốn mỏng hơn */
 }
 
@@ -229,7 +231,7 @@
   width: 40px;
   height: 40px;
   stroke-width: 35;
-  stroke: #515045;
+  stroke: #605e38;
   /* hoặc 0.5 nếu muốn mỏng hơn */
 }
   .Toolbar_Menu_Dropdown {
