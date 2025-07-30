@@ -33,9 +33,9 @@ function RouteNavigation() {
 changeToHomePage();
 function changeToHomePage() {
     const btn_header = window.innerWidth < 450 ? document.getElementById('mobileHeader') : document.getElementById('desktopHeader');
-    if (!btn_header) return
-    btn_header.addEventListener('click', () => {
-        window.location.href = '/';
-    });
+    // if (!btn_header) return
+    // btn_header.addEventListener('click', () => {
+    //     window.location.href = '/';
+    // });
 
 }
