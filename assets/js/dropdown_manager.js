@@ -57,6 +57,8 @@ function handleBack() {
 
 function handleClickOutside() {
   var width = window.innerWidth;
+    const btn_menu = width < 450 ? document.getElementById('Mobile_Toolbar_Menu') : document.getElementById('Toolbar_Menu');
+
   // const menu_dropdown = width < 450 ? document.getElementById('Mobile_Toolbar_Menu_Dropdown') : document.getElementById('Toolbar_Menu_Dropdown');
   // const setting_dropdown = width < 450 ? document.getElementById('Mobile_Toolbar_Setting_Dropdown') : document.getElementById('Toolbar_Setting_Dropdown');
 const menu_dropdown =document.getElementById('Toolbar_Menu_Dropdown');
@@ -65,6 +67,7 @@ const menu_dropdown =document.getElementById('Toolbar_Menu_Dropdown');
   document.addEventListener('click', (e) => {
     if (menu_dropdown && menu_dropdown.classList.contains('active')) {
       menu_dropdown.classList.remove('active');
+      btn_menu.classList.remove('active');
     }
     else if (setting_dropdown && setting_dropdown.classList.contains('active')) {
       setting_dropdown.classList.remove('active');
