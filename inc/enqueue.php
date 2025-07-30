@@ -9,6 +9,8 @@ function folds_enqueue_assets()
   wp_enqueue_style('toolbar-style', get_template_directory_uri() . '/assets/css/toolbar.css');
   wp_enqueue_style('home-style', get_template_directory_uri() . '/assets/css/home.css');
   wp_enqueue_style('setting-style', get_template_directory_uri() . '/assets/css/setting.css');
+  wp_enqueue_style('introduction-style', get_template_directory_uri() . '/assets/css/page-introduction.css');
+
   wp_enqueue_style('blog-style', get_template_directory_uri() . '/assets/css/blog.css');
   wp_enqueue_style('blog-menu-style', get_template_directory_uri() . '/assets/css/menu.css');
   wp_enqueue_style('blog-single-style', get_template_directory_uri() . '/assets/css/blog-single.css');
