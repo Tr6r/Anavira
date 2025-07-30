@@ -155,7 +155,7 @@
         <p>
             “Thức ăn không phải là sản phẩm. Nó là lời cầu nguyện được làm ra bằng đôi tay thật, rau củ quả thật, và một trái tim không bao giờ thoà hiệp.”
         </p>
-        
+
     </div>
     <div class="Frontpage_Container_Items">
         <div class="Frontpage_Container_Items_Tilte">
@@ -172,48 +172,14 @@
             <p class="Frontpage_Container_Items_Content">
                 Nó đến từ hành trình tỉnh thức – từ việc đứng dậy sau đau đớn – từ quyết định sống một cuộc đời khác đi.
             </p>
-
         </div>
 
     </div>
-
-
-    <div class="Frontpage_Container_Buttons">
-        <div class="Frontpage_Container_Buttons_Item" data-url="/about-us">
-            <div class="Frontpage_Container_Buttons_Item_Icon">
-                <?php echo file_get_contents(get_template_directory() . '/assets/images/leaf.svg'); ?>
-            </div>
-            <a class="Frontpage_Container_Buttons_Item_Navigate" href="/about-us">Giới thiệu</a>
-
-        </div>
-        <div class="Frontpage_Container_Buttons_Item" data-url="/">
-            <div class="Frontpage_Container_Buttons_Item_Icon">
-                <?php echo file_get_contents(get_template_directory() . '/assets/images/food.svg'); ?>
-            </div>
-            <a class="Frontpage_Container_Buttons_Item_Navigate" href="">Sản phẩm</a>
-
-        </div>
-        <div class="Frontpage_Container_Buttons_Item" data-url="/blog">
-            <div class="Frontpage_Container_Buttons_Item_Icon">
-                <?php echo file_get_contents(get_template_directory() . '/assets/images/pen.svg'); ?>
-            </div>
-            <a class="Frontpage_Container_Buttons_Item_Navigate" href="/blog">Bài viết</a>
-
-        </div>
-        <div class="Frontpage_Container_Buttons_Item " data-url="/">
-            <div class="Frontpage_Container_Buttons_Item_Icon">
-                <?php echo file_get_contents(get_template_directory() . '/assets/images/recipe.svg'); ?>
-            </div>
-            <a class="Frontpage_Container_Buttons_Item_Navigate" href="">Công thức WFPB</a>
-
-        </div>
-        <div class="Frontpage_Container_Buttons_Item" data-url="/">
-            <div class="Frontpage_Container_Buttons_Item_Icon">
-                <?php echo file_get_contents(get_template_directory() . '/assets/images/cart.svg'); ?>
-            </div>
-            <a class="Frontpage_Container_Buttons_Item_Navigate" href="">Đặt hàng</a>
-
-        </div>
+    <div class="Frontpage_Container_Statement">
+        <p> #Anvira </p>
+        <p> #Thức_tỉnh_Mạnh_mẽ_Tái_sinh </p>
     </div>
+
+
+
 </div>
-

@@ -15,8 +15,8 @@
   <script>
     document.addEventListener('DOMContentLoaded', () => {
       RouteNavigation();
-changeToHomePage();
-
+      changeToHomePage();
+      
       handleSettingDropdown();
       handleMenuDropdown();
 
