@@ -34,6 +34,8 @@
     .Items_Content_Expand
     {
     margin-left: 10px;
+      text-decoration: underline;
+
     }
 
     @media (max-width: 450px) {
@@ -66,5 +68,12 @@
         .Blog_Introduction_Expand {
             display: none;
         }
+           .Items_Content_Expand
+    {
+    margin-left: 10px;
+      text-decoration: underline;
+
+    }
+
 
     }

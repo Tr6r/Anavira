@@ -39,7 +39,7 @@
         <div class="Frontpage_Container_Items_Contents">
             <p class="Frontpage_Container_Items_Content">
                 Tôi từng nằm viện, giữa những người bệnh K khác, và thấy rõ một điều: có những người yếu thế đến mức không đủ sức để tự tra Google, không đủ tiền để hỏi chuyên gia, không đủ chữ nghĩa để hiểu hết toa thuốc của mình. Có người chỉ cần một câu nói ấm áp, một kinh nghiệm thật, hoặc một món cháo lành – cũng có thể đổi cả một ngày 
-                buồn thành hy vọng. <a class="Items_Content_Expand" id ="Blog_Introduction_Expand_Button">Xem thêm...</a>
+                buồn thành hy vọng. <a class="Items_Content_Expand" id ="Blog_Introduction_Expand_Button">Xem thêm</a>
             </p>
             
 
