@@ -3,7 +3,7 @@
     <div class="Frontpage_Container_Items ">
         <div class="Frontpage_Container_Items_Tilte">
             <div class="Frontpage_Container_Items_Tilte_Icon">
-                <?php echo file_get_contents(get_template_directory() . '/assets/images/leaf3.svg'); ?>
+                <?php echo file_get_contents(get_template_directory() . '/assets/images/leaf2.svg'); ?>
             </div>
             <h2 class='Frontpage_Container_Items_Tilte_Text'>Vì sao là ngọn lửa – không phải mầm cây? </h2>
         </div>
@@ -65,7 +65,7 @@
             <div class="Frontpage_Container_Items_Tilte_Icon">
                 <?php echo file_get_contents(get_template_directory() . '/assets/images/leaf3.svg'); ?>
             </div>
-            <h2 class='Frontpage_Container_Items_Tilte_Text'>W.F.P.B là gì?</h2>
+            <h2 class='Frontpage_Container_Items_Tilte_Text'>W.f.p.b là gì?</h2>
         </div>
 
         <div class="Frontpage_Container_Items_Contents">

@@ -30,7 +30,7 @@
 .About_Container_banner_Image {
     width: 100%;
     border-radius: 7px;
-    margin-top: 10px;
+    margin-top: 20px;
 }
 
 .About_Container_Items {
@@ -43,8 +43,8 @@
     background-color: #f1dfc1;
     border-radius: 6px;
     font-family: 'Merriweather', serif;
-    margin-top: 10px;
-    padding-bottom: 10px;
+    margin-top: 20px;
+    padding:20px 30px 30px 30px;
     box-sizing: border-box;
 
 }
@@ -57,7 +57,7 @@
 .About_Products {
 
     background-color: #f8efe0;
-    border-radius: 30px 30px 0 0;
+        border-radius: 0 0 6px 6px !important;
     margin-top: -25px;
 }
 
@@ -93,8 +93,8 @@
     margin-top: 10px;
     color: #605e38;
 
-    font-family: 'UTMAlpineKT', sans-serif;
-    font-weight: 300;
+    font-family: 'HLTAphroditeSlimPro', sans-serif;
+    font-weight: 1000;
 
 }
 
@@ -310,8 +310,9 @@
     background-color: #f1dfc1;
         border-radius: 6px;
         font-family: 'Merriweather', serif;
-        margin-top: 10px;
-        padding-bottom: 10px;
+        margin-top: 20px;
+            padding: 10px 10px 20px 10px;
+
         box-sizing: border-box;
 
     }
@@ -324,7 +325,7 @@
     .About_Products {
 
     background-color: #f8efe0;
-        border-radius: 30px 30px 0 0;
+        border-radius: 0 0 6px 6px !important;
         margin-top: -25px;
     }
 
@@ -360,8 +361,8 @@
         margin-top: 10px;
         color: #605e38;
 
-        font-family: 'UTMAlpineKT', sans-serif;
-        font-weight: 300;
+        font-family: 'HLTAphroditeSlimPro', sans-serif;
+        font-weight: 1000;
 
     }
 

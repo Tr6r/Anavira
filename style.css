@@ -17,8 +17,7 @@ Tags: one-column, custom-colors, custom-menu, custom-logo, editor-style, feature
 @font-face {
   font-family: 'HLTAphroditeSlimPro';
   src: url('./assets/fonts/HLTAphroditeSlimPro.woff2') format('woff2');
-  font-weight: 500;
-  font-style: normal;
+  
 }
 
 @font-face {

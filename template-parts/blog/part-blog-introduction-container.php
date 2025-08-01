@@ -28,8 +28,7 @@
 
 
         </div>
-    </div>
-    <div class="Frontpage_Container_Items">
+    
         <div class="Frontpage_Container_Items_Tilte">
             <div class="Frontpage_Container_Items_Tilte_Icon">
                 <?php echo file_get_contents(get_template_directory() . '/assets/images/leaf3.svg'); ?>
@@ -53,8 +52,7 @@
 
 
         </div>
-    </div>
-    <div class="Frontpage_Container_Items">
+   
         <div class="Frontpage_Container_Items_Tilte">
             <div class="Frontpage_Container_Items_Tilte_Icon">
                 <?php echo file_get_contents(get_template_directory() . '/assets/images/leaf3.svg'); ?>
@@ -171,9 +169,7 @@
             </p>
 
         </div>
-    </div>
 
-    <div class="Frontpage_Container_Items">
         <div class="Frontpage_Container_Items_Contents">
             <p class="Frontpage_Container_Items_Content">
                 Tôi không viết để khoe mình sống khác. Tôi viết, vì biết có người đang cần một ai đó lên tiếng trước.

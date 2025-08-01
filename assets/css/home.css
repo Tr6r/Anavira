@@ -31,7 +31,7 @@
 .Frontpage_Container_banner_Image {
     width: 100%;
     border-radius: 7px;
-    margin-top: 10px;
+    margin-top: 20px;
 }
 
 .Frontpage_Container_Items {
@@ -44,8 +44,11 @@
     background-color: #f1dfc1;
     border-radius: 6px;
     font-family: 'Merriweather', serif;
-    margin-top: 10px;
-    padding-bottom: 10px;
+
+    margin-top: 20px;
+    
+    padding:20px 30px 30px 30px;
+
     box-sizing: border-box;
 
 }
@@ -74,8 +77,8 @@
     margin-top: 10px;
     color: #605e38;
 
-    font-family: 'UTMAlpineKT', sans-serif;
-    font-weight: 300;
+    font-family: 'HLTAphroditeSlimPro', sans-serif;
+    font-weight: 1000;
 
 }
 
@@ -126,23 +129,23 @@
     font-size: 40px;
 }
 
-    .Frontpage_Container_Statement {
-        width: 100%;
-        font-family: 'HLTAphroditeSlimPro', sans-serif;
-        font-weight: 400;
-        font-size: var(--font-size-base);
-        font-weight: 400;
-        text-align: left;
-        text-indent: 1em;
+.Frontpage_Container_Statement {
+    width: 100%;
+    font-family: 'HLTAphroditeSlimPro', sans-serif;
+    font-weight: 400;
+    font-size: var(--font-size-base);
+    font-weight: 400;
+    text-align: left;
+    text-indent: 1em;
 
-        margin-top: 10px;
-        color: #605e38;
-    }
+    margin-top: 10px;
+    color: #605e38;
+}
 
-    .Frontpage_Container_Statement p {
-        margin: 0 !important;
-        font-weight: 600;
-    }
+.Frontpage_Container_Statement p {
+    margin: 0 !important;
+    font-weight: 600;
+}
 
 .Frontpage_Container_Guaranty {
     display: flex;
@@ -240,10 +243,10 @@
     width: 60px;
 }
 
-.Text_MarginLeft
-{
+.Text_MarginLeft {
     margin-left: 20px !important;
 }
+
 @media (max-width: 450px) {
     .Frontpage_Container {
         width: 100vw;
@@ -265,13 +268,13 @@
         align-items: center;
         padding-bottom: 10px;
         box-sizing: border-box;
-                min-width: 0px;
+        min-width: 0px;
 
     }
 
     .Frontpage_Container_banner {
         width: 100vw;
-                min-width: 0px;
+        min-width: 0px;
 
     }
 
@@ -292,8 +295,9 @@
         background-color: #f1dfc1;
         border-radius: 6px;
         font-family: 'Merriweather', serif;
-        margin-top: 10px;
-        padding-bottom: 10px;
+        margin-top: 20px;
+        /* padding-bottom: 10px; */
+        padding: 10px 10px 20px 10px;
         box-sizing: border-box;
 
     }
@@ -322,8 +326,8 @@
         margin-top: 10px;
         color: #605e38;
 
-        font-family: 'UTMAlpineKT', sans-serif;
-        font-weight: 300;
+        font-family: 'HLTAphroditeSlimPro', sans-serif;
+        font-weight: 1000;
 
     }
 
@@ -368,9 +372,10 @@
     .Whitecolor {
         color: white !important;
     }
+
     .Whitecolor svg {
         color: white !important;
-        stroke : white !important;
+        stroke: white !important;
     }
 
     .bullet {
@@ -380,7 +385,7 @@
     .Frontpage_Container_Statement {
         width: 100%;
         font-family: 'HLTAphroditeSlimPro', sans-serif;
-        font-weight: 400;
+        
         font-size: var(--font-size-base);
         font-weight: 400;
         text-align: left;
