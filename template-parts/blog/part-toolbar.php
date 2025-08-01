@@ -22,21 +22,21 @@ if ( ! is_front_page() && ! is_page('About') ) {
           <?php endif; ?>
 
           <div class="Desktop_Toolbar_Midle">
-            <div class="Desktop_Toolbar_Midle_Icon" data-url="/">
+            <div class="Desktop_Toolbar_Midle_Icon" title="Trang chủ" data-url="/">
               <?php echo file_get_contents(get_template_directory() . '/assets/images/home.svg'); ?>
             </div>
-            <div class="Desktop_Toolbar_Midle_Icon" title="Đây là biểu tượng Cài đặt ⚙️" data-url="/about-us">
+            <div class="Desktop_Toolbar_Midle_Icon" title="Về chúng tôi" data-url="/about-us">
               <?php echo file_get_contents(get_template_directory() . '/assets/images/aboutus.svg'); ?>
             </div>
 
-            <div class="Desktop_Toolbar_Midle_Icon" data-url="/blog">
+            <div class="Desktop_Toolbar_Midle_Icon" title="Bài viết"  data-url="/blog">
               <?php echo file_get_contents(get_template_directory() . '/assets/images/blog.svg'); ?>
             </div>
             
-            <div class="Desktop_Toolbar_Midle_Icon" data-url="/">
+            <div class="Desktop_Toolbar_Midle_Icon" title="Sản phẩm" data-url="/">
               <?php echo file_get_contents(get_template_directory() . '/assets/images/food.svg'); ?>
             </div>
-            <div class="Desktop_Toolbar_Midle_Icon" data-url="/">
+            <div class="Desktop_Toolbar_Midle_Icon"title="Công thức WFPB" data-url="/">
               <?php echo file_get_contents(get_template_directory() . '/assets/images/recipe.svg'); ?>
             </div>
 

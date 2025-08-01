@@ -38,29 +38,32 @@
 
         <div class="Frontpage_Container_Items_Contents">
             <p class="Frontpage_Container_Items_Content">
-                Tôi từng nằm viện, giữa những người bệnh K khác, và thấy rõ một điều: có những người yếu thế đến mức không đủ sức để tự tra Google, không đủ tiền để hỏi chuyên gia, không đủ chữ nghĩa để hiểu hết toa thuốc của mình. Có người chỉ cần một câu nói ấm áp, một kinh nghiệm thật, hoặc một món cháo lành – cũng có thể đổi cả một ngày buồn thành hy vọng.
+                Tôi từng nằm viện, giữa những người bệnh K khác, và thấy rõ một điều: có những người yếu thế đến mức không đủ sức để tự tra Google, không đủ tiền để hỏi chuyên gia, không đủ chữ nghĩa để hiểu hết toa thuốc của mình. Có người chỉ cần một câu nói ấm áp, một kinh nghiệm thật, hoặc một món cháo lành – cũng có thể đổi cả một ngày 
+                buồn thành hy vọng. <a class="Items_Content_Expand" id ="Blog_Introduction_Expand_Button">Xem thêm...</a>
             </p>
-            <p class="Frontpage_Container_Items_Content">
+            
+
+            <p class="Frontpage_Container_Items_Content Blog_Introduction_Expand">
                 Tôi đã hứa với Trời Đất – rằng nếu còn sống, tôi sẽ không để những điều tôi từng trải qua trôi qua vô nghĩa. Tôi sẽ viết – bằng chính sự thật, bằng ngôn ngữ của người từng đứng bên bờ sinh tử, và bằng tấm lòng của người từng đi qua những ngày chẳng thấy mặt trời.
             </p>
-            <p class="Frontpage_Container_Items_Content">
+            <p class="Frontpage_Container_Items_Content Blog_Introduction_Expand">
                 Tôi viết cho những ai đang ở nơi tối nhất trong đời. Những ai không cần triết lý, chỉ cần một lối ra. Những ai không còn sức để cố gắng, nhưng vẫn còn một chút niềm tin lặng lẽ – rằng đâu đó sẽ có người hiểu mình.
             </p>
-            <p class="Frontpage_Container_Items_Content">
+            <p class="Frontpage_Container_Items_Content Blog_Introduction_Expand">
                 Nếu bạn là một người như thế – blog này là để dành cho bạn.
             </p>
 
 
         </div>
    
-        <div class="Frontpage_Container_Items_Tilte">
-            <div class="Frontpage_Container_Items_Tilte_Icon">
+        <div class="Frontpage_Container_Items_Tilte Blog_Introduction_Expand">
+            <div class="Frontpage_Container_Items_Tilte_Icon ">
                 <?php echo file_get_contents(get_template_directory() . '/assets/images/leaf4.svg'); ?>
             </div>
-            <h2 class='Frontpage_Container_Items_Tilte_Text'>Cấu trúc nội dung blog</h2>
+            <h2 class='Frontpage_Container_Items_Tilte_Text '>Cấu trúc nội dung blog</h2>
         </div>
 
-        <div class="Frontpage_Container_Items_Contents">
+        <div class="Frontpage_Container_Items_Contents Blog_Introduction_Expand">
             <p class="Frontpage_Container_Items_Content">
                 Blog Anavira sẽ chia thành 4 nhóm chủ đề:
             </p>
@@ -170,7 +173,7 @@
 
         </div>
 
-        <div class="Frontpage_Container_Items_Contents">
+        <div class="Frontpage_Container_Items_Contents Blog_Introduction_Expand">
             <p class="Frontpage_Container_Items_Content">
                 Tôi không viết để khoe mình sống khác. Tôi viết, vì biết có người đang cần một ai đó lên tiếng trước.
             </p>

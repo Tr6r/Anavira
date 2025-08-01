@@ -1,9 +1,9 @@
    .Blog_Container {
-    width: 100%;
+    width: 710px;
     display: flex;
     align-items: center;
     justify-content: center;
-    flex-direction: column;
+    flex-direction: column;;
     min-width: 710px;
     /* padding: 0 20px;
     box-sizing: border-box; */
