@@ -2,7 +2,7 @@
     <div class="About_Container_Items">
         <div class="About_Container_Items_Tilte">
             <div class="About_Container_Items_Tilte_Icon">
-                <?php echo file_get_contents(get_template_directory() . '/assets/images/leaf3.svg'); ?>
+                <?php echo file_get_contents(get_template_directory() . '/assets/images/leaf4.svg'); ?>
             </div>
             <h2 class='About_Container_Items_Tilte_Text'>Một bình minh, một quyết định</h2>
         </div>
@@ -24,7 +24,7 @@
     <div class="About_Container_Items">
         <div class="About_Container_Items_Tilte">
             <div class="About_Container_Items_Tilte_Icon">
-                <?php echo file_get_contents(get_template_directory() . '/assets/images/leaf3.svg'); ?>
+                <?php echo file_get_contents(get_template_directory() . '/assets/images/leaf4.svg'); ?>
             </div>
             <h2 class='About_Container_Items_Tilte_Text'>Anavira: Thức tỉnh – Mạnh mẽ – Tái sinh</h2>
         </div>
@@ -39,10 +39,10 @@
         </div>
 
     </div>
-    <div class="About_Container_Items padding-bottom pos_relative">
+    <div class="About_Container_Items padding-bottom">
         <div class="About_Container_Items_Tilte">
             <div class="About_Container_Items_Tilte_Icon">
-                <?php echo file_get_contents(get_template_directory() . '/assets/images/leaf3.svg'); ?>
+                <?php echo file_get_contents(get_template_directory() . '/assets/images/leaf4.svg'); ?>
             </div>
             <h2 class='About_Container_Items_Tilte_Text'>Chúng tôi làm gì?</h2>
         </div>
@@ -79,7 +79,7 @@
         </div>
 
     </div>
-    <div class="About_Container_Items About_Products pos_relative ">
+    <div class="About_Container_Items About_Products  ">
         <div class="About_Container_Items_Contents Text_MarginLeft">
             <p class="About_Container_Items_Content ">
                 Các dòng sản phẩm
@@ -168,7 +168,7 @@
     <div class="About_Container_Items">
         <div class="About_Container_Items_Tilte">
             <div class="About_Container_Items_Tilte_Icon">
-                <?php echo file_get_contents(get_template_directory() . '/assets/images/leaf3.svg'); ?>
+                <?php echo file_get_contents(get_template_directory() . '/assets/images/leaf4.svg'); ?>
             </div>
             <h2 class='About_Container_Items_Tilte_Text'>Chúng tôi tin điều gì?</h2>
         </div>
@@ -194,7 +194,7 @@
     <div class="About_Container_Items">
         <div class="About_Container_Items_Tilte">
             <div class="About_Container_Items_Tilte_Icon">
-                <?php echo file_get_contents(get_template_directory() . '/assets/images/leaf3.svg'); ?>
+                <?php echo file_get_contents(get_template_directory() . '/assets/images/leaf4.svg'); ?>
             </div>
             <h2 class='About_Container_Items_Tilte_Text'>Người sáng lập</h2>
         </div>
@@ -216,7 +216,7 @@
     <div class="About_Container_Items">
         <div class="About_Container_Items_Tilte">
             <div class="About_Container_Items_Tilte_Icon">
-                <?php echo file_get_contents(get_template_directory() . '/assets/images/leaf3.svg'); ?>
+                <?php echo file_get_contents(get_template_directory() . '/assets/images/leaf4.svg'); ?>
             </div>
             <h2 class='About_Container_Items_Tilte_Text'>Tôi và Anavira</h2>
         </div>
@@ -234,7 +234,7 @@
     <div class="About_Container_Items">
         <div class="About_Container_Items_Tilte">
             <div class="About_Container_Items_Tilte_Icon">
-                <?php echo file_get_contents(get_template_directory() . '/assets/images/leaf3.svg'); ?>
+                <?php echo file_get_contents(get_template_directory() . '/assets/images/leaf4.svg'); ?>
             </div>
             <h2 class='About_Container_Items_Tilte_Text'>Tôi và tiền bạc</h2>
         </div>
@@ -257,7 +257,7 @@
     <div class="About_Container_Items">
         <div class="About_Container_Items_Tilte">
             <div class="About_Container_Items_Tilte_Icon">
-                <?php echo file_get_contents(get_template_directory() . '/assets/images/leaf3.svg'); ?>
+                <?php echo file_get_contents(get_template_directory() . '/assets/images/leaf4.svg'); ?>
             </div>
             <h2 class='About_Container_Items_Tilte_Text'>Anavira không nhận vốn đổi lấy quyền can thiệp điều hành.</h2>
         </div>
@@ -305,7 +305,7 @@
     <div class="About_Container_Items">
         <div class="About_Container_Items_Tilte">
             <div class="About_Container_Items_Tilte_Icon">
-                <?php echo file_get_contents(get_template_directory() . '/assets/images/leaf3.svg'); ?>
+                <?php echo file_get_contents(get_template_directory() . '/assets/images/leaf4.svg'); ?>
             </div>
             <h2 class='About_Container_Items_Tilte_Text'>Kết</h2>
         </div>

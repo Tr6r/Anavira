@@ -1,5 +1,5 @@
 /* Mặc định: desktop hiển thị, mobile ẩn */
-.MobileHomeHeader {
+/* .MobileHomeHeader {
   display: none;
 }
 
@@ -7,9 +7,9 @@
   display: block;
   height: fit-content;
 
-}
+} */
 
-.HomeHeader_Container {
+/* .HomeHeader_Container {
   height: fit-content;
   min-width: 710px;
 
@@ -88,19 +88,82 @@
   width: 550px;
   height: 180px;
 
+} */
+
+.MobileHomeHeader {
+  width: 100%;
+  min-width: 710px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0px 30px;
+
+  box-sizing: border-box;
+}
+
+.MobileHomeHeader_Container {
+  display: flex;
+
+  align-items: center;
+
+  justify-content: flex-start;
+  width: 100%;
+  height: 100%;
+  background-color: #f1dfc1;
+  padding: 30px 30px;
+
+  box-sizing: border-box;
+  min-width: 710px;
+}
+
+.MobileHomeHeader_Logo {
+  margin-left: 30px;
+  width: 145px;
+  height: 150px;
+}
+
+.MobileHomeHeader_Content {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  padding-left: 25px;
+  padding-top: 10px;
+  box-sizing: border-box;
+  color: #605e38;
+
+}
+
+.MobileHomeHeader_Content_Brand {
+  font-family: 'VnCenturySchoolbook', sans-serif;
+  font-weight: 600;
+
+  margin-top: 5px;
+  font-size: 50px;
+  margin-top: 5px;
+}
+
+.MobileHomeHeader_Content_Slogan {
+  font-family: 'UTMAlpineKT', sans-serif;
+  font-weight: 400;
+  letter-spacing: 0.01em;
+  margin-top: 5px;
+  font-size: var(--font-size-slogan);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 5px 0 !important;
 }
 
 @media (max-width: 450px) {
-  .MobileHomeHeader {
-    display: block;
-  }
-
-  .HomeHeader {
-    display: none;
-  }
 
   .MobileHomeHeader {
     width: 100vw;
+    min-width: 0px;
+
     height: 100px;
     background-color: #f1dfc1;
 
@@ -113,7 +176,20 @@
     box-sizing: border-box;
   }
 
+  .MobileHomeHeader_Container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    min-width: 0px;
+      padding: 0px 0px;
+
+  }
+
+
   .MobileHomeHeader_Logo {
+      margin-left: 13px;
+
     width: 65px;
     height: 70px;
   }

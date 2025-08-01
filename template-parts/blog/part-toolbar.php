@@ -26,14 +26,18 @@ if ( ! is_front_page() && ! is_page('About') ) {
               <?php echo file_get_contents(get_template_directory() . '/assets/images/home.svg'); ?>
             </div>
             <div class="Desktop_Toolbar_Midle_Icon" title="Đây là biểu tượng Cài đặt ⚙️" data-url="/about-us">
-              <?php echo file_get_contents(get_template_directory() . '/assets/images/leaf.svg'); ?>
+              <?php echo file_get_contents(get_template_directory() . '/assets/images/aboutus.svg'); ?>
             </div>
 
             <div class="Desktop_Toolbar_Midle_Icon" data-url="/blog">
-              <?php echo file_get_contents(get_template_directory() . '/assets/images/pen.svg'); ?>
+              <?php echo file_get_contents(get_template_directory() . '/assets/images/blog.svg'); ?>
+            </div>
+            
+            <div class="Desktop_Toolbar_Midle_Icon" data-url="/">
+              <?php echo file_get_contents(get_template_directory() . '/assets/images/food.svg'); ?>
             </div>
             <div class="Desktop_Toolbar_Midle_Icon" data-url="/">
-              <?php echo file_get_contents(get_template_directory() . '/assets/images/checklist.svg'); ?>
+              <?php echo file_get_contents(get_template_directory() . '/assets/images/recipe.svg'); ?>
             </div>
 
           </div>
@@ -49,14 +53,17 @@ if ( ! is_front_page() && ! is_page('About') ) {
                 <?php echo file_get_contents(get_template_directory() . '/assets/images/home.svg'); ?>
               </div>
               <div class="Mobile_Toolbar_Midle_Icon" data-url="/about-us">
-                <?php echo file_get_contents(get_template_directory() . '/assets/images/leaf.svg'); ?>
+                <?php echo file_get_contents(get_template_directory() . '/assets/images/aboutus.svg'); ?>
               </div>
 
               <div class="Mobile_Toolbar_Midle_Icon" data-url="/blog">
-                <?php echo file_get_contents(get_template_directory() . '/assets/images/pen.svg'); ?>
+                <?php echo file_get_contents(get_template_directory() . '/assets/images/blog.svg'); ?>
               </div>
+                <div class="Desktop_Toolbar_Midle_Icon" data-url="/">
+              <?php echo file_get_contents(get_template_directory() . '/assets/images/food.svg'); ?>
+            </div>
               <div class="Mobile_Toolbar_Midle_Icon" data-url="/">
-                <?php echo file_get_contents(get_template_directory() . '/assets/images/checklist.svg'); ?>
+                <?php echo file_get_contents(get_template_directory() . '/assets/images/recipe.svg'); ?>
               </div>
               
 

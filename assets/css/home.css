@@ -6,8 +6,6 @@
     align-items: center;
     justify-content: center;
     flex-direction: column;
-
-
 }
 
 .Frontpage_Container_Content {
@@ -93,8 +91,7 @@
     height: 35px;
     stroke: #605e38;
     stroke-width: 35;
-    margin-right: 7px;
-    margin-top: 10px;
+    margin-right: 20px;
     color: #4a4a3f;
 }
 
@@ -132,19 +129,19 @@
 .Frontpage_Container_Statement {
     width: 100%;
     font-family: 'HLTAphroditeSlimPro', sans-serif;
-    font-weight: 400;
+    /* font-weight: 400; */
     font-size: var(--font-size-base);
-    font-weight: 400;
     text-align: left;
     text-indent: 1em;
 
     margin-top: 10px;
-    color: #605e38;
+    color: #000000;
 }
 
 .Frontpage_Container_Statement p {
     margin: 0 !important;
-    font-weight: 600;
+    font-weight: 1000;
+    font-style: italic;
 }
 
 .Frontpage_Container_Guaranty {
@@ -341,8 +338,8 @@
         width: 30px;
         height: 30px;
         stroke-width: 30;
-        margin-right: 7px;
-        margin-top: 10px;
+    margin-right: 20px;
+
         color: #4a4a3f;
     }
 

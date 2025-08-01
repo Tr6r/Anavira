@@ -10,7 +10,7 @@
     <div class="Frontpage_Container_Items">
         <div class="Frontpage_Container_Items_Tilte">
             <div class="Frontpage_Container_Items_Tilte_Icon">
-                <?php echo file_get_contents(get_template_directory() . '/assets/images/leaf3.svg'); ?>
+                <?php echo file_get_contents(get_template_directory() . '/assets/images/leaf4.svg'); ?>
             </div>
             <h2 class='Frontpage_Container_Items_Tilte_Text'>Lời mở đầu cho Blog Anavira</h2>
         </div>
@@ -31,7 +31,7 @@
     
         <div class="Frontpage_Container_Items_Tilte">
             <div class="Frontpage_Container_Items_Tilte_Icon">
-                <?php echo file_get_contents(get_template_directory() . '/assets/images/leaf3.svg'); ?>
+                <?php echo file_get_contents(get_template_directory() . '/assets/images/leaf4.svg'); ?>
             </div>
             <h2 class='Frontpage_Container_Items_Tilte_Text'>Vì sao tôi viết blog này?</h2>
         </div>
@@ -55,7 +55,7 @@
    
         <div class="Frontpage_Container_Items_Tilte">
             <div class="Frontpage_Container_Items_Tilte_Icon">
-                <?php echo file_get_contents(get_template_directory() . '/assets/images/leaf3.svg'); ?>
+                <?php echo file_get_contents(get_template_directory() . '/assets/images/leaf4.svg'); ?>
             </div>
             <h2 class='Frontpage_Container_Items_Tilte_Text'>Cấu trúc nội dung blog</h2>
         </div>

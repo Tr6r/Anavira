@@ -5,9 +5,9 @@
     justify-content: center;
     flex-direction: column;
     min-width: 710px;
-
     /* padding: 0 20px;
     box-sizing: border-box; */
+
   }
 
   /* Chữ Blog */
@@ -183,7 +183,7 @@
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    /* padding: 0 20px; */
+        padding: 0 0;
     box-sizing: border-box;
     min-width: 0px;
   }
