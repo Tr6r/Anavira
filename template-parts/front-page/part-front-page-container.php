@@ -5,7 +5,7 @@
             <div class="Frontpage_Container_Items_Tilte_Icon">
                 <?php echo file_get_contents(get_template_directory() . '/assets/images/leaf4.svg'); ?>
             </div>
-            <h2 class='Frontpage_Container_Items_Tilte_Text'>Vì sao là ngọn lửa – không phải mầm cây? </h2>
+            <h2 class='Frontpage_Container_Items_Tilte_Text'>Vì sao là ngọn lửa – không phải mầm cây?</h2>
         </div>
 
         <div class="Frontpage_Container_Items_Contents">

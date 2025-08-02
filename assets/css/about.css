@@ -44,8 +44,10 @@
     border-radius: 6px;
     font-family: 'Merriweather', serif;
     margin-top: 20px;
-    padding:20px 30px 30px 30px;
+    padding: 20px 30px 30px 30px;
     box-sizing: border-box;
+
+
 
 }
 
@@ -57,7 +59,7 @@
 .About_Products {
 
     background-color: #f8efe0;
-        border-radius: 0 0 6px 6px !important;
+    border-radius: 0 0 6px 6px !important;
     margin-top: -25px;
 }
 
@@ -85,6 +87,9 @@
     box-sizing: border-box;
     align-items: center;
 
+                position: relative;
+
+
 }
 
 .About_Container_Items_Tilte h2 {
@@ -92,10 +97,10 @@
     font-size: var(--font-size-title);
     margin-top: 10px;
     color: #605e38;
+    text-indent: 1.5em;
 
     font-family: 'HLTAphroditeSlimPro', sans-serif;
     font-weight: 1000;
-
 }
 
 .About_Container_Items_Tilte_Text {
@@ -104,9 +109,20 @@
 
 }
 
+.About_Container_Items_Tilte_Icon {
+    position: absolute;
+    top: 15px;
+    left: 0;
+    z-index: 1000;
+    display: flex;
+    align-items: flex-start;
+
+}
+
 .About_Container_Items_Tilte_Icon svg {
-    width: 35px;
-    height: 35px;
+    width: calc(var(--font-size-title) * 1.5);
+    height: calc(var(--font-size-title) * 1.5);
+
     stroke: #605e38;
     stroke-width: 35;
     margin-right: 20px;
@@ -307,13 +323,14 @@
         flex-direction: column;
         justify-content: center;
 
-    background-color: #f1dfc1;
+        background-color: #f1dfc1;
         border-radius: 6px;
         font-family: 'Merriweather', serif;
         margin-top: 20px;
-            padding: 10px 10px 20px 10px;
+        padding: 10px 10px 20px 10px;
 
         box-sizing: border-box;
+        position: relative;
 
     }
 
@@ -324,7 +341,7 @@
 
     .About_Products {
 
-    background-color: #f8efe0;
+        background-color: #f8efe0;
         border-radius: 0 0 6px 6px !important;
         margin-top: -25px;
     }
@@ -349,21 +366,22 @@
 
     .About_Container_Items_Tilte {
         display: flex;
-        padding: 0 12px;
         box-sizing: border-box;
-        align-items: center;
+        align-items: start;
+
+        position: relative;
 
     }
 
     .About_Container_Items_Tilte h2 {
 
-        font-size: var(--font-size-title);
+     font-size: var(--font-size-title);
         margin-top: 10px;
         color: #605e38;
-
+        text-indent: 1.5em;
         font-family: 'HLTAphroditeSlimPro', sans-serif;
         font-weight: 1000;
-
+        margin-left: 0;
     }
 
     .About_Container_Items_Tilte_Text {
@@ -371,14 +389,20 @@
         font-size: var(--font-size-title);
 
     }
-
+   .Frontpage_Container_Items_Tilte_Icon {
+        box-sizing: border-box;
+        position: absolute;
+        top: 18px;
+        left: 0;
+        z-index: 1000;
+    }
     .About_Container_Items_Tilte_Icon svg {
-        width: 35px;
-        height: 35px;
+        width: calc(var(--font-size-title) * 1.5);
+        height: calc(var(--font-size-title) * 1.5);
+
         stroke: #605e38;
         stroke-width: 35;
-     margin-right: 20px;
-
+        margin-right: 20px;
         color: #4a4a3f;
     }
 
