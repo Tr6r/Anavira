@@ -113,7 +113,7 @@
     position: absolute;
     top: 15px;
     left: 0;
-    z-index: 1000;
+    z-index: 100;
     display: flex;
     align-items: flex-start;
 
@@ -394,7 +394,7 @@
         position: absolute;
         top: 10px;
         left: 0;
-        z-index: 1000;
+        z-index: 100;
     }
     .About_Container_Items_Tilte_Icon svg {
         width: calc(var(--font-size-title) * 1.5);
