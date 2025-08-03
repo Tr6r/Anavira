@@ -389,10 +389,10 @@
         font-size: var(--font-size-title);
 
     }
-   .Frontpage_Container_Items_Tilte_Icon {
+   .About_Container_Items_Tilte_Icon {
         box-sizing: border-box;
         position: absolute;
-        top: 5px;
+        top: 10px;
         left: 0;
         z-index: 100;
     }
