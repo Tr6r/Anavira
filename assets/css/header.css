@@ -219,13 +219,15 @@
   .MobileHomeHeader_Content_Slogan {
     font-family: 'UTMAlpineKT', sans-serif;
     font-weight: 400;
-    letter-spacing: 0.01em;
+    /* letter-spacing: 0.01em; */
     /* hoặc 0.1em */
     margin-top: 5px;
-    font-size: 1.2em;
+    font-size:1.2em;
     display: flex;
     justify-content: center;
     align-items: center;
     margin: 5px 0 !important;
+    white-space: nowrap;
+
   }
 }
