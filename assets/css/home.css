@@ -354,7 +354,7 @@ height: calc(var(--font-size-title) * 1.5);
         /* height: 100%; */
         box-sizing: border-box;
         position: absolute;
-        top: 18px;
+        top: 10px;
         left: 0;
         z-index: 1000;
     }
