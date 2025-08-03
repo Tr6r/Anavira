@@ -407,20 +407,20 @@ height: calc(var(--font-size-title) * 1.5);
 
     .Frontpage_Container_Statement {
         width: 100%;
-        font-family: 'HLTAphroditeSlimPro', sans-serif;
+    font-family: 'HLTAphroditeSlimPro', sans-serif;
+    /* font-weight: 400; */
+    font-size: var(--font-size-base);
+    text-align: left;
+    text-indent: 1em;
 
-        font-size: var(--font-size-base);
-        font-weight: 400;
-        text-align: left;
-        text-indent: 1em;
-
-        margin-top: 10px;
-        color: #605e38;
+    margin-top: 10px;
+    color: #000000;
     }
 
     .Frontpage_Container_Statement p {
-        margin: 0 !important;
-        font-weight: 600;
+       margin: 0 !important;
+    font-weight: 1000;
+    font-style: italic;
     }
 
 
