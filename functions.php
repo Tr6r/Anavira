@@ -5,6 +5,7 @@
 require get_template_directory() . '/inc/function-js.php';
 require get_template_directory() . '/inc/ajax.php';
 require get_template_directory() . '/inc/enqueue.php';
+require get_template_directory() . '/inc/timestamp.php';
 
 // Bạn có thể thêm các file khác ở đây:
 # require get_template_directory() . '/inc/menus.php';
