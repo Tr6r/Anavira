@@ -1,4 +1,5 @@
     <body class="app">
+
         <?php get_header('home'); ?>
 
         <?php get_template_part('template-parts/front-page/part-front-page'); ?>
@@ -11,15 +12,17 @@
   <script src="<?php echo get_template_directory_uri(); ?>/assets/js/route_manager.js"></script>
   <script src="<?php echo get_template_directory_uri(); ?>/assets/js/fontsize_manager.js"></script>
   <script src="<?php echo get_template_directory_uri(); ?>/assets/js/language_manager.js"></script>
+  <script src="<?php echo get_template_directory_uri(); ?>/assets/js/video_manager.js"></script>
 
   <script>
     document.addEventListener('DOMContentLoaded', () => {
       RouteNavigation();
-      changeToHomePage();
       handleSettingDropdown();
       handleMenuDropdown();
 
       handleBack();
+
+      videoManager();
 
       handleClickOutside();
       preventDropDownCloseOnClickInside();

@@ -20,6 +20,8 @@ function anavira_enqueue_assets() {
         'language'  => 'assets/js/language_manager.js',
         'route'   => 'assets/js/route_manager.js',
         'post'  => 'assets/js/post_manager.js',
+        'video'  => 'assets/js/video_manager.js',
+
     ];
 
     // Enqueue CSS
