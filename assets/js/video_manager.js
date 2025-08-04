@@ -1,6 +1,7 @@
 
 
 document.addEventListener('DOMContentLoaded', function () {
+    videoManager();
     const video_container = document.getElementById('video_container');
 
     var videoFlag = sessionStorage.getItem('video_intro');// true la da xem
@@ -27,3 +28,9 @@ function videoManager() {
         });
     }
 }
+ function turnOffVideo() {
+    const container = document.getElementById('video_container');
+    if (container) {
+      container.classList.add('active');
+    }
+  }

@@ -1,6 +1,4 @@
 <main class="Frontpage_Container">
-    <?php get_template_part('template-parts/video/part-video'); ?>
-
     <?php get_template_part('template-parts/blog/part-toolbar'); ?>
      <div class="Frontpage_Container_banner">
 

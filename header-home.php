@@ -8,7 +8,12 @@
     <?php wp_head(); ?>
 </head>
 
+  <script src="<?php echo get_template_directory_uri(); ?>/assets/js/video_manager.js"></script>
+
+
 <div class="MobileHomeHeader" id="mobileHeader">
+    <?php get_template_part('template-parts/video/part-video'); ?>
+
     <div class="MobileHomeHeader_Container">
         <img class="MobileHomeHeader_Logo"
             src="<?php echo site_url(); ?>/wp-content/uploads/2025/07/9-nam-02-1.png" height="60" alt="Logo">
