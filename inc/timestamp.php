@@ -1,7 +1,7 @@
 <?php
 function anavira_enqueue_assets() {
     $css_files = [
-        'styles' => 'styles.css',
+        'style' => 'style.css',
         'about' => 'assets/css/about.css',
         'blog-single'  => 'assets/css/blog-single.css',
         'blog'  => 'assets/css/blog.css',
