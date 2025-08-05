@@ -14,3 +14,11 @@
         
     </div>
 </div>
+<script>
+     function turnOffVideo() {
+    const container = document.getElementById('video_container');
+    if (container) {
+      container.classList.add('active');
+    }
+  }
+</script>
