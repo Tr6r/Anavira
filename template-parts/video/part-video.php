@@ -15,25 +15,6 @@
     </div>
 </div>
 <script>
-     function turnOffVideo() {
-    const container = document.getElementById('video_container');
-    if (container) {
-      container.classList.add('active');
-    }
-  }
-  videoManager()
-  function videoManager() {
-    const video = document.getElementById('video_intro');
-    const video_container = document.getElementById('video_container');
-
-    if (video && video_container) {
-        video.addEventListener('ended', function () {
-
-            setTimeout(function () {
-                video_container.classList.add('active');
-            }, 1);
-        });
-    }
-}
+   videoManager()
 
 </script>

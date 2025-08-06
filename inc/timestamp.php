@@ -14,15 +14,7 @@ function anavira_enqueue_assets() {
         'video'  => 'assets/css/video.css',
     ];
 
-    $js_files = [
-        'dropdown' => 'assets/js/dropdown_manager.js',
-        'fontsize'   => 'assets/js/fontsize_manager.js',
-        'language'  => 'assets/js/language_manager.js',
-        'route'   => 'assets/js/route_manager.js',
-        'post'  => 'assets/js/post_manager.js',
-        'video'  => 'assets/js/video_manager.js',
-
-    ];
+   
 
     // Enqueue CSS
     foreach ($css_files as $handle => $rel_path) {
@@ -36,18 +28,31 @@ function anavira_enqueue_assets() {
             );
         }
     }
+  $js_files = [
+        'dropdown' => 'assets/js/dropdown_manager.js',
+        'fontsize' => 'assets/js/fontsize_manager.js',
+        'language' => 'assets/js/language_manager.js',
+        'route'    => 'assets/js/route_manager.js',
+        'post'     => 'assets/js/post_manager.js',
+        'video'    => 'assets/js/video_manager.js',
+    ];
 
-    // Enqueue JS
     foreach ($js_files as $handle => $rel_path) {
         $full_path = get_template_directory() . '/' . $rel_path;
+        $uri_path = get_template_directory_uri() . '/' . $rel_path;
+
+        // ✳️ Gợi ý thêm: kiểm tra thật sự file có tồn tại để tránh lỗi
         if (file_exists($full_path)) {
             wp_enqueue_script(
                 $handle . '-script',
-                get_template_directory_uri() . '/' . $rel_path,
-                [],
-                filemtime($full_path),
-                true
+                $uri_path,
+                [], // dependencies nếu có, có thể thêm 'jquery' nếu dùng jQuery
+                filemtime($full_path), // dùng thời gian sửa đổi làm version (cache busting)
+                true // in ở footer
             );
+        } else {
+            // ✅ DEBUG: log tên file chưa tồn tại
+            error_log("JS file not found: " . $full_path);
         }
     }
 }

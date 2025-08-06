@@ -8,8 +8,6 @@
     <?php wp_head(); ?>
 </head>
 
-  <script src="<?php echo get_template_directory_uri(); ?>/assets/js/video_manager.js"></script>
-
 
 <div class="MobileHomeHeader" id="mobileHeader">
     <?php get_template_part('template-parts/video/part-video'); ?>
