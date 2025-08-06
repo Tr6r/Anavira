@@ -47,6 +47,8 @@
     padding: 20px 30px 30px 30px;
     box-sizing: border-box;
 
+        line-height: 1.6;
+
 
 
 }
@@ -331,6 +333,9 @@
 
         box-sizing: border-box;
         position: relative;
+
+            line-height: 1.6;
+
 
     }
 

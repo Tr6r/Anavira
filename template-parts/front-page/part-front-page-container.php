@@ -55,7 +55,7 @@
                 <strong>Không dầu. Không đường tinh luyện. Không bột ngọt. Không chất bảo quản. Không hương liệu.</strong> Chỉ có rau củ quả thật, nấm thật, và năng lượng chữa lành tự nhiên trong từng sản phẩm.
             </p>
             <p class="Frontpage_Container_Items_Content">
-                Mỗi công thức đều do người sáng lập nghiên cứu, thử nghiệm, tự tay thực hiện – không thuê gia công hay đặt hàng loại sản.
+                Mỗi công thức đều do người sáng lập nghiên cứu, thử nghiệm, tự tay thực hiện – không thuê gia công hay đặt hàng loại sẵn.
             </p>
 
         </div>
@@ -153,7 +153,7 @@
     </div>
     <div class="Frontpage_Container_Statement">
         <p>
-            “Thức ăn không phải là sản phẩm. Nó là lời cầu nguyện được làm ra bằng đôi tay thật, rau củ quả thật, và một trái tim không bao giờ thoà hiệp.”
+            “Thức ăn không phải là sản phẩm. Nó là lời cầu nguyện được làm ra bằng đôi tay thật, rau củ quả thật, và một trái tim không bao giờ thỏa hiệp.”
         </p>
 
     </div>
