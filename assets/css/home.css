@@ -142,7 +142,7 @@ height: calc(var(--font-size-title) * 1.5);
 
 .Frontpage_Container_Statement {
     width: 100%;
-    font-family: 'HLTAphroditeSlimPro', sans-serif;
+    font-family: 'Merriweather', sans-serif;
     /* font-weight: 400; */
     font-size: var(--font-size-base);
     text-align: left;
@@ -154,7 +154,7 @@ height: calc(var(--font-size-title) * 1.5);
 
 .Frontpage_Container_Statement p {
     margin: 0 !important;
-    font-weight: 1000;
+    font-weight: 400;
     font-style: italic;
 }
 
@@ -255,7 +255,7 @@ height: calc(var(--font-size-title) * 1.5);
 }
 
 .Text_MarginLeft {
-    margin-left: 20px !important;
+    text-indent: 0.9em !important;
 }
 
 @media (max-width: 450px) {
@@ -349,6 +349,9 @@ height: calc(var(--font-size-title) * 1.5);
         font-size: var(--font-size-title);
 
     }
+    .Text_MarginLeft {
+    text-indent: 0.9em !important;
+}
 
     .Frontpage_Container_Items_Tilte_Icon {
         /* height: 100%; */
@@ -407,7 +410,7 @@ height: calc(var(--font-size-title) * 1.5);
 
     .Frontpage_Container_Statement {
         width: 100%;
-    font-family: 'HLTAphroditeSlimPro', sans-serif;
+    font-family: 'Merriweather', sans-serif;
     /* font-weight: 400; */
     font-size: var(--font-size-base);
     text-align: left;
@@ -419,7 +422,7 @@ height: calc(var(--font-size-title) * 1.5);
 
     .Frontpage_Container_Statement p {
        margin: 0 !important;
-    font-weight: 1000;
+    font-weight: 400;
     font-style: italic;
     }
 
