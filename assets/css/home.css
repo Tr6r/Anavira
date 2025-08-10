@@ -148,14 +148,17 @@ height: calc(var(--font-size-title) * 1.5);
     font-size: var(--font-size-base);
     text-align: left;
     text-indent: 1em;
-
-    margin-top: 10px;
+    padding: 0 42px;
+    box-sizing: border-box;
+    margin-top: 20px;
     color: #000000;
 }
 
 .Frontpage_Container_Statement p {
+    /* font-size: var(--font-size-base); */
+    margin: 10px 0 !important;
     margin: 0 !important;
-    font-weight: 400;
+    font-weight: bold;
     font-style: italic;
 }
 

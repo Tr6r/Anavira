@@ -55,7 +55,7 @@
                 <strong>Không dầu. Không đường tinh luyện. Không bột ngọt. Không chất bảo quản. Không hương liệu.</strong> Chỉ có rau củ quả thật, nấm thật, và năng lượng chữa lành tự nhiên trong từng sản phẩm.
             </p>
             <p class="Frontpage_Container_Items_Content">
-                Mỗi công thức đều do người sáng lập nghiên cứu, thử nghiệm, tự tay thực hiện – không thuê gia công hay đặt hàng loại sẵn.
+                Mỗi công thức đều do người sáng lập nghiên cứu, thử nghiệm, tự tay thực hiện – không thuê gia công hay đặt hàng có sẵn.
             </p>
 
         </div>
@@ -88,25 +88,27 @@
         </div>
 
         <div class="Frontpage_Container_Items_Contents">
-            <p class="Frontpage_Container_Items_Content Whitecolor">
-
+             <p class="Frontpage_Container_Items_Content Whitecolor">
                 <span>•</span>
-                <strong>Cháo ăn liền Anavira</strong> – dễ tiêu, phù hợp cho người sau mổ, hóa – xạ trị.
+
+                <strong>Bột nêm nấm Anavira</strong> – <em>từ rau củ & nấm tươi sấy nguyên chất.</em>
             </p>
             <p class="Frontpage_Container_Items_Content Whitecolor">
                 <span>•</span>
 
-                <strong>Nước mắm chay Anavira </strong>– hương vị đậm đà, không men công nghiệp.
+                <strong>Nước mắm chay Anavira </strong>– <em>hương vị đậm đà, không men công nghiệp.</em>
             </p>
+            <p class="Frontpage_Container_Items_Content Whitecolor">
+
+                <span>•</span>
+                <strong>Cháo ăn liền Anavira</strong> –<em>dễ tiêu, phù hợp cho người sau mổ, hóa – xạ trị.</em>
+            </p>
+            
+           
             <p class="Frontpage_Container_Items_Content Whitecolor">
                 <span>•</span>
 
-                <strong>Bột nêm nấm Anavira</strong> – từ rau củ & nấm tươi sấy nguyên chất.
-            </p>
-            <p class="Frontpage_Container_Items_Content Whitecolor">
-                <span>•</span>
-
-                <strong>Pâté, chả, nhân bánh mì Anavira</strong> – phong cách Đông - Tây, độc quyền công thức.
+                <strong>Pâté, chả, nhân bánh mì Anavira</strong> –<em>phong cách Đông - Tây, độc quyền công thức.</em>
             </p>
 
         </div>
@@ -176,8 +178,9 @@
 
     </div>
     <div class="Frontpage_Container_Statement">
-        <p> #Anvira </p>
-        <p> #Thức_tỉnh_Mạnh_mẽ_Tái_sinh </p>
+        <p> #Anvira</p>
+        <p> #AnviraWFPB</p>
+        <p> #Thức_tỉnh_Mạnh_mẽ_Tái_sinh</p>
     </div>
 
 
