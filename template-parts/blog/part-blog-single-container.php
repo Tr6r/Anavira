@@ -8,6 +8,7 @@
                     <?php the_content(); ?>
                 </div>
             </div>
+    <?php get_template_part('template-parts/comment/part-comment'); ?> 
 
         <?php endwhile;
     else: ?>

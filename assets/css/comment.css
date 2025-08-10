@@ -1,0 +1,368 @@
+/* Bọc toàn bộ comment */
+.comments-wrap {
+    margin-top: 20px;
+    font-family: 'Merriweather', sans-serif;
+    font-size: var(--font-size-base);
+    background-color: #f1dfc1;
+    width: 100%;
+    min-width: 710px;
+    padding: 20px 30px;
+    box-sizing: border-box;
+    color: #605e38;
+    border-radius: 7px;
+}
+
+.comment-title-textarea {
+    font-size: var(--font-size-title) !important;
+    font-weight: bold !important;
+    color: #605e38 !important;
+
+}
+
+
+.comment-date {
+    font-size: var(--font-size-base) !important;
+    color: #605e38 !important;
+    margin-left: 0px !important;
+}
+
+.comment-form-textarea {
+    font-size: var(--font-size-base) !important;
+    height: 200px;
+    background-color: #f1dfc1 !important;
+    border: 2px solid #605e38 !important;
+}
+
+.comment-form-textarea:focus {
+    border: 3px solid #605e38 !important;
+    outline: none !important;
+}
+
+.comment-auther-textarea {
+    font-size: var(--font-size-base) !important;
+    background-color: #f1dfc1 !important;
+    border: 2px solid #605e38 !important;
+}
+
+.comment-auther-textarea:focus {
+    border: 3px solid #605e38 !important;
+    outline: none !important;
+}
+
+.submit {
+    background-color: #605e38 !important;
+    /* màu nền */
+    color: #fff;
+    /* màu chữ */
+    padding: 10px 20px;
+    /* khoảng cách trong nút */
+    border: none;
+    /* bỏ viền mặc định */
+    width: auto !important;
+    border-radius: 7px !important;
+    /* bo góc */
+    font-size: var(--font-size-base);
+    /* dùng biến font-size của bạn */
+    cursor: pointer;
+    /* đổi con trỏ chuột */
+}
+
+.comment-form .submit:hover {
+    background-color: #4a482b;
+    /* đổi màu khi hover */
+}
+
+/* Tiêu đề số bình luận */
+.comments-wrap h3 {
+    font-size: var(--font-size-title);
+    margin-bottom: 15px;
+    font-weight: bold;
+}
+
+/* Danh sách comment cha */
+.comment-list {
+    list-style: none;
+    padding-left: 0;
+    margin: 0;
+}
+
+/* Mỗi comment */
+.comment-list li {
+    border: 2px solid #605e38 !important;
+    border-radius: 6px;
+    padding: 12px 15px;
+    margin-bottom: 15px;
+    background-color: #f1dfc1 !important;
+
+    word-wrap: break-word;
+    /* Ngắt từ khi quá dài */
+    white-space: normal;
+    /* Cho phép xuống dòng */
+    overflow-wrap: break-word;
+
+    display: flex;
+        flex-direction: column
+}
+
+
+.comment-list li ul.comment-list {
+    margin-top: 12px;
+    margin-left: 10px;
+    border-left: 2px solid #605e38;
+    padding-left: 15px;
+}
+
+.comment-list li ul.comment-list li {
+    border: 0px solid #605e38 !important;
+    border-radius: 6px;
+    padding: 12px 10px;
+    margin-bottom: 0px;
+    background-color: #f1dfc1 !important;
+}
+
+/* Tên tác giả */
+.comment-list strong {
+    color: #605e38;
+    font-size: var(--font-size-title);
+}
+
+/* Nội dung comment */
+.comment-list p {
+    margin: 8px 0;
+    font-size: var(--font-size-base);
+    line-height: 1.6;
+    color: #555;
+}
+
+/* Link trả lời */
+.comment-list a.comment-reply-link {
+    font-size: var(--font-size-base);
+    font-style: italic;
+    text-decoration: underline;
+
+    color: #424a4e;
+}
+
+.comment-list a.comment-reply-link:hover {
+    text-decoration: underline;
+}
+
+/* Form gửi bình luận */
+.comment-form {
+    margin-top: 25px;
+}
+
+.comment-form label {
+    display: block;
+    margin-bottom: 5px;
+    font-size: 14px;
+}
+
+.comment-form input,
+.comment-form textarea {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.comment-form input[type="submit"] {
+    background-color: #0073aa;
+    color: white;
+    border: none;
+    cursor: pointer;
+    padding: 10px 15px;
+}
+
+/* 
+.comment-form input[type="submit"]:hover {
+    background-color: #005f8d;
+}
+ */
+@media (max-width: 450px) {
+
+    /* Bọc toàn bộ comment */
+    .comments-wrap {
+        margin-top: 20px;
+        font-family: 'Merriweather', sans-serif;
+        font-size: var(--font-size-base);
+        background-color: #f1dfc1;
+        width: 100%;
+        min-width: 0px;
+        padding: 10px 20px;
+        box-sizing: border-box;
+        color: #605e38;
+        border-radius: 7px;
+    }
+
+    .comment-title-textarea {
+        font-size: var(--font-size-title) !important;
+        font-weight: bold !important;
+        color: #605e38 !important;
+
+    }
+
+
+    .comment-date {
+        font-size: var(--font-size-base) !important;
+        color: #605e38 !important;
+        margin-left: 0px !important;
+    }
+
+    .comment-form-textarea {
+        font-size: var(--font-size-base) !important;
+        height: 200px;
+        background-color: #f1dfc1 !important;
+        border: 2px solid #605e38 !important;
+    }
+
+    .comment-form-textarea:focus {
+        border: 3px solid #605e38 !important;
+        outline: none !important;
+    }
+
+    .comment-auther-textarea {
+        font-size: var(--font-size-base) !important;
+        background-color: #f1dfc1 !important;
+        border: 2px solid #605e38 !important;
+    }
+
+    .comment-auther-textarea:focus {
+        border: 3px solid #605e38 !important;
+        outline: none !important;
+    }
+
+    .submit {
+        background-color: #605e38 !important;
+        /* màu nền */
+        color: #fff;
+        /* màu chữ */
+        padding: 10px 20px;
+        /* khoảng cách trong nút */
+        border: none;
+        /* bỏ viền mặc định */
+        width: auto !important;
+        border-radius: 7px !important;
+        /* bo góc */
+        font-size: var(--font-size-base);
+        /* dùng biến font-size của bạn */
+        cursor: pointer;
+        /* đổi con trỏ chuột */
+    }
+
+    .comment-form .submit:hover {
+        background-color: #4a482b;
+        /* đổi màu khi hover */
+    }
+
+    /* Tiêu đề số bình luận */
+    .comments-wrap h3 {
+        font-size: var(--font-size-title);
+        margin-bottom: 15px;
+        font-weight: bold;
+    }
+
+    /* Danh sách comment cha */
+    .comment-list {
+        list-style: none;
+        padding-left: 0;
+        margin: 0;
+    }
+
+    /* Mỗi comment */
+    .comment-list li {
+        border: 2px solid #605e38 !important;
+        border-radius: 6px;
+        padding: 5px 5px;
+        margin-bottom: 15px;
+        background-color: #f1dfc1 !important;
+
+        word-wrap: break-word;
+        /* Ngắt từ khi quá dài */
+        white-space: normal;
+        /* Cho phép xuống dòng */
+        overflow-wrap: break-word;
+
+        display: flex;
+        flex-direction: column
+    }
+
+
+    .comment-list li ul.comment-list {
+        margin-top: 12px;
+        margin-left: 10px;
+        border-left: 2px solid #605e38;
+        padding-left: 15px;
+    }
+
+    .comment-list li ul.comment-list li {
+        border: 0px solid #605e38 !important;
+        border-radius: 6px;
+        padding: 5px 5px;
+        margin-bottom: 0px;
+        background-color: #f1dfc1 !important;
+    }
+
+    /* Tên tác giả */
+    .comment-list strong {
+        color: #605e38;
+        font-size: var(--font-size-title);
+    }
+
+    /* Nội dung comment */
+    .comment-list p {
+        margin: 8px 0;
+        font-size: var(--font-size-base);
+        line-height: 1.6;
+        color: #555;
+    }
+
+    /* Link trả lời */
+    .comment-list a.comment-reply-link {
+        font-size: var(--font-size-base);
+        font-style: italic;
+        text-decoration: underline;
+
+        color: #424a4e;
+    }
+
+    .comment-list a.comment-reply-link:hover {
+        text-decoration: underline;
+    }
+
+    /* Form gửi bình luận */
+    .comment-form {
+        margin-top: 25px;
+    }
+
+    .comment-form label {
+        display: block;
+        margin-bottom: 5px;
+        font-size: 14px;
+    }
+
+    .comment-form input,
+    .comment-form textarea {
+        width: 100%;
+        padding: 8px;
+        margin-bottom: 12px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+    }
+
+    .comment-form input[type="submit"] {
+        background-color: #0073aa;
+        color: white;
+        border: none;
+        cursor: pointer;
+        padding: 10px 15px;
+    }
+
+    /* 
+.comment-form input[type="submit"]:hover {
+    background-color: #005f8d;
+}
+ */
+
+}

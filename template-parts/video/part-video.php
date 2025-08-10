@@ -14,7 +14,3 @@
         
     </div>
 </div>
-<script>
-   videoManager()
-
-</script>

@@ -1,12 +1,12 @@
    .Blog_Container {
-    width: 710px;
+    width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;;
     min-width: 710px;
-    /* padding: 0 20px;
-    box-sizing: border-box; */
+    padding: 0 30px;
+    box-sizing: border-box;
 
   }
 
@@ -322,7 +322,7 @@
   width: 100%;
   box-sizing: border-box;
   font-size: var(--font-size-base);
-    line-height: 6;
+    line-height: 1.6;
 
 
 }

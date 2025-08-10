@@ -6,6 +6,7 @@ function RouteNavigation() {
 
   document.querySelectorAll(selector).forEach(item => {
     item.addEventListener('click', () => {
+      console.log("heh")
       let url = item.getAttribute('data-url');
       if (url) {
         // Đảm bảo không có dấu / thừa

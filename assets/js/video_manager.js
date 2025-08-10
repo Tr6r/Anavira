@@ -14,7 +14,7 @@ document.addEventListener('DOMContentLoaded', function () {
     }
 });
 
-
+ videoManager() 
 function videoManager() {
     const video = document.getElementById('video_intro');
     const video_container = document.getElementById('video_container');

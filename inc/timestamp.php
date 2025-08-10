@@ -12,6 +12,7 @@ function anavira_enqueue_assets() {
         'setting' =>  'assets/css/setting.css',
         'toolbar' => 'assets/css/toolbar.css',
         'video'  => 'assets/css/video.css',
+        'comment'  => 'assets/css/comment.css',
     ];
 
    
@@ -35,6 +36,7 @@ function anavira_enqueue_assets() {
         'route'    => 'assets/js/route_manager.js',
         'post'     => 'assets/js/post_manager.js',
         'video'    => 'assets/js/video_manager.js',
+        'comment'    => 'assets/js/comment_manager.js',
     ];
 
     foreach ($js_files as $handle => $rel_path) {
