@@ -81,6 +81,27 @@
 
 }
 
+.Desktop_Toolbar_Midle_Icon_Setting
+{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 10px;
+  box-sizing: border-box;
+  border-radius: 50%;
+  cursor: pointer;
+
+}
+.Desktop_Toolbar_Midle_Icon_Setting svg
+{
+width: 35px;
+  height: 35px;
+    stroke: #605e38 !important;
+      stroke-width: 3 ! important;
+
+
+}
+
 .Desktop_Toolbar_Midle_Icon:hover {
   cursor: pointer;
   background-color: bisque;

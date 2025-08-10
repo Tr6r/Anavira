@@ -13,6 +13,7 @@ function anavira_enqueue_assets() {
         'toolbar' => 'assets/css/toolbar.css',
         'video'  => 'assets/css/video.css',
         'comment'  => 'assets/css/comment.css',
+        'footer'  => 'assets/css/footer.css',
     ];
 
    

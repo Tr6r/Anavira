@@ -63,7 +63,6 @@ body{
   .app {
   width: 100vw;
   height: fit-content;
-  padding-bottom: 10px;
   box-sizing: border-box;
   overflow: auto;
   margin: 0 !important;
