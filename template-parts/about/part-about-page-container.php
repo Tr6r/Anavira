@@ -98,7 +98,7 @@
                 Người bệnh sẽ không thể ăn mãi rau luộc lạt lẽo, hay cháo nhạt tênh. Người khỏe cũng không ai duy trì thực dưỡng lâu dài nếu bữa ăn nhạt nhẽo như hình phạt.
             </p>
             <p class="About_Container_Items_Content">
-                ấm, rau củ, không hương liệu, không bột ngọt. Tôi sấy từng mẻ hành, tỏi, gừng, cà rốt, củ sắn… rồi phối trộn cùng nấm bào ngư, nấm hương, tiêu, thảo mộc – để tạo nên một thứ gia vị vừa sâu vị, vừa lành tính.
+                Vì vậy, tôi tạo ra bột nêm từ nấm, rau củ, không hương liệu, không bột ngọt. Tôi sấy từng mẻ hành, tỏi, gừng, cà rốt, củ sắn… rồi phối trộn cùng nấm bào ngư, nấm hương, tiêu, thảo mộc – để tạo nên một thứ gia vị vừa sâu vị, vừa lành tính.
             </p>
 
             <p class="About_Container_Items_Content"><strong> Bột nêm không chỉ là gia vị. Nó là trái tim của món ăn.</strong></p>
@@ -130,7 +130,7 @@
 
         <div class="About_Container_Items_Contents ">
             <p class="About_Container_Items_Content">
-                Sau mỗi đợt hóa trị, tôi từng ngồi trước tô cơm mà không nuốt nổi – nhưng vẫn <strong>phải ăn</strong> để đủ sức hồi phục. Xạ trị kéo dài gần tháng, cơ thể đuối dần – và tôi hiểu rằng: <strong>Ăn là để sống tiếp.</strong>
+                Sau mỗi đợt hóa trị, tôi từng ngồi trước chén cơm mà không nuốt nổi – nhưng vẫn <strong>phải ăn</strong> để đủ sức hồi phục. Xạ trị kéo dài gần tháng, cơ thể đuối dần – và tôi hiểu rằng: <strong>Ăn là để sống tiếp.</strong>
             </p>
             <p class="About_Container_Items_Content">
                 Vậy là tôi tự tay nấu thử.
