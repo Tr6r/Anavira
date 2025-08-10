@@ -79,7 +79,7 @@
         </div>
 
     </div>
-    <div class="About_Container_Items About_Products  ">
+    <div class="About_Container_Items About_Products">
         <div class="About_Container_Items_Contents Text_MarginLeft">
             <p class="About_Container_Items_Content ">
                 Các dòng sản phẩm
