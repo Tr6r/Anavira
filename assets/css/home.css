@@ -102,7 +102,7 @@
 
 .Frontpage_Container_Items_Tilte_Icon svg {
     width: calc(var(--font-size-title) * 1.5);
-height: calc(var(--font-size-title) * 1.5);
+    height: calc(var(--font-size-title) * 1.5);
 
     stroke: #605e38;
     stroke-width: 35;
@@ -144,7 +144,6 @@ height: calc(var(--font-size-title) * 1.5);
 .Frontpage_Container_Statement {
     width: 100%;
     font-family: 'Merriweather', sans-serif;
-    /* font-weight: 400; */
     font-size: var(--font-size-base);
     text-align: left;
     text-indent: 1em;
@@ -155,7 +154,6 @@ height: calc(var(--font-size-title) * 1.5);
 }
 
 .Frontpage_Container_Statement p {
-    /* font-size: var(--font-size-base); */
     margin: 10px 0 !important;
     margin: 0 !important;
     font-weight: bold;
@@ -314,7 +312,7 @@ height: calc(var(--font-size-title) * 1.5);
         /* padding-bottom: 10px; */
         padding: 10px 10px 20px 10px;
         box-sizing: border-box;
-            line-height: 1.6;
+        line-height: 1.6;
 
 
     }
@@ -355,9 +353,10 @@ height: calc(var(--font-size-title) * 1.5);
         font-size: var(--font-size-title);
 
     }
+
     .Text_MarginLeft {
-    text-indent: 0.9em !important;
-}
+        text-indent: 0.9em !important;
+    }
 
     .Frontpage_Container_Items_Tilte_Icon {
         /* height: 100%; */
@@ -416,20 +415,23 @@ height: calc(var(--font-size-title) * 1.5);
 
     .Frontpage_Container_Statement {
         width: 100%;
-    font-family: 'Merriweather', sans-serif;
-    /* font-weight: 400; */
-    font-size: var(--font-size-base);
-    text-align: left;
-    text-indent: 1em;
+        font-family: 'Merriweather', sans-serif;
+        /* font-weight: 400; */
+        font-size: var(--font-size-base);
+        text-align: left;
+        text-indent: 1em;
 
-    margin-top: 10px;
-    color: #000000;
+        padding: 0 22px;
+        box-sizing: border-box;
+        
+        margin-top: 20px;
+        color: #000000;
     }
 
     .Frontpage_Container_Statement p {
-       margin: 0 !important;
-    font-weight: 400;
-    font-style: italic;
+        margin: 0 !important;
+        font-weight: bold;
+        font-style: italic;
     }
 
 
