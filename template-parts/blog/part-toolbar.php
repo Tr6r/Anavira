@@ -33,13 +33,12 @@
           <?php echo file_get_contents(get_template_directory() . '/assets/images/blog.svg'); ?>
         </div>
 
-        <div class="Desktop_Toolbar_Midle_Icon" title="Sản phẩm" data-url="/">
+        <div class="Desktop_Toolbar_Midle_Icon" title="Sản phẩm" data-url="/product">
           <?php echo file_get_contents(get_template_directory() . '/assets/images/food.svg'); ?>
         </div>
         <div class="Desktop_Toolbar_Midle_Icon" title="Công thức WFPB" data-url="/">
           <?php echo file_get_contents(get_template_directory() . '/assets/images/recipe.svg'); ?>
         </div>
-
       </div>
 
       <div class="Desktop_Toolbar_Midle_Icon_Setting" id="Toolbar_Setting" title="Cài đặt">
@@ -66,8 +65,6 @@
         <div class="Mobile_Toolbar_Midle_Icon" data-url="/">
           <?php echo file_get_contents(get_template_directory() . '/assets/images/recipe.svg'); ?>
         </div>
-
-
 
  <div class="Desktop_Toolbar_Midle_Icon_Setting" id="Mobile_Toolbar_Setting" title="Cài đặt">
         <?php echo file_get_contents(get_template_directory() . '/assets/images/setting.svg'); ?>
