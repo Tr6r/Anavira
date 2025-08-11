@@ -36,7 +36,7 @@
         <div class="Desktop_Toolbar_Midle_Icon" title="Sản phẩm" data-url="/product">
           <?php echo file_get_contents(get_template_directory() . '/assets/images/food.svg'); ?>
         </div>
-        <div class="Desktop_Toolbar_Midle_Icon" title="Công thức WFPB" data-url="/">
+        <div class="Desktop_Toolbar_Midle_Icon" title="Công thức WFPB" data-url="/recipe">
           <?php echo file_get_contents(get_template_directory() . '/assets/images/recipe.svg'); ?>
         </div>
       </div>
@@ -59,10 +59,10 @@
         <div class="Mobile_Toolbar_Midle_Icon" data-url="/blog">
           <?php echo file_get_contents(get_template_directory() . '/assets/images/blog.svg'); ?>
         </div>
-        <div class="Desktop_Toolbar_Midle_Icon" data-url="/">
+        <div class="Desktop_Toolbar_Midle_Icon" data-url="/product">
           <?php echo file_get_contents(get_template_directory() . '/assets/images/food.svg'); ?>
         </div>
-        <div class="Mobile_Toolbar_Midle_Icon" data-url="/">
+        <div class="Mobile_Toolbar_Midle_Icon" data-url="/recipe">
           <?php echo file_get_contents(get_template_directory() . '/assets/images/recipe.svg'); ?>
         </div>
 
