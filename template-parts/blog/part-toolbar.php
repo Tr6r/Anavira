@@ -59,16 +59,19 @@
         <div class="Mobile_Toolbar_Midle_Icon" data-url="/blog">
           <?php echo file_get_contents(get_template_directory() . '/assets/images/blog.svg'); ?>
         </div>
-        <div class="Desktop_Toolbar_Midle_Icon" data-url="/product">
+
+       <div class="Mobile_Toolbar_Midle_Icon" data-url="/product">
           <?php echo file_get_contents(get_template_directory() . '/assets/images/food.svg'); ?>
         </div>
+
         <div class="Mobile_Toolbar_Midle_Icon" data-url="/recipe">
           <?php echo file_get_contents(get_template_directory() . '/assets/images/recipe.svg'); ?>
         </div>
 
- <div class="Desktop_Toolbar_Midle_Icon_Setting" id="Mobile_Toolbar_Setting" title="Cài đặt">
-        <?php echo file_get_contents(get_template_directory() . '/assets/images/setting.svg'); ?>
-      </div>
+        <div class="Desktop_Toolbar_Midle_Icon_Setting" id="Mobile_Toolbar_Setting" title="Cài đặt">
+          <?php echo file_get_contents(get_template_directory() . '/assets/images/setting.svg'); ?>
+        </div>
+
       </div>
       <?php if ($iconState) : ?>
         <div class="Toolbar_Icon" id="Mobile_Toolbar_Menu">

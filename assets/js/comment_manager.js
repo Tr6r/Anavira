@@ -2,7 +2,7 @@ document.addEventListener("DOMContentLoaded", function () {
     const form = document.querySelector("#commentform");
     const author = document.querySelector("#author");
     const comment = document.querySelector("#comment");
-
+    if (!form || !author || !comment) return;
     form.addEventListener("submit", function (e) {
         let valid = true;
 

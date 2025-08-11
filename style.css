@@ -55,26 +55,6 @@ body {
   --font-size-slogan: 1.875rem;
 }
 
-
-@media (max-width: 450px) {
-  :root {
-    --font-size-title: 1rem;
-    --font-size-base: 0.7rem;
-    --font-size-slogan: 1rem;
-  }
-
-  .app {
-    width: 100vw;
-    height: fit-content;
-    box-sizing: border-box;
-    overflow: auto;
-    margin: 0 !important;
-    background-color: #fdfaf5;
-  }
-
-
-}
-
 .Container {
   display: flex;
   flex-direction: column;
@@ -186,4 +166,41 @@ body {
 
   font-size: 140px !important;
   text-indent: 0em !important;
+}
+
+
+
+@media (max-width: 450px) {
+  :root {
+    --font-size-title: 1rem;
+    --font-size-base: 0.7rem;
+    --font-size-slogan: 1rem;
+  }
+
+  .app {
+    width: 100vw;
+    height: fit-content;
+    box-sizing: border-box;
+    overflow: auto;
+    margin: 0 !important;
+    background-color: #fdfaf5;
+  }
+
+.Comingsoon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+}
+
+.Comingsoon_Title {
+  display: flex;
+  align-items: center;
+
+  justify-content: center;
+    text-align: center !important;
+
+  font-size: 70px !important;
+  text-indent: 0em !important;
+}
 }

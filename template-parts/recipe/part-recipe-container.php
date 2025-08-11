@@ -1,3 +1,1 @@
-<div>
-    NOTHING RECIPE
-</div>
+<p></p>
