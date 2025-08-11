@@ -17,7 +17,7 @@ Tags: #Anavira, #ThuctinhManhmeTaisinh
 @font-face {
   font-family: 'HLTAphroditeSlimPro';
   src: url('./assets/fonts/HLTAphroditeSlimPro.woff2') format('woff2');
-  
+
 }
 
 @font-face {
@@ -31,10 +31,12 @@ Tags: #Anavira, #ThuctinhManhmeTaisinh
   font-family: 'UTMAlpineKT';
   src: url('./assets/fonts/UTMAlpineKT.woff2') format('woff2');
 }
-body{
+
+body {
   margin: 0 !important;
   overflow-x: hidden;
 }
+
 .app {
   width: 100vw;
   background-color: #fdfaf5;
@@ -44,7 +46,7 @@ body{
   flex-direction: column;
   justify-content: center;
   align-items: center;
-/*  */
+  /*  */
 }
 
 :root {
@@ -60,13 +62,14 @@ body{
     --font-size-base: 0.7rem;
     --font-size-slogan: 1rem;
   }
+
   .app {
-  width: 100vw;
-  height: fit-content;
-  box-sizing: border-box;
-  overflow: auto;
-  margin: 0 !important;
-  background-color: #fdfaf5;
+    width: 100vw;
+    height: fit-content;
+    box-sizing: border-box;
+    overflow: auto;
+    margin: 0 !important;
+    background-color: #fdfaf5;
   }
 
 
@@ -166,3 +169,21 @@ body{
   box-sizing: border-box;
 }
 
+
+.Comingsoon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.Comingsoon_Title {
+  display: flex;
+  align-items: center;
+
+  justify-content: center;
+    text-align: center !important;
+
+  font-size: 140px !important;
+  text-indent: 0em !important;
+}
