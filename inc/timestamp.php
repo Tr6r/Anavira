@@ -16,6 +16,7 @@ function anavira_enqueue_assets()
         'comment'  => 'assets/css/comment.css',
         'footer'  => 'assets/css/footer.css',
         'product'  => 'assets/css/product.css',
+        'feedback'  => 'assets/css/feedback.css',
 
     ];
 
@@ -41,6 +42,7 @@ function anavira_enqueue_assets()
         'post'     => 'assets/js/post_manager.js',
         'video'    => 'assets/js/video_manager.js',
         'comment'  => 'assets/js/comment_manager.js',
+        'feedback'  => 'assets/js/feedback_manager.js',
     ];
 
     foreach ($js_files as $handle => $rel_path) {
