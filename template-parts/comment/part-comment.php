@@ -52,17 +52,14 @@ function render_comments($comment_tree, $depth = 1)
 
         // Hiển thị thời gian
         echo ' <span class="comment-date">';
-        echo esc_html( get_comment_date( 'H:i d/m/Y', $comment ) );
-        // echo '</span><br>';
+        echo esc_html(get_comment_date('H:i d/m/Y', $comment));
+        echo '</span>';
 
         echo '<p>' . esc_html($comment->comment_content) . '</p>';
 
-        // Dùng comment_reply_link đúng chuẩn
-        echo get_comment_reply_link([
-            'reply_text' => 'Trả lời',
-            'depth'      => $depth,
-            'max_depth'  => get_option('thread_comments_depth'),
-        ], $comment->comment_ID, get_the_ID());
+        // Thay vì get_comment_reply_link(), ta dùng nút + form container
+        echo '<a href="#" class="reply-link" data-comment-id="' . $comment->comment_ID . '">Trả lời</a>';
+        echo '<div class="reply-form-container" id="reply-form-' . $comment->comment_ID . '" style="display:none;"></div>';
 
         // Render con nếu có
         if (!empty($node['children'])) {
@@ -100,7 +97,6 @@ function render_comments($comment_tree, $depth = 1)
                 <input class="comment-auther-textarea" id="author" name="author" type="text" value="" size="30" />
             </p>
         ',
-            // Không thêm email, website nữa
         ],
     ]);
     ?>
@@ -109,3 +105,111 @@ function render_comments($comment_tree, $depth = 1)
     <?php render_comments($nested_comments); ?>
 
 </div>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        // Hiện/ẩn form reply khi click nút "Trả lời"
+        document.querySelectorAll('.reply-link').forEach(function(link) {
+            link.addEventListener('click', function(e) {
+                e.preventDefault();
+                let commentId = this.dataset.commentId;
+                let container = document.getElementById('reply-form-' + commentId);
+
+                if (container.innerHTML.trim() === '') {
+                    container.innerHTML = `
+                    <input
+                        id="reply-author-${commentId}"
+                        class="comment-auther-textarea"
+                        type="text"
+                        name="author"
+                        placeholder="Họ và tên"
+                        style="width: 100%; margin-bottom: 8px;"
+                    />
+                    <textarea
+                        id="reply-content-${commentId}"
+                        class="comment-form-textarea"
+                        placeholder="Nhập câu trả lời..."
+                        rows="4"
+                        style="width:100%;"
+                    ></textarea>
+                    <br>
+                    <button
+                        id="reply-send-${commentId}"
+                        class="comment-button-reply send-reply"
+                        type="button"
+                        data-parent-id="${commentId}"
+                    >Gửi</button>
+                `;
+                }
+
+                container.style.display = (container.style.display === 'none' || container.style.display === '') ? 'block' : 'none';
+
+                if (container.style.display === 'none') {
+                    container.innerHTML = '';
+                }
+            });
+        });
+
+        // Xử lý gửi reply comment qua AJAX (delegated event)
+        document.addEventListener('click', function(e) {
+            if (e.target.classList.contains('send-reply')) {
+
+                let parentId = e.target.dataset.parentId;
+                let container = e.target.parentElement;
+                let textarea = container.querySelector('textarea');
+
+                if (!textarea) {
+                    alert('Đã xảy ra lỗi, vui lòng thử lại.');
+                    return;
+                }
+
+                let content = textarea.value.trim();
+                let authorInput = container.querySelector('input[name="author"]');
+                let authorName = authorInput ? authorInput.value.trim() : '';
+
+                if (!authorName) {
+                    alert('Vui lòng nhập họ và tên');
+                    return;
+                }
+                if (!content) {
+                    alert('Vui lòng nhập nội dung trả lời');
+                    return;
+                }
+
+
+                // Bỏ comment để test fetch thật
+                fetch(MyAjaxVars.ajaxurl, {
+                        method: 'POST',
+                        headers: {
+                            'Content-Type': 'application/x-www-form-urlencoded'
+                        },
+                        body: new URLSearchParams({
+                            action: 'submit_comment_reply',
+                            nonce: MyAjaxVars.nonce,
+                            comment_post_ID: MyAjaxVars.post_id,
+                            comment_parent: parentId,
+                            comment_content: content,
+                            comment_author: authorName,
+                        }),
+                    })
+                    .then(res => {
+                        return res.json();
+                    })
+                    .then(data => {
+                        if (data.success) {
+                            container.innerHTML = '';
+                            container.style.display = 'none';
+
+                            // TODO: reload hoặc update lại phần comment nếu cần
+                        } else {
+                            alert('Đã xảy ra lỗi, vui lòng thử lại.');
+                        }
+                    })
+                    .catch(err => {
+                        console.error(err);
+                        alert('Đã xảy ra lỗi, vui lòng thử lại.');
+                    });
+            }
+        });
+    });
+</script>

@@ -17,17 +17,24 @@ function getPostById() {
             if (isOpen) return;
 
             // Nạp nội dung mới
-            fetch(`/wp-admin/admin-ajax.php?action=get_posts_by_category&cat_id=${catId}`)
-                .then(r => r.text())
-                .then(html => {
-                    container.innerHTML = `
-            <a href="${archiveLink}" class="view-all-posts">Tất cả</a>
-            ${html}
-          `;
-                })
-                .catch(() => {
-                    container.innerHTML = '<p>Lỗi khi tải bài viết.</p>';
-                });
+            fetch(`${MyAjaxVars.ajaxurl}?action=get_posts_by_category&cat_id=${catId}&nonce=${MyAjaxVars.nonce}`)
+    .then(res => res.json())
+    .then(data => {
+        if(data.success) {
+            const posts = data.data;
+            const htmlPosts = posts.map(post => `<li><a href="${post.url}">${post.title}</a></li>`).join('');
+            container.innerHTML = `
+                <a href="${archiveLink}" class="view-all-posts">Tất cả</a>
+                <ul>${htmlPosts}</ul>
+            `;
+        } else {
+            container.innerHTML = `<p>${data.data}</p>`;
+        }
+    })
+    .catch(() => {
+        container.innerHTML = '<p>Lỗi khi tải bài viết.</p>';
+    });
+
         });
     });
 }

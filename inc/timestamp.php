@@ -1,5 +1,6 @@
 <?php
-function anavira_enqueue_assets() {
+function anavira_enqueue_assets()
+{
     $css_files = [
         'style' => 'style.css',
         'about' => 'assets/css/about.css',
@@ -16,7 +17,7 @@ function anavira_enqueue_assets() {
         'footer'  => 'assets/css/footer.css',
     ];
 
-   
+
 
     // Enqueue CSS
     foreach ($css_files as $handle => $rel_path) {
@@ -30,31 +31,45 @@ function anavira_enqueue_assets() {
             );
         }
     }
-  $js_files = [
+    $js_files = [
         'dropdown' => 'assets/js/dropdown_manager.js',
         'fontsize' => 'assets/js/fontsize_manager.js',
         'language' => 'assets/js/language_manager.js',
         'route'    => 'assets/js/route_manager.js',
         'post'     => 'assets/js/post_manager.js',
         'video'    => 'assets/js/video_manager.js',
-        'comment'    => 'assets/js/comment_manager.js',
+        'comment'  => 'assets/js/comment_manager.js',
     ];
 
     foreach ($js_files as $handle => $rel_path) {
         $full_path = get_template_directory() . '/' . $rel_path;
         $uri_path = get_template_directory_uri() . '/' . $rel_path;
 
-        // ✳️ Gợi ý thêm: kiểm tra thật sự file có tồn tại để tránh lỗi
         if (file_exists($full_path)) {
             wp_enqueue_script(
                 $handle . '-script',
                 $uri_path,
-                [], // dependencies nếu có, có thể thêm 'jquery' nếu dùng jQuery
-                filemtime($full_path), // dùng thời gian sửa đổi làm version (cache busting)
-                true // in ở footer
+                [],
+                filemtime($full_path),
+                true
             );
+
+            // Nếu là file post_manager.js thì localize biến cho nó
+            if ($handle === 'post') {
+                wp_localize_script($handle . '-script', 'MyAjaxVars', [
+                    'ajaxurl' => admin_url('admin-ajax.php'),
+                    'nonce'   => wp_create_nonce('anavira_load_posts_nonce'),
+                    'post_id' => get_the_ID(),
+                ]);
+            }
+            if ($handle === 'comment') {
+                wp_localize_script($handle . '-script', 'MyAjaxVars', [
+                    'ajaxurl' => admin_url('admin-ajax.php'),
+                    'nonce'   => wp_create_nonce('anavira_comment_nonce'),
+                    'post_id' => get_the_ID(),
+                ]);
+            }
         } else {
-            // ✅ DEBUG: log tên file chưa tồn tại
             error_log("JS file not found: " . $full_path);
         }
     }

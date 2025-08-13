@@ -5,22 +5,7 @@ function folds_enqueue_assets()
   // Load CSS tổng
       wp_enqueue_style('main-style', get_stylesheet_uri());
 
-  // wp_enqueue_style('header-style', get_template_directory_uri() . '/assets/css/header.css');
-  // wp_enqueue_style('toolbar-style', get_template_directory_uri() . '/assets/css/toolbar.css');
-  // wp_enqueue_style('home-style', get_template_directory_uri() . '/assets/css/home.css');
-  // wp_enqueue_style('setting-style', get_template_directory_uri() . '/assets/css/setting.css');
-  // wp_enqueue_style('introduction-style', get_template_directory_uri() . '/assets/css/page-introduction.css');
-  // wp_enqueue_style('video-style', get_template_directory_uri() . '/assets/css/video.css');
-
-
-  // wp_enqueue_style('blog-style', get_template_directory_uri() . '/assets/css/blog.css');
-  // wp_enqueue_style('blog-menu-style', get_template_directory_uri() . '/assets/css/menu.css');
-  // wp_enqueue_style('blog-single-style', get_template_directory_uri() . '/assets/css/blog-single.css');
-  // wp_enqueue_style('about-style', get_template_directory_uri() . '/assets/css/about.css');
-
-
-
-  //load Icon Font Awesome
+//load Icon Font Awesome
   wp_enqueue_style(
     'font-awesome',
     'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css'
@@ -48,10 +33,6 @@ function folds_enqueue_assets()
 add_action('wp_enqueue_scripts', 'folds_enqueue_assets');
 
 //plugin WP
-function anavira_theme_setup() {
-    add_theme_support('post-thumbnails');
-}
-add_action('after_setup_theme', 'anavira_theme_setup');
 function custom_excerpt_length( $length ) {
     return 200; // Hiển thị 200 từ
 }
