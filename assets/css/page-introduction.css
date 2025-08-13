@@ -16,7 +16,16 @@
 
         margin: 0;
         letter-spacing: 5px;
+        text-align: center;
+    }
 
+    .Introduction_Container_Title_Sub {
+        font-family: 'Merriweather', serif !important;
+        color: #4a4a3f !important;
+        font-size: var(--font-size-base) !important;
+        font-weight: 1000 !important;
+        margin: 0 !important;
+        letter-spacing: 5px !important;
     }
 
     .Items_Content_Expand {
@@ -31,10 +40,10 @@
     .Blog_Introduction_Expand {
         display: none;
     }
-    .Items_Content_Expand
-    {
-    margin-left: 10px;
-      text-decoration: underline;
+
+    .Items_Content_Expand {
+        margin-left: 10px;
+        text-decoration: underline;
 
     }
 
@@ -68,12 +77,12 @@
         .Blog_Introduction_Expand {
             display: none;
         }
-           .Items_Content_Expand
-    {
-    margin-left: 10px;
-      text-decoration: underline;
 
-    }
+        .Items_Content_Expand {
+            margin-left: 10px;
+            text-decoration: underline;
+
+        }
 
 
     }
