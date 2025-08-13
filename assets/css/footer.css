@@ -1,3 +1,11 @@
+.Mobile_Footer_Container {
+    display: none;
+}
+
+.Footer_Container {
+    display: block;
+}
+
 .Footer {
     width: 100%;
     min-width: 710px;
@@ -49,13 +57,6 @@
     /* text-decoration: none; */
 }
 
-.Mobile_Footer_Container {
-    display: none;
-}
-
-.Footer_Container {
-    display: block;
-}
 
 @media (max-width: 450px) {
 
