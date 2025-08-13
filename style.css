@@ -35,6 +35,8 @@ Tags: #Anavira, #ThuctinhManhmeTaisinh
 body {
   margin: 0 !important;
   overflow-x: hidden;
+    user-select: none;
+
 }
 
 .app {
@@ -53,6 +55,8 @@ body {
   --font-size-title: 1.2rem;
   --font-size-base: 1rem;
   --font-size-slogan: 1.875rem;
+    user-select: none;
+
 }
 
 .Container {
@@ -175,6 +179,8 @@ body {
     --font-size-title: 1rem;
     --font-size-base: 0.7rem;
     --font-size-slogan: 1rem;
+      user-select: none;
+
   }
 
   .app {
