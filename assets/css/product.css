@@ -1,0 +1,54 @@
+.Product_Container {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    ;
+    min-width: 710px;
+    padding: 20px 0px;
+    box-sizing: border-box;
+}
+
+.Product_Container_Label {
+    width: 100%;
+    min-width: 710px;
+    gap: 20px;
+    display: grid;
+    grid-template-columns: auto auto;
+    /* 2 cột cố định */
+}
+
+.Product_Container_Label img:nth-child(3) {
+
+    grid-column: 1 / span 2;
+    /* Ảnh thứ 3 chiếm cả 2 cột */
+}
+
+.Product_Container_Label_Image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+@media (max-width: 450px) {
+    .Product_Container {
+        width: 100vw;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        min-width: 0px;
+        padding: 0 10px;
+        box-sizing: border-box;
+    }
+
+    .Product_Container_Label {
+        width: 100%;
+        min-width: 0px;
+        gap: 10px;
+        display: grid;
+        grid-template-columns: auto auto;
+    }
+
+}
