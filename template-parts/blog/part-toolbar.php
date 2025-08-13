@@ -1,17 +1,13 @@
   <?php
   $iconState;
-  if (! is_front_page() && ! is_page('About')) {
+  if (! is_front_page() && ! is_page('About') && !is_page('Product') && ! is_page('Recipe')) {
     $iconState = true; //front page là false
   } else {
     $iconState = false;
   }
   ?>
   <div class="Toolbar_Container">
-
-
     <div class="Desktop_Toolbar">
-
-
       <?php if ($iconState) : ?>
         <div class="Toolbar_Icon" id="Toolbar_Menu">
           <i class='bx bx-menu '></i>
