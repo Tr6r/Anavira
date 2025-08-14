@@ -17,7 +17,7 @@ function getPostById() {
             if (isOpen) return;
 
             // Nạp nội dung mới
-            fetch(`${MyAjaxVars.ajaxurl}?action=get_posts_by_category&cat_id=${catId}&nonce=${MyAjaxVars.nonce}`)
+            fetch(`${PostAjaxVars.ajaxurl}?action=get_posts_by_category&cat_id=${catId}&nonce=${PostAjaxVars.nonce}`)
     .then(res => res.json())
     .then(data => {
         if(data.success) {

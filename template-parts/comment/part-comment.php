@@ -178,15 +178,15 @@ function render_comments($comment_tree, $depth = 1)
 
 
                 // Bỏ comment để test fetch thật
-                fetch(MyAjaxVars.ajaxurl, {
+                fetch(CommentAjaxVars.ajaxurl, {
                         method: 'POST',
                         headers: {
                             'Content-Type': 'application/x-www-form-urlencoded'
                         },
                         body: new URLSearchParams({
                             action: 'submit_comment_reply',
-                            nonce: MyAjaxVars.nonce,
-                            comment_post_ID: MyAjaxVars.post_id,
+                            nonce: CommentAjaxVars.nonce,
+                            comment_post_ID: CommentAjaxVars.post_id,
                             comment_parent: parentId,
                             comment_content: content,
                             comment_author: authorName,

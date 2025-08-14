@@ -14,7 +14,9 @@
         </div>
       <?php else : ?>
 
-        <div></div>
+        <div class="Toolbar_Icon" id="Toolbar_Menu" style="visibility: hidden;">
+          <i class='bx bx-menu'></i>
+        </div>
       <?php endif; ?>
 
       <div class="Desktop_Toolbar_Midle">
@@ -35,10 +37,10 @@
         <div class="Desktop_Toolbar_Midle_Icon" title="Công thức WFPB" data-url="/recipe">
           <?php echo file_get_contents(get_template_directory() . '/assets/images/recipe.svg'); ?>
         </div>
-         <div class="Desktop_Toolbar_Midle_Icon" title="phản hồi" data-url="/feedback">
-          <?php echo file_get_contents(get_template_directory() . '/assets/images/blog.svg'); ?>
+        <div class="Desktop_Toolbar_Midle_Icon" title="phản hồi" data-url="/feedback">
+          <?php echo file_get_contents(get_template_directory() . '/assets/images/feedback.svg'); ?>
         </div>
-        
+
       </div>
 
 
@@ -46,7 +48,7 @@
         <?php echo file_get_contents(get_template_directory() . '/assets/images/setting.svg'); ?>
       </div>
 
-     
+
     </div>
 
     <div class="Mobile_Toolbar">
@@ -71,11 +73,15 @@
           <?php echo file_get_contents(get_template_directory() . '/assets/images/recipe.svg'); ?>
         </div>
 
-        <div class="Desktop_Toolbar_Midle_Icon_Setting" id="Mobile_Toolbar_Setting" title="Cài đặt">
-          <?php echo file_get_contents(get_template_directory() . '/assets/images/setting.svg'); ?>
+        <div class="Mobile_Toolbar_Midle_Icon" data-url="/feedback">
+          <?php echo file_get_contents(get_template_directory() . '/assets/images/feedback.svg'); ?>
         </div>
 
       </div>
+      <div class="Desktop_Toolbar_Midle_Icon_Setting" id="Mobile_Toolbar_Setting" title="Cài đặt">
+        <?php echo file_get_contents(get_template_directory() . '/assets/images/setting.svg'); ?>
+      </div>
+
       <?php if ($iconState) : ?>
         <div class="Toolbar_Icon" id="Mobile_Toolbar_Menu">
           <i class='bx bx-menu '></i>

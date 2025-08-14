@@ -68,7 +68,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 3em;
+  gap: 2em;
 }
 
 .Desktop_Toolbar_Midle_Icon {
@@ -257,7 +257,8 @@ width: 35px;
   }
 
   .Mobile_Toolbar_Midle {
-    width: 100%;
+    width: 90%;
+    overflow: auto;
     display: flex;
     align-items: center;
     justify-content: space-between;

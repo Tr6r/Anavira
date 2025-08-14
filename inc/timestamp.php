@@ -60,14 +60,14 @@ function anavira_enqueue_assets()
 
             // Nếu là file post_manager.js thì localize biến cho nó
             if ($handle === 'post') {
-                wp_localize_script($handle . '-script', 'MyAjaxVars', [
+                wp_localize_script($handle . '-script', 'PostAjaxVars', [
                     'ajaxurl' => admin_url('admin-ajax.php'),
                     'nonce'   => wp_create_nonce('anavira_load_posts_nonce'),
                     'post_id' => get_the_ID(),
                 ]);
             }
             if ($handle === 'comment') {
-                wp_localize_script($handle . '-script', 'MyAjaxVars', [
+                wp_localize_script($handle . '-script', 'CommentAjaxVars', [
                     'ajaxurl' => admin_url('admin-ajax.php'),
                     'nonce'   => wp_create_nonce('anavira_comment_nonce'),
                     'post_id' => get_the_ID(),
