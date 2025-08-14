@@ -1,5 +1,13 @@
 <!DOCTYPE html>
 <html <?php language_attributes(); ?>>
+<?php
+$headerState;
+if (is_page('Product')) {
+    $headerState = true; //Product là true
+} else {
+    $headerState = false;
+}
+?>
 
 <head>
     <meta charset="<?php bloginfo('charset'); ?>">
@@ -21,6 +29,9 @@
             <div class="MobileHomeHeader_Content_Brand">
                 ANAVIRA
             </div>
+            <?php if ($headerState) : ?>
+                <p class="MobileHomeHeader_Content_WFPB">WFPB</p>
+            <?php endif; ?>
             <p class="MobileHomeHeader_Content_Slogan">Thức tỉnh - Mạnh mẽ - Tái sinh</p>
         </div>
     </div>
