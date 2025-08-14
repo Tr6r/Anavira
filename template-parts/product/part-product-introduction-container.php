@@ -1,8 +1,6 @@
 <div class="Introduction_Container">
     <div class="Introduction_Container_Title">
-        <p>Sản phẩm</p>
-        <p class="Introduction_Container_Title_Sub">Tinh túy thuần chay -</p>
-        <p class="Introduction_Container_Title_Sub">Hương vị thật từ nguyên liệu thật</p>
+        <p>Phản hồi</p>
     </div>
     <div class="Frontpage_Container_banner">
 
