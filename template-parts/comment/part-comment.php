@@ -71,8 +71,6 @@ function render_comments($comment_tree, $depth = 1)
     echo '</ul>';
 }
 
-
-
 ?>
 
 <div class="comments-wrap">
