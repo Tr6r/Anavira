@@ -34,7 +34,7 @@ function anavira_enqueue_assets()
             );
         }
     }
-    $js_files = [
+    $js_files = [   
         'dropdown' => 'assets/js/dropdown_manager.js',
         'fontsize' => 'assets/js/fontsize_manager.js',
         'language' => 'assets/js/language_manager.js',
@@ -43,6 +43,7 @@ function anavira_enqueue_assets()
         'video'    => 'assets/js/video_manager.js',
         'comment'  => 'assets/js/comment_manager.js',
         'feedback'  => 'assets/js/feedback_manager.js',
+        'toolbar'  => 'assets/js/toolbar_manager.js',
     ];
 
     foreach ($js_files as $handle => $rel_path) {

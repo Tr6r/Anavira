@@ -6,6 +6,8 @@
     align-items: center;
     justify-content: center;
     flex-direction: column;
+            margin-top: 0px;
+
 }
 
 .Frontpage_Container_Content {
@@ -272,7 +274,7 @@
         justify-content: center;
         flex-direction: column;
 
-
+        margin-top: 70px;
     }
 
     .Frontpage_Container_Content {

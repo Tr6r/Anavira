@@ -40,7 +40,9 @@ body {
 }
 
 .app {
-  width: 100vw;
+  width: 100%;
+    box-sizing: border-box;
+
   background-color: #fdfaf5;
   padding: 0 25%;
   box-sizing: border-box;
@@ -56,6 +58,7 @@ body {
   --font-size-base: 1rem;
   --font-size-slogan: 1.875rem;
     user-select: none;
+ 
 
 }
 
@@ -180,9 +183,8 @@ body {
     --font-size-base: 0.7rem;
     --font-size-slogan: 1rem;
       user-select: none;
-
   }
-
+  
   .app {
     width: 100vw;
     height: fit-content;

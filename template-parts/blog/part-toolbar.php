@@ -6,7 +6,7 @@
     $iconState = false;
   }
   ?>
-  <div class="Toolbar_Container">
+  <div id="Toolbar" class="Toolbar_Container">
     <div class="Desktop_Toolbar">
       <?php if ($iconState) : ?>
         <div class="Toolbar_Icon" id="Toolbar_Menu">

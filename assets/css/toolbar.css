@@ -187,9 +187,9 @@ width: 35px;
   .Toolbar_Container {
     width: 100vw;
     min-width: 0px;
-    position: sticky;
+    position: fixed;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    top: 0;
+    top: 120px;
     z-index: 1000;
     margin-top: 20px;
 
