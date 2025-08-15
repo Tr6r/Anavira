@@ -1,11 +1,11 @@
 <div class="Introduction_Container">
     <div class="Introduction_Container_Title">
-        <p>Bài viết
+        <p>Blog
         <p>
     </div>
     <div class="Frontpage_Container_banner">
 
-        <img class="Frontpage_Container_banner_Image" src="<?php echo site_url(); ?>/wp-content/uploads/2025/07/Blog.png" alt="Banner">
+        <img class="Frontpage_Container_banner_Image" src="<?php echo get_template_directory_uri(); ?>/assets/images/static/blog-banner.png" alt="Banner">
     </div>
     <div class="Frontpage_Container_Items">
         <div class="Frontpage_Container_Items_Tilte">

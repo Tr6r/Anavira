@@ -5,6 +5,8 @@
         align-items: center;
         /* padding: 10px;
         box-sizing: border-box; */
+            margin-top: 0px;
+
     }
 
     .Introduction_Container_Title p {
@@ -55,6 +57,8 @@
             align-items: center;
             padding: 10px;
             box-sizing: border-box;
+                margin-top: 80px;
+
         }
 
         .Introduction_Container_Title p {

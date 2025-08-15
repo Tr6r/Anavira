@@ -5,7 +5,7 @@
     </div>
     <div class="Frontpage_Container_banner">
 
-        <img class="Frontpage_Container_banner_Image" src="<?php echo site_url(); ?>/wp-content/uploads/2025/08/recipe_banner.jpg" alt="Banner">
+        <img class="Frontpage_Container_banner_Image" src="<?php echo get_template_directory_uri(); ?>/assets/images/static/recipe-banner.jpg" alt="Banner">
     </div>
     <div class="Frontpage_Container_Items">
         <div class="Frontpage_Container_Items_Contents">

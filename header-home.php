@@ -2,7 +2,7 @@
 <html <?php language_attributes(); ?>>
 <?php
 $headerState;
-if (is_page('Product')) {
+if (is_page('Product') || is_page('Recipe')) {
     $headerState = true; //Product là true
 } else {
     $headerState = false;
@@ -22,7 +22,7 @@ if (is_page('Product')) {
 
     <div class="MobileHomeHeader_Container">
         <img class="MobileHomeHeader_Logo"
-            src="<?php echo site_url(); ?>/wp-content/uploads/2025/07/9-nam-02-1.png" height="60" alt="Logo">
+            src="<?php echo get_template_directory_uri(); ?>/assets/images/static/logo.png" height="60" alt="Logo">
         </img>
 
         <div class="MobileHomeHeader_Content">

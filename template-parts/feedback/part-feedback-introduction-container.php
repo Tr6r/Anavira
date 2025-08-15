@@ -2,10 +2,6 @@
     <div class="Introduction_Container_Title">
         <p>Phản hồi</p>
     </div>
-    <div class="Frontpage_Container_banner">
-
-        <img class="Frontpage_Container_banner_Image" src="<?php echo site_url(); ?>/wp-content/uploads/2025/08/product_banner.jpg" alt="Banner">
-    </div>
     <div class="Frontpage_Container_Items">
         <div class="Frontpage_Container_Items_Contents">
 

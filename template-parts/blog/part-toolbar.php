@@ -1,6 +1,6 @@
   <?php
   $iconState;
-  if (! is_front_page() && ! is_page('About') && !is_page('Product') && ! is_page('Recipe')) {
+  if (! is_front_page() && ! is_page('About') && !is_page('Product') && ! is_page('Recipe') &&  ! is_page('Feedback')) {
     $iconState = true; //front page là false
   } else {
     $iconState = false;

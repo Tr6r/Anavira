@@ -178,6 +178,10 @@ body {
 
 
 @media (max-width: 450px) {
+  html,body
+  {
+    overflow-x: hidden;
+  }
   :root {
     --font-size-title: 1rem;
     --font-size-base: 0.7rem;
@@ -189,7 +193,6 @@ body {
     width: 100vw;
     height: fit-content;
     box-sizing: border-box;
-    overflow: auto;
     margin: 0 !important;
     background-color: #fdfaf5;
   }
