@@ -7,11 +7,10 @@ document.addEventListener('DOMContentLoaded', () => {
     const minTop = width > 450 ? 0 : -20;     // top nhỏ nhất
     
     if (!toolbar) return;
-    if (window.location.pathname.includes('/product/') || window.location.pathname.includes('/recipe/')) {
-        initialTop = 150;
-        toolbar.style.top = initialTop + 'px';
-    }
-   
+    if (/^\/(vi|en)\/(recipe|product)\/$/.test(window.location.pathname)) {
+    initialTop = 150;
+    toolbar.style.top = initialTop + 'px';
+}
         window.addEventListener('scroll', () => {
             const scrollAmount = window.scrollY;
 
