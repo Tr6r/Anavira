@@ -1,25 +1,35 @@
  <body class="app">
-    <?php get_header('home'); ?>
+   <?php get_header('home'); ?>
 
-    <?php get_template_part('template-parts/blog/part-blog-archive-page'); ?>
+   <?php
+$post_type = get_post_type(); // lấy CPT hiện tại
 
-    <?php get_footer(); ?>
-  </body>
+    if ($post_type == 'recipe-cpt') {
+      get_template_part('template-parts/recipe/part-recipe-page');
+    } elseif ($post_type == 'product-cpt') {
+      get_template_part('template-parts/product/part-product-page');
+    } else {
+      get_template_part('template-parts/blog/part-blog-archive-page');
+    }
+    ?>
+
+   <?php get_footer(); ?>
+ </body>
 
 
-  <script>
-    document.addEventListener('DOMContentLoaded', () => {
-      RouteNavigation();
+ <script>
+   document.addEventListener('DOMContentLoaded', () => {
+     RouteNavigation();
 
-      handleSettingDropdown();
-      handleMenuDropdown();
+     handleSettingDropdown();
+     handleMenuDropdown();
 
-      handleBack();
+     handleBack();
 
-      handleClickOutside();
-      preventDropDownCloseOnClickInside();
+     handleClickOutside();
+     preventDropDownCloseOnClickInside();
 
-      getPostById();
+     getPostById();
 
-    });
-  </script>
+   });
+ </script>

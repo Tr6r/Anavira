@@ -12,6 +12,7 @@ add_action('wp_enqueue_scripts', function () {
     ]);
 });
 
+
 add_action('wp_ajax_get_posts_by_category',        'anavira_load_posts_by_category');
 add_action('wp_ajax_nopriv_get_posts_by_category', 'anavira_load_posts_by_category');
 
