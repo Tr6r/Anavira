@@ -1,6 +1,5 @@
 
-function getPostById() {
-
+document.addEventListener('DOMContentLoaded', () => {
     document.querySelectorAll('.Menu_category_link').forEach(link => {
         link.addEventListener('click', (e) => {
             e.preventDefault();
@@ -10,34 +9,33 @@ function getPostById() {
             const container = document.querySelector(`#Menu_category_posts-${catId}`);
             if (!container) return;
 
-            // Ẩn tất cả khối bài viết khác
+            // Ẩn tất cả các category khác
             const isOpen = container.children.length > 0;
-
             document.querySelectorAll('.Menu_category_posts').forEach(div => div.innerHTML = '');
             if (isOpen) return;
 
-            // Nạp nội dung mới
-            fetch(`${PostAjaxVars.ajaxurl}?action=get_posts_by_category&cat_id=${catId}&nonce=${PostAjaxVars.nonce}`)
-    .then(res => res.json())
-    .then(data => {
-        if(data.success) {
-            const posts = data.data;
-            const htmlPosts = posts.map(post => `<li><a href="${post.url}">${post.title}</a></li>`).join('');
-            container.innerHTML = `
-                <a href="${archiveLink}" class="view-all-posts">Tất cả</a>
-                <ul>${htmlPosts}</ul>
-            `;
-        } else {
-            container.innerHTML = `<p>${data.data}</p>`;
-        }
-    })
-    .catch(() => {
-        container.innerHTML = '<p>Lỗi khi tải bài viết.</p>';
-    });
-
+            // Fetch bài viết từ AJAX
+            fetch(`${PostAjaxVars.ajaxurl}?action=get_posts_by_category&cat_id=${catId}&typepost=${PostAjaxVars.typepost}&nonce=${PostAjaxVars.nonce}`)
+                .then(res => res.json())
+                .then(data => {
+                    if(data.success) {
+                        const posts = data.data;
+                        const htmlPosts = posts.map(post => `<li><a href="${post.url}">${post.title}</a></li>`).join('');
+                        container.innerHTML = `
+                            <a href="${archiveLink}" class="view-all-posts">Tất cả</a>
+                            <ul>${htmlPosts}</ul>
+                        `;
+                    } else {
+                        container.innerHTML = `<p>${data.data}</p>`;
+                    }
+                })
+                .catch(() => {
+                    container.innerHTML = '<p>Lỗi khi tải bài viết.</p>';
+                });
         });
     });
-}
+});
+
 handlePostExpand();
 
 function handlePostExpand() {

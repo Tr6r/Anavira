@@ -2,13 +2,12 @@
 // Không bắt buộc email, chỉ giữ trường Tên
 add_filter('pre_option_require_name_email', '__return_zero');
 
-add_filter('comment_form_default_fields', function($fields) {
-    $new_fields = [];
-    if (isset($fields['author'])) {
-        $new_fields['author'] = $fields['author']; // Giữ lại trường Tên
-    }
-    return $new_fields;
-});
+    add_filter('comment_form_default_fields', function($fields) {
+        $new_fields = [];
+            $new_fields['author'] = $fields['author']; // Giữ lại trường Tên
+        
+        return $new_fields;
+    });
 
 
 function anavira_handle_submit_comment_reply() {

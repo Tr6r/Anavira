@@ -17,7 +17,6 @@ function anavira_enqueue_assets()
         'footer'  => 'assets/css/footer.css',
         'product'  => 'assets/css/product.css',
         'feedback'  => 'assets/css/feedback.css',
-
     ];
 
 

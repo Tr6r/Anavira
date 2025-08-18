@@ -1,6 +1,6 @@
 <div class="Introduction_Container">
     <div class="Introduction_Container_Title">
-        <p>Phản hồi</p>
+        <p>Sản phẩm</p>
     </div>
     <div class="Frontpage_Container_banner">
 
