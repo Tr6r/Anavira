@@ -8,7 +8,7 @@
   }
 
   .Menu_Title {
-    font-size: var(--font-size-title);
+    font-size: var(--font-size-base);
     font-weight: 600;
   }
 
@@ -27,14 +27,14 @@
 
     box-sizing: border-box;
     text-align: left;
-    font-size: var(--font-size-title);
+    font-size: var(--font-size-base);
     font-weight: 400;
 
   }
 
   .Menu_category_link {
     padding-left: 0px;
-    font-size: var(--font-size-title);
+    font-size: var(--font-size-base);
     font-weight: 600;
     text-decoration: none;
     color: white;
@@ -68,7 +68,7 @@
     margin-top: 5px;
     text-decoration: none;
     color: white;
-    font-size: var(--font-size-title);
+    font-size: var(--font-size-base);
     font-weight: 400;
     display: -webkit-box;
     -webkit-line-clamp: 3;
@@ -92,7 +92,7 @@
   }
 
   .Menu_Title {
-    font-size: var(--font-size-title);
+    font-size: var(--font-size-base);
     font-weight: 600;
   }
 
@@ -110,14 +110,14 @@
 
     box-sizing: border-box;
     text-align: left;
-    font-size: var(--font-size-title);
+    font-size: var(--font-size-base);
     font-weight: 400;
 
   }
 
   .Menu_category_link {
     padding-left: 0px;
-    font-size: var(--font-size-title);
+    font-size: var(--font-size-base);
     font-weight: 600;
     text-decoration: none;
     color: white;
@@ -148,7 +148,7 @@
     margin-top: 5px;
     text-decoration: none;
     color: white;
-    font-size: var(--font-size-title);
+    font-size: var(--font-size-base);
     font-weight: 400;
     display: -webkit-box;
     -webkit-line-clamp: 3;

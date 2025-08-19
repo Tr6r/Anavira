@@ -180,7 +180,7 @@ body {
 @media (max-width: 450px) {
   html,body
   {
-    overflow-x: hidden;
+    overflow-x: hidden !important;
   }
   :root {
     --font-size-title: 1rem;

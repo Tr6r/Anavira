@@ -30,6 +30,11 @@
         letter-spacing: 5px !important;
     }
 
+    .letter-spacing-0
+    {
+        letter-spacing: 1.5 !important;
+    }
+
     .Items_Content_Expand {
         color: #605e38;
     }
@@ -87,6 +92,10 @@
             text-decoration: underline;
 
         }
+   .letter-spacing-0
+    {
+        letter-spacing: 0 !important;
+    }
 
 
     }

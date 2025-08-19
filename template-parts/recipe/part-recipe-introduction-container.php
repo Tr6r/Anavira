@@ -1,7 +1,8 @@
 <div class="Introduction_Container">
     <div class="Introduction_Container_Title">
         <p>Công thức</p>
-        <p class="Introduction_Container_Title_Sub">Anavira-Thức tỉnh vị giác, nuôi dưỡng sự sống.</p>
+        <p class="Introduction_Container_Title_Sub letter-spacing-0">Anavira - Thức tỉnh vị giác,</p>
+        <p class="Introduction_Container_Title_Sub letter-spacing-0">nuôi dưỡng sự sống.</p>
     </div>
     <div class="Frontpage_Container_banner">
 

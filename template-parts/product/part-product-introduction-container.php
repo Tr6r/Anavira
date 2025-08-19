@@ -41,7 +41,7 @@
                 </p>
                 <br></br>
                 <p class="Frontpage_Container_Items_Content">
-                  <strong>  Coming soon – Sắp ra mắt, với công thức đã được tinh chỉnh và kiểm nghiệm kỹ lưỡng.</strong> </p>
+                  <em>  Coming soon </em> – Sắp ra mắt, với công thức đã được tinh chỉnh và kiểm nghiệm kỹ lưỡng.</p>
 
             </div>
 
