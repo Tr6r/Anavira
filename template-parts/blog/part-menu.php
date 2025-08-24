@@ -25,26 +25,36 @@ switch ($current_page) {
         $typepost = 'blog';
 }
 
-// Lấy categories của CPT tương ứng
-$categories = get_terms([
-    'taxonomy'   => $typepost . '-categories',
+$taxonomy = $typepost . '-categories';
+
+// ✅ Chỉ lấy category CHA
+$parents = get_terms([
+    'taxonomy'   => $taxonomy,
     'hide_empty' => false,
+    'parent'     => 0,
 ]);
 ?>
 
 <div class="Menu">
     <div class="Menu_Title">Danh mục</div>
     <ul class="Menu_List" id="category-list">
-        <?php foreach ($categories as $cat): ?>
-            <li class="Menu_List_Item">
-                <a href="#" class="Menu_category_link"
-                    data-id="<?= $cat->term_id ?>"
-                    data-link="<?= get_term_link($cat) ?>"
-                    data-typepost="<?= esc_attr($typepost) ?>">
-                    <?= esc_html($cat->name) ?>
-                </a>
-            </li>
-            <div id="Menu_category_posts-<?= $cat->term_id ?>" class="Menu_category_posts"></div>
-        <?php endforeach; ?>
+        <?php if (!is_wp_error($parents) && !empty($parents)) : ?>
+            <?php foreach ($parents as $cat): ?>
+                <li class="Menu_List_Item" data-cat-id="<?= esc_attr($cat->term_id) ?>">
+                    <a href="#"
+                       class="Menu_category_link"
+                       data-id="<?= esc_attr($cat->term_id) ?>"
+                       data-link="<?= esc_url(get_term_link($cat)) ?>"
+                       data-typepost="<?= esc_attr($typepost) ?>">
+                        <?= esc_html($cat->name) ?>
+                    </a>
+
+                    <!-- nơi để render CON -->
+                    <div id="Menu_children-<?= esc_attr($cat->term_id) ?>" class="Menu_children"></div>
+                    <!-- nơi để render POSTS -->
+                    <div id="Menu_category_posts-<?= esc_attr($cat->term_id) ?>" class="Menu_category_posts"></div>
+                </li>
+            <?php endforeach; ?>
+        <?php endif; ?>
     </ul>
 </div>
