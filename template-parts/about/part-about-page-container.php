@@ -116,7 +116,7 @@
             <p class="About_Container_Items_Content">
                 Vậy là tôi tự tay nấu thử. </p>
             <p class="About_Container_Items_Content">
-                Từng mẻ nước mắm chay Anavira được chưng cất từ <strong>dứa tươi, nấm hương, tiêu hột, gừng, cỏ ngọt...</strong> và nước tương nguyên chất.Không hương liệu. Không chất bảo quản. Không lên men nhân tạo. Chỉ là những nguyên liệu thật, nấu trong thời gian thật – để tạo nên một vị chấm <strong>tròn đầy – dịu mặn – thơm sâu – và lành</strong>.
+                Từng mẻ nước mắm chay Anavira được chưng cất từ <strong>dứa tươi, nấm hương, tiêu hột, gừng, cỏ ngọt...</strong>. Không hương liệu. Không chất bảo quản. Không lên men nhân tạo. Chỉ là những nguyên liệu thật, nấu trong thời gian thật – để tạo nên một vị chấm <strong>tròn đầy – dịu mặn – thơm sâu – và lành</strong>.
             </p>
 
             <p class="About_Container_Items_Content"><strong>Vì nước mắm không chỉ là nước chấm.</strong></p>
@@ -131,9 +131,6 @@
         <div class="About_Container_Items_Contents ">
             <p class="About_Container_Items_Content">
                 Sau mỗi đợt hóa trị, tôi từng ngồi trước chén cơm mà không nuốt nổi – nhưng vẫn <strong>phải ăn</strong> để đủ sức hồi phục. Xạ trị kéo dài gần tháng, cơ thể đuối dần – và tôi hiểu rằng: <strong>Ăn là để sống tiếp.</strong>
-            </p>
-            <p class="About_Container_Items_Content">
-                Vậy là tôi tự tay nấu thử.
             </p>
             <p class="About_Container_Items_Content">
                 Cháo Anavira ra đời cho những lúc yếu nhất đời người. Không chỉ cho người ung thư, mà cho bất kỳ ai đang nằm viện – cần một chén cháo <strong>sạch, đủ chất, dễ tiêu – và thật sự lành.</strong>
